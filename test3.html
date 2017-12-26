@@ -1,0 +1,3107 @@
+<html lang="ko"><head>
+<meta charset="utf-8">
+<link rel="shortcut icon" href="http://image.yeoboya.com/imgs/new_wedding/mobile/img/favicon_16.ico" type="image/x-icon">
+<link rel="icon" href="http://image.yeoboya.com/imgs/new_wedding/mobile/img/favicon_16.ico" type="image/x-icon">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="ALL">
+<meta name="robots" content="index,follow">
+<meta name="revisit-after" content="1 days">
+<meta name="Subject" content="여보야">
+<meta name="description" content="결혼, 재혼, 평생 배우자를 찾는 스마트한 방법, 문의전화1522-3379">
+<meta name="keywords" content="여보야, yeoboya, 결혼, 재혼">
+<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="HandheldFriendly" content="true">
+<meta name="mobile-web-app-capable" content="yes">
+
+
+<title>여보야</title>
+<link href="css/webfont.min2.css" rel="stylesheet" type="text/css">
+<link href="css/default.css" rel="stylesheet" type="text/css">
+<script async="" src="https://www.google-analytics.com/analytics.js"></script><script>
+document.domain = "yeoboya.com";
+var _underwork = false;
+</script>
+<script src="http://m.yeoboya.com/_global/js/jquery.min.js"></script>
+<script src="http://m.yeoboya.com/_global/js/jquery-cookie.min.js"></script>
+<script src="http://m.yeoboya.com/_global/js/jsBridge.js"></script>
+<script src="http://m.yeoboya.com/_global/js/app.js"></script>
+<script src="http://m.yeoboya.com/_global/js/NodeMarrySession.js"></script>
+<script src="http://m.yeoboya.com/js/default.js"></script>
+<script src="http://m.yeoboya.com/js/testDomains.js"></script>
+<script src="http://m.yeoboya.com/_global/js/jquery-ui.min-1.12.1.js"></script>
+<style>
+#imgSpinBg {position:fixed;width:100%;height:100%;background:rgba(0,0,0,0.7);top:0;}
+#imgSpin {position:fixed;top:50%;left:50%;margin-top:-36px;margin-left:-36px;width:72px;height:72px;}
+@-webkit-keyframes flip /* Safari and Chrome */ {
+  from {
+    -ms-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  to {
+    -ms-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+@keyframes flip {
+  from {
+    -ms-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  to {
+    -ms-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+
+.flip {    
+  -webkit-animation: flip 1.2s ease infinite;
+  -moz-animation: flip 1.2s ease infinite;
+  -ms-animation: flip 1.2s ease infinite;
+  -o-animation: flip 1.2s ease infinite;
+  animation: flip 1.2s ease infinite;
+}
+
+.btn_home{display:inline-block;}
+.btn_home{position:absolute; padding:7px 20px 2px 50px; top:0; right:0;}
+.layer_select_area {position:absolute;cursor:pointer;word-break:break-all;z-index:999;width:100%;}
+.layer_select_top_triangle {position:relative;top:0px;z-index:10;width:0;height:0;border-color: transparent transparent #c3c3c5 transparent;border-width:0 16px 8px 0;border-style:solid;width:0px;height:0px;margin:0 auto;display:none;}
+.layer_select_top_triangle .triangle {position:absolute;top:2px;left:1px;z-index:10;width:0;height:0;border-color: transparent transparent #c3c3c5 transparent;border-width:0 16px 8px 0;border-style:solid;width:0px;height:0px;margin:0 auto;}
+.layer_select_box {position:relative;cursor:pointer;word-break:break-all;z-index:9;}
+.layer_select_box .layer_select_box_opt {border-bottom:0px none rgb(72, 51, 52);color:rgb(72, 51, 52);}
+.layer_select_box .layer_select_box_opt_selected {border-bottom:0px none rgb(72, 51, 52);color:#fff;background:#fef091;}
+</style>
+<script src="http://m.yeoboya.com/js/jquery.vticker.min.js"></script>
+<script src="http://m.yeoboya.com/js/jquery.openSelect.js?ver=1513040071"></script>
+<script src="http://m.yeoboya.com/js/handlebars.js"></script>
+</head>
+<body style=";-webkit-overflow-scrolling: touch" class="scroll_remove">
+<script>
+// path controls
+var _chnl = '';
+var _ctrl = '';
+var _dest = '';
+
+$(window).on("touchend",function(){});
+</script><style>
+#wrap {background:#fff;}
+#ft_space {width:100%;height:50px}
+
+#infomation {position:relative;padding:0px 10px 0px 8px;margin-top:3px;z-index:10;-webkit-transform:translateZ(0);}
+#infomation .notice_box {position:relative;width:100%;height:25px;border:1px solid #e9e9e9;border-radius:3px}
+#infomation .notice_box .icon {display:table-cell;text-align:center;padding:0 5px;line-height:5px;}
+#infomation .notice_box .icon img {vertical-align:middle; }
+#infomation .notice_box ul {margin:0;list-style:none;font-size:0.8em;display:none;}
+#infomation .notice_box li {padding:8px 10px 8px 5px}
+
+#infoTiker {display:table-cell;overflow:hidden;position:relative;height:25px;width:100%;}
+#infoTiker li {height:25px;line-height:25px}
+
+.notice_box_open {box-shadow: 0px 10px 10px -5px rgba(0,0,0,0.4); -webkit-box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.4); -moz-box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.4);}
+
+.btn_open_notice {display:block; position:absolute; top:3px; right:8px; width:30px; height:25px; line-height:25px; border:1px solid #a1a1a1; background:#bcbcbc; background:-moz-linear-gradient(top, #bcbcbc 0%, #929292 100%); background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#bcbcbc), color-stop(100%,#929292)); background:-webkit-linear-gradient(top, #bcbcbc 0%,#929292 100%); background:-o-linear-gradient(top, #bcbcbc 0%,#929292 100%); background:-ms-linear-gradient(top, #bcbcbc 0%,#929292 100%); background:linear-gradient(to bottom, #bcbcbc 0%,#929292 100%); color:#fff; font-size:11px; text-align:center; filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#bcbcbc', endColorstr='#929292',GradientType=0 );z-index:21}
+
+#tikerBox2 {display:none; width:100%; position:absolute; top:0; left:0; padding:0px 10px 3px 8px; z-index:11; -webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+.open_msg_box_wrap {width:100%; max-height:410px; overflow-y:auto; border:1px solid #483334; border-radius:3px; background-color:#fff}
+.open_msg_box_wrap ul {margin:0; padding:0 8px 0 10px; font-size:12px; height:280px; }
+.open_msg_box_wrap ul li {position:relative; width:100%; background:#fff; padding:2px 5px; border-bottom:1px solid #ddd; letter-spacing:-1px; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box}
+.open_msg_box_wrap ul li span.icon {display:block;position:absolute;top:50%;left:-5px;width:6.73px;height:18px;margin-top:-9px}
+/*
+.open_msg_box_wrap ul li div {display:table-cell;padding:2px 15px 2px 5px;width:100%;border-bottom:1px solid #ddd;}
+.open_msg_box_wrap ul li div p {width:100%;line-height:17px;}
+.open_msg_box_wrap ul li span {color:#e8296c;}
+*/
+.open_msg_box_wrap ul li:last-child {margin-bottom:2px;}
+
+.roll_gray { font-weight:normal; color:gray; }
+.roll_black { font-weight:normal; color:#483334; }
+.roll_red {color:#e8296c;}
+
+#yeo_list li.no_rd_member {border:none;min-height:500px}
+.h_btn_rgphoto { position:absolute; top:7px; right:182px; }
+
+
+.del_btn {position:absolute; top:0; right:0; height:30px; width:70px; /*padding:0 5px; border:1px solid #a1a1a1;*/ background:#bcbcbc; background:-moz-linear-gradient(top, #bcbcbc 0%, #929292 100%); background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#bcbcbc), color-stop(100%,#929292)); background:-webkit-linear-gradient(top, #bcbcbc 0%,#929292 100%); background:-o-linear-gradient(top, #bcbcbc 0%,#929292 100%); background:-ms-linear-gradient(top, #bcbcbc 0%,#929292 100%); background:linear-gradient(to bottom, #bcbcbc 0%,#929292 100%); color:#fff; font-size:12px; font-weight:bold; text-align:center; line-height:28px; filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#bcbcbc', endColorstr='#929292',GradientType=0 );}
+
+.call_btn {position:absolute; right:0; height:28px; padding:0 5px; border:1px solid #e8b710; background:#f5e125; background:-moz-linear-gradient(top, #f5e125 0%, #efce17 100%); background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#f5e125), color-stop(100%,#efce17)); background:-webkit-linear-gradient(top, #f5e125 0%,#efce17 100%); background:-o-linear-gradient(top, #f5e125 0%,#efce17 100%); background:-ms-linear-gradient(top, #f5e125 0%,#efce17 100%); background:linear-gradient(to bottom, #f5e125 0%,#efce17 100%); color:#454545; font-size:12px; font-weight:bold; text-align:center; line-height:28px; filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5e125', endColorstr='#efce17',GradientType=0 );}
+
+.img_chung { display:inline;width:30px; height:30px; position:relative; padding-left:30px;}
+.img_chung img { width:18px; height:26px; position:absolute; top:0; left:5px; }
+.img_chung.on {display:none; position:absolute; z-index:11; width:70px; height:100px; left:80px; border:1px solid #999; border-radius:10px; background:url('http://image.yeoboya.com/imgs/new_wedding/mobile/img4/img_chung_l.gif') no-repeat center; background-size:60px; background-color:#ffffff;}
+
+/*nav.hideNav {display:none;position:fixed;top:0}*/
+
+#editPop {display:none;position:fixed;width:96%;top:10px;left:50%;margin-left:-48%;background:#fff;border:3px solid #575757;z-index:1500}
+#editPop .popTitle {display:block;width:100%;background:#fff600;font-size:1em;padding:5px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+#editText {width:90%;height:80px;left:50%;font-family:dotum;font-size:14px;margin:10px 0 10px 5%;border:1px solid #dedede;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+.btnBg {position:relative;width:100%;height:40px;color:white;text-align:center;background:white;color:black}
+.btnAll {width:60px;height:30px;text-align:center;font-family:dotum;font-size:15px;margin:0 5px 0 5px}
+
+/*--- 카카오스타일 뱃지(메시지카운트) -----*/
+.msg_badge { float:right; position:relative; top:3px; width:22px; height:22px; border: 2px solid rgb(255,255,255); border-radius:19px; background:rgb(254,93,14); color:#fff; font-size:0.8em; font-weight:bold; text-align:center; z-index:10; display:none; line-height:24px; }
+.msg_badge .number2 {position:absolute; width:100%; color:#fff; top:1px; left:0px; font-size:1.2em; padding-left:0px; padding-top:0px; border:0px solid red; text-align:center;}
+.badgePos1 { right:170px; }
+.badgePos2 { right:116px; }
+.badgePos3 { right:648px; }
+.badgePos4 { right:362px; }
+
+.cert_photo_btn {z-index:2000; display:inline-block; position:absolute; top:7px; right:220px; line-height:32px; padding:0 3px; height:29px; border:1px solid #3a3030; border-radius:5px; background:-moz-linear-gradient(top, #aaa2a1 0%, #746665 100%); background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#aaa2a1), color-stop(100%,#746665)); background:-webkit-linear-gradient(top, #aaa2a1 0%,#746665 100%); background:-o-linear-gradient(top, #aaa2a1 0%,#746665 100%); background: -ms-linear-gradient(top, #aaa2a1 5%, #746665 100%); color:#fff; font-size:0.8em; letter-spacing:-1px; box-shadow: inset 0px 1px 0px 0px #d5d1d1; -webkit-box-shadow:inset 0 1px 0 0px #d5d1d1; -moz-box-shadow:inset 0 1px 0 0px #d5d1d1;} /* 161128 _ padding수정 */
+.cert_photo_btn_on {z-index:2000; display:inline-block; position:absolute; top:7px; right:220px; line-height:32px; padding:0 3px; height:29px; border:1px solid #3a3030; border-radius:5px; background:-moz-linear-gradient(top, #aaa2a1 0%, #746665 100%); background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff5858), color-stop(100%,#8a1f1f)); background:-webkit-linear-gradient(top, #ff5858 0%,#8a1f1f 100%); background:-o-linear-gradient(top, #ff5858 0%,#8a1f1f 100%); background: -ms-linear-gradient(top, #ff5858 5%, #8a1f1f 100%); color:#fff; font-size:0.8em; letter-spacing:-1px; box-shadow: inset 0px 1px 0px 0px #d5d1d1; -webkit-box-shadow:inset 0 1px 0 0px #d5d1d1; -moz-box-shadow:inset 0 1px 0 0px #d5d1d1;} /* 161128 _ padding수정 */
+
+.adv_banner {position:relative; width:100%; height:36px; border-top:2px solid #ffd88c; border-bottom:2px solid #ffd88c; background-color:#4c1d2d; margin-bottom:3px}
+.adv_banner img {position:absolute; top:7px; left:8px;}
+.adv_banner .bnr_txt01 {position:absolute; top:2px; left:58px; color:#ffd88c; font-size:11px;}
+.adv_banner .bnr_txt02 {position:absolute; top:13px; left:58px; color:#ffd88c; font-size:16px;}
+.divider_line {position:absolute; top:4px; right:82px; width:2px; height:28px; background-color:#ffd88c;}
+@media (min-width:360px) {
+	.divider_line {right:100px;}
+}
+
+.btn_viral_bnr {position:absolute; top:3px; right:8px; float:right; width:60px; height:30px; border:none; border-radius:3px; background:#f9cf87; background:-moz-linear-gradient(top, #f9cf87 0%, #c59c5d 100%); background:-webkit-linear-gradient(top, #f9cf87 0%,#c59c5d 100%); background:linear-gradient(to bottom, #f9cf87 0%,#c59c5d 100%); color:#4c1d2d; font-size:12px; line-height:12px;}
+
+/* ---카피라이트부분 리스트의 [더보기] 아래에 붙도록 ---*/
+#company_ad { display:block; position:relative;display:none; }
+
+#adverLayer {display:none;position:fixed;top:40px;left:0;width:100%;padding:10px 10px 10px 8px;z-index:1500;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+.viral_box_wrap {width:100%; height:auto; overflow:hidden; border:2px solid #f3c07b; background-color:#4c1d2d; box-shadow:-1px -1px 19px 3px rgba(0,0,0,.3); text-align:center; -webkit-box-shadow:-1px -1px 19px 3px rgba(0,0,0,.3); -o-box-shadow:-1px -1px 19px 3px rgba(0,0,0,.3); -moz-box-shadow:-1px -1px 19px 3px rgba(0,0,0,.3);}
+.viral_box_wrap img {clear:both; margin-top:10px;}
+.viral_box_wrap h1 {clear:both; padding-top:18px; color:#ffd88c; font-size:20px;}
+.viral_box_wrap h2 {padding-top:18px; color:#f1bb77; font-size:12px;}
+.txt_line {display:inline-block; width:251px; height:1px; margin-top:22px; margin-bottom:16px; background-color:#f1bb77; color:#f1bb77;}
+.btn_viral {display:block; width:99%; height:40px; margin:0 auto; margin-bottom:2px; border:none; background:#f9cf87; background:-moz-linear-gradient(top, #f9cf87 0%, #c59c5d 100%); background:-webkit-linear-gradient(top, #f9cf87 0%,#c59c5d 100%); background:linear-gradient(to bottom, #f9cf87 0%,#c59c5d 100%); color:#4c1d2d; font-size:18px;}
+.today_hidden_check {clear:both; width:100%; height:24px; background-color:#4c4848; text-align:left; line-height:24px;}
+.today_hidden_check .today_hidden {float:left; margin-top:5px; margin-left:10px;}
+.check_txt {display:inline-block; margin-left:8px; color:#efd6be; font-size:12px;}
+
+/*==== 160503 영상대화 추가사항===== */
+.vchat_btn {position:absolute; right:60px; height:28px; padding:0 5px; border:1px solid #e62424;-moz-box-shadow:inset 0px 1px 0px 0px #ffa6af;-webkit-box-shadow:inset 0px 1px 0px 0px #ffa6af;box-shadow:inset 0px 1px 0px 0px #ffa6af;background: #fb4456; background: -moz-linear-gradient(top,  #ff485a 0%,
+#fb4456 47%, #f33e4f 100%);background: -webkit-linear-gradient(top,  #ff485a 0%,#fb4456 47%,#f33e4f 100%); background: linear-gradient(to bottom,  #ff485a 0%,#fb4456 47%,#f33e4f 100%);color:#fff; font-size:12px; font-weight:bold; text-align:center; line-height:28px; }
+
+#contents #mngTxt {position:relative; display:block; padding:5px 5px 5px 5px; font-size:14px; font-weight:bold; color:#000000;}
+#contents #mngTxt .familyConts{display:inline-block; margin-left:7px; margin-bottom:-2px; width:49%; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; height:14px; line-height:16px; background-color:#CEFBC9;}
+#contents #mngTxt .repectConts{display:inline-block; margin-left:7px; margin-bottom:-2px; width:68%; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; height:14px; line-height:16px; background-color:#CEFBC9;}
+
+/* 기획서 004_여보야앱 이용안내창 */
+#pmchatAlert {position:fixed; width:100%; z-index:10000; top:250px;}
+#pmchatAlertMask {  position:fixed;  background-color:#000000; left:0; top:0; width:100%; height:100%;  opacity: 0.7; z-index:-1;}
+.app_alarm_wrap {position:relative; width:304px; height:auto; margin:0 auto; overflow:hidden; border-radius:10px; box-shadow:0px 0px 10px 0px rgba(0,0,0,0.75); text-align:center; -webkit-box-shadow:0px 0px 10px 0px rgba(0,0,0,0.75); -moz-box-shadow:0px 0px 10px 0px rgba(0,0,0,0.75); background-color:#FFFFFF}
+
+.app_alarm_wrap .content_box {width:100%; height:auto; overflow:hidden; border-top-right-radius:10px; border-top-left-radius:10px; background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #543d3e), color-stop(1, #2a1a1a)); background:-moz-linear-gradient(top, #543d3e 5%, #2a1a1a 100%); background:-webkit-linear-gradient(top, #543d3e 5%, #2a1a1a 100%); background:-ms-linear-gradient(top, #543d3e 5%, #2a1a1a 100%); background:linear-gradient(to bottom, #543d3e 5%, #2a1a1a 100%); box-shadow:inset 0px 2px 0px 0px #684c4d; -webkit-box-shadow:inset 0px 2px 0px 0px #684c4d; -moz-box-shadow:inset 0px 2px 0px 0px #684c4d;}
+.app_alarm_wrap img {position:absolute; top:15px; left:25px;}
+.app_alarm_wrap .y_app_txt {display:inline-block; padding:20px 45px 17px 90px; color:#fff; font-size:14px; text-align:left;}
+.app_alarm_wrap .y_app_txt span {color:#fff993;}
+.app_alarm_wrap .btn_y_app {display:inline-block; margin:0 0 15px 0; padding:10px 45px; border:1px solid #54381e; border-radius:5px; background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #875052), color-stop(1, #875052)); background:-moz-linear-gradient(top, #875052 5%, #875052 100%); background:-webkit-linear-gradient(top, #875052 5%, #875052 100%); background:-ms-linear-gradient(top, #875052 5%, #875052 100%); background:linear-gradient(to bottom, #875052 5%, #875052 100%); box-shadow:inset 0px 1px 0px 0px #a06668; color:#fff; -webkit-box-shadow:inset 0px 1px 0px 0px #a06668; -moz-box-shadow:inset 0px 1px 0px 0px #a06668;}
+.app_alarm_wrap .btn_app_alarm_closed {display:inline-block; padding:5px 0; font-size:14px; text-decoration:underline;}
+
+/* 영상대화 팝업창 */
+.promote_pop {display:block; position:relative; width:100%; height:auto; margin:10px 0; padding:0; overflow:hidden;}
+.promote_pop img {display:block; width:97%; height:auto; margin:0 auto;}
+.promote_close_btn {display:block; position:absolute; top:1%; width:8%; right:2%;}
+
+.ment_area:active {background:#bababa}
+
+/* 중매인 헤더 추가 버튼들 위치 */
+header .ar_h_btn_msg {position:absolute;top:7px;right:178px}
+header .btn_ar_mem_join { position:absolute;top:7px;right:116px; }
+header .btn_ar_mem_manage { position:absolute;top:7px;right:54px; }
+header .h_btn_myinfo {position:absolute;top:7px;right:10px; outline:none;}
+header #logo { left:10px; }
+
+/* 중매회원/가족회원 마크 */
+.list_id_mark {display:inline-block; margin-left:5px;}
+
+/* 170427 시크릿 배너 */
+.banner_secret{position:absolute; top:12px; right:-100px; width:95px; height:132px; background:url(http://image.yeoboya.com/imgs/new_wedding/mobile/secret/bg_secret_banner.png) no-repeat center center; background-size:95px 132px;}
+.chk_wrap{position:relative; width:100%; height:75px; padding-top:50px; box-sizing:border-box;}
+.chk_wrap input[type="checkbox"]{display:block; position:absolute; z-index:10; top:0px; left:0px; width:100%; height:100%; opacity:0; border:none; outline:none; background-color:transparent; cursor:pointer;}
+.chk_wrap label{display:block; position:relative; width:55px; height:25px; padding:0px; margin:0 auto; border-radius:17px; background-color:#c6c6c6; color:#fff; font-size:12px; transition:background-color 0.2s ease-out; cursor:pointer; -webkit-tap-highlight-color:rgba(255,255,255,0);}
+.chk_wrap .chk_handle{display:inline-block; position:absolute; top:2px; left:2px; width:22px; height:22px; background:url(http://image.yeoboya.com/imgs/new_wedding/mobile/secret/ico_secret_handle.png) no-repeat center center; background-size:22px 22px; transition:left 0.2s ease-out;}
+.chk_wrap .chk_on, .chk_wrap .chk_off{display:inline-block; position:absolute; top:6px; width:auto; height:13px; line-height:13px; transition:opacity 0.2s ease-out;}
+.chk_wrap .chk_on{left:8px; opacity:0;}
+.chk_wrap .chk_off{right:7px; opacity:1;}
+
+.chk_wrap input[type="checkbox"]:checked ~ label{background-color:#d26499;}
+.chk_wrap input[type="checkbox"]:checked ~ label .chk_handle{left:32px;}
+.chk_wrap input[type="checkbox"]:checked ~ label .chk_on{opacity:1;}
+.chk_wrap input[type="checkbox"]:checked ~ label .chk_off{opacity:0;}
+
+.list_link{position:relative; width:100%; height:57px; padding:5px 5px 7px 5px; box-sizing:border-box;}
+.list_link a{display:block; width:100%; height:100%; padding:6px 0; border-radius:9px; box-sizing:border-box; background:url(http://image.yeoboya.com/imgs/new_wedding/mobile/secret/btn_secret_banner2.png) no-repeat center center; background-size:85px 45px; box-shadow:1px 1px 2px rgba(0,0,0,0.5);}
+.list_link a p{width:100%; height:16px; line-height:16px; color:#fff; font-size:12px; text-align:center;}
+.list_link a .fc_mint{color:#9de9db;}
+.list_link a .fc_pink{color:#ffd1e7;}
+.list_link p.hint {margin-top:9px}
+
+/* 170428 시크릿배너 뱃지추가 */
+.banner_secret .scrt_count{position:absolute; top:76px; right:2px; width:23px; height:23px;}
+.banner_secret .scrt_alim{position:absolute; top:0; left:0; width:23px; height:23px; line-height:23px; font-size:14px; color:#fff; text-align:center; letter-spacing:0px;}
+
+/* 170418 시크릿 뱃지 */
+.scrt_on_badge{position:absolute; top:2px; left:5px; display:inline-block; width:60px; height:auto; background-color:#be4a82; color:#fff; border-radius:10px; text-align:center; font-size:12px;}
+.scrt_off_badge{position:absolute; top:2px; left:5px; display:inline-block; width:60px; height:auto; background-color:#8c8b97; color:#fff; border-radius:10px; text-align:center; font-size:12px;}
+
+.scrt_logo_badge_on{display:inline-block; position:relative; top:6px; width:44px; height:13px; margin-left:3px; vertical-align:top; background: url(http://image.yeoboya.com/imgs/new_wedding/mobile/secret/secretBadge_full-text_on.png) no-repeat center bottom; background-size:44px 13px;}
+.scrt_logo_badge_off{display:inline-block; position:relative; top:6px; width:44px; height:13px; margin-left:3px; vertical-align:top; background: url(http://image.yeoboya.com/imgs/new_wedding/mobile/secret/secretBadge_full-text_off.png) no-repeat center bottom; background-size:44px 13px;}
+
+/* 170418 전체보기 드롭메뉴 수정*/
+header .h_btn_all{position:absolute; top:7px; right:125px;}
+header img.new_icon{position:absolute; right:122px; top:5px;}
+
+.bg_black{display:none; position:fixed; width:100%;  height:100%; left:0px; top:0px; background-color:rgba(0,0,0,0.7); z-index:24;}
+.bg_black_all{display:none; position:fixed; width:100%;  height:100%; left:0px; top:0px; background-color:rgba(0,0,0,0.7); z-index:25;}
+.dropDown_menu{display:none; position:absolute; width:85px; height:auto; right:125px; top:35px; border-radius:0 0 6px 6px; border:2px solid #4f4142; box-sizing:border-box; background:#fff; box-shadow:0 0 3px #666; z-index:100;}
+.dropDown_menu ul.dropMenu_1{display:inline-block; width:81px; height:52px; padding:0; margin:0 auto; }
+.dropDown_menu li{position:relative; width:73px; height:52px; text-align:center; margin-left:4px; border-top:2px solid #b1b1b1;}
+.dropDown_menu li.no_line{border:none;}
+.dropDown_menu li a {display:inline-block;width:100%;height:100%}
+.dropDown_menu li img.icon{position:relative; top:0; margin-top:5px;}
+.dropDown_menu li.no_line img.icon{margin-top:11px;}
+
+.count_alim1 {position:absolute; top:13px; right:-4px; width:23px; height:23px; text-align:center}
+.count_alim1 p.alim1{position:absolute; top:0; left:0; width:23px; height:23px; font-size:14px; color:#fff; line-height:21px;}
+.count_alim2 {position:absolute; top:13px; right:-4px;}
+.count_alim2 p.alim2{position:absolute; top:0; left:0; width:23px; height:23px; font-size:14px; color:#fff; line-height:21px;}
+.count_alim3 {position:absolute; top:10px; right:-4px;}
+.count_alim3 p.alim3{position:absolute; top:0; left:0; width:23px; height:23px; font-size:14px; color:#fff; line-height:21px;}
+.count_alim4 {position:absolute; top:13px; right:-4px;}
+.count_alim4 p.alim4{position:absolute; top:0; left:0; width:23px; height:23px; font-size:14px; color:#fff; line-height:21px; text-align:center; letter-spacing:0px;} /* 1704 추가 */
+
+.dropDown_menu .new_alim{position:absolute; top:13px; right:-4px; width:23px; height:23px; text-align:center}
+.dropDown_menu .new_alim2{position:absolute; top:10px; right:-4px; width:23px; height:23px; text-align:center} /* 1704 추가 */
+
+/* 170404 드롭다운메뉴 우측 이벤트배너 위치 설정*/
+.dropDown_menu .banner_evnt{position:absolute; top:296px; right:-97px;}
+.dropDown_menu .banner_evnt a{display:block; width:100%; height:100%;}
+
+/* 161028 header 관련 css */
+body {padding-top: 0px;}
+header {position: relative; top: 0; z-index:12; transition: top 0.2s ease-in-out; width: 100%; }
+
+.layerSel {position:relative;width:190%;height:auto;margin:0 5%;background-color:#fff;font-family:NotoSansKR-Bold, sans-serif;font-weight:400;font-size:1.0em;color:#483334;border-radius:5px;border:1px solid #c3c3c5;box-shadow:0 2px 5px #cbcbce;cursor:pointer;}
+.layerSelOpt {background-color:#fff;width:100%;height:49px;line-height:49px;border-bottom:3px solid #efefef;}
+.layerSelOptSelected {background-color:#fef091;width:100%;height:49px;line-height:49px;border-bottom:3px solid #efefef;}
+
+/* 연락하기 버튼 영역 시작 */
+#contents #yeo_list ul li form .list_info a{position:relative;display:block;width:100%;height:100%;line-height:28px;border-radius:0 0 3px 3px;box-sizing:border-box;background-color:transparent;overflow:hidden;}
+#contents #yeo_list ul li form .list_info a img{vertical-align:middle;padding:0 5px 0 10px;}
+#contents #yeo_list ul li form .list_info a .list_btn{position:absolute;bottom:0; right:0;border-radius:0 0 3px 0;width:70px;height:30px;line-height:30px;background-color:#fcde46;color:#272727;font-size:1.10em;text-align:center;transition:all 0.2s ease-in-out;-webkit-transition:all 0.2s ease-in-out;-ms-transition:all 0.2s ease-in-out;-moz-transition:all 0.2s ease-in-out;-o-transition:all 0.2s ease-in-out;}
+#contents #yeo_list ul li form .list_info a .list_btn:hover{background-color:#fce362;}
+@keyframes push {
+	50% { transform:scale(0.9); }
+	100% { transform:scale(1); }
+}
+@-webkit-keyframes push {
+	50% { -webkit-transform:scale(0.9); }
+	100% { -webkit-transform:scale(1); }
+}
+@-ms-keyframes push {
+	50% { -ms-transform:scale(0.9); }
+	100% { -ms-transform:scale(1); }
+}
+@-moz-keyframes push {
+	50% { -moz-transform:scale(0.9); }
+	100% { -moz-transform:scale(1); }
+}
+@-o-keyframes push {
+	50% { -o-transform:scale(0.9); }
+	100% { -o-transform:scale(1); }
+}
+#contents #yeo_list ul li form .list_info a .list_btn_active{background-color:#fce362;animation:push 0.2s ease-in-out 1;-webkit-animation:push 0.2s ease-in-out 1;-ms-animation:push 0.2s ease-in-out 1;-moz-animation:push 0.2s ease-in-out 1;-o-animation:push 0.2s ease-in-out 1;}
+/* 연락하기 버튼영역 끝 */
+
+/* 프로필 사진 영역 시작 */
+#contents #yeo_list ul li form .photo_box .ripple{position:absolute;top:4px;left:4px;width:60px;height:60px;border:2px solid #efefef;border-radius:100%;box-sizing:border-box;background: transparent;opacity:0;}
+@keyframes rippling {
+    25% {transform: scale(1.15);opacity: 1;}
+    100% {transform: scale(1.3);opacity: 0;}
+}
+@-webkit-keyframes rippling {
+    25% { -webkit-transform: scale(1.15); opacity: 1; }
+    100% { -webkit-transform: scale(1.3); opacity: 0; }
+}
+@-ms-keyframes rippling {
+    25% { -ms-transform: scale(1.15); opacity: 1; }
+    100% { -ms-transform: scale(1.3); opacity: 0; }
+}
+@-moz-keyframes rippling {
+    25% { -moz-transform: scale(1.15); opacity: 1; }
+    100% { -moz-transform: scale(1.3); opacity: 0; }
+}
+@-o-keyframes rippling {
+    25% { -o-transform: scale(1.15); opacity: 1; }
+    100% { -o-transform: scale(1.3); opacity: 0; }
+}
+#contents #yeo_list ul li form .photo_box .ripple_active{animation:rippling 0.2s linear 1;-webkit-animation:rippling 0.2s linear 1;-ms-animation:rippling 0.2s linear 1;-moz-animation:rippling 0.2s linear 1;-o-animation:rippling 0.2s linear 1;}
+/* 프로필 사진영역 끝 */
+
+/* 공지 버튼 시작 */
+#infomation .info_btn{position:relative;display:table-cell;width:25px;padding:7px 5px;box-sizing:border-box;border-bottom:none;}
+#infomation .info_btn .info_tri{width:0px;height:0px;padding:0;border-width:10px 7.5px 0 7.5px;border-style:solid;border-color:#483334 transparent transparent transparent;}
+#infomation .info_btn .info_close{border-width:0 7.5px 10px 7.5px;border-color:transparent transparent #483334 transparent;}
+/* 공지 버튼 끝 */
+
+/* 새로운 이성회원 가입 알림 시작 */
+.notice_pop_partner { position:fixed; top:0; left:50%; bottom:0; width:290px; height:186px; margin-top:auto; margin-bottom:auto; margin-left:-145px; background-color:#fff; border-radius:20px; box-shadow:0px 0px 14px #403a3c; z-index:999; display:none;}
+.btn_close_wishPop {position:absolute; top:0; right:0; z-index:100; display:block; width:26%; height:40%; background:url(http://image.yeoboya.com/imgs/new_wedding/mobile/wish/btn_close.png) no-repeat 80% 12px; background-size:12px 12px;}
+.notice_pop_partner h1 {position:relative; text-align:center; font-size:17px; font-weight:bold; padding:20px 0 8px 0; margin:0; color:#7118cd; letter-spacing:-0.5px;}
+.notice_pop_partner p {color:#4b436e; font-size:15px; text-align:center; font-weight:400; line-height:20px; padding-top:4px;}
+.btn_set {position:absolute; bottom:0; left:0; width:290px; height:55px; background-color:#4b436e; border-bottom-left-radius:20px; border-bottom-right-radius:20px; color:#fff; text-align:center; line-height:55px; box-shadow: inset 0px -3px 0px #403961; letter-spacing:-0.5px;}
+/* 새로운 이성회원 가입 알림 끝 */
+
+/* 170516 추가 _ 시크릿이용권 만료 알림 시작 */
+.notice_pop_secret {position:fixed; top:0; left:50%; bottom:0; width:290px; height:186px; margin-top:auto; margin-bottom:auto; margin-left:-145px; background-color:#fff; -webkit-border-radius:8px 8px 7px 7px; border-radius:8px 8px 7px 7px; -webkit-box-shadow:0px 0px 14px #403a3c; box-shadow:0px 0px 14px #403a3c; z-index:1001; display:none;}
+.notice_pop_secret .title-in {position:relative; width:100%; height:40px; -webkit-border-radius:7px 7px 0 0; border-radius:7px 7px 0 0; background-image:-webkit-gradient(linear,left top,right bottom,from(#ffd7d7),to(#e9bbff)); background-image:linear-gradient(to right,#ffd7d7,#e9bbff);}
+.notice_pop_secret .title-in .title {position:absolute; top:0; left:0; width:100%; height:40px; font-size:18px; font-weight:bold; color:#222; line-height:40px; text-align:center; letter-spacing:-2px;}
+.notice_pop_secret .title-in .title .strong {color:#8f134a;}
+.notice_pop_secret .ment-in {position:relative; top:7px; left:50%; width:96%; height:auto; margin-left:-48%;}
+.notice_pop_secret .ment-in .ment {font-size:15px; color:#302a54; line-height:22px; text-align:center; letter-spacing:-2px;}
+.notice_pop_secret .ment-in .ment .time {margin-right:2px; font-size:16px; font-weight:bold; color:#c10037; letter-spacing:-1px;}
+.notice_pop_secret a.btn_cancel {position:absolute; bottom:10px; left:50%; width:107px; height:31px; margin-left:-118px; border:1px solid #949494; -webkit-border-radius:4px; border-radius:4px; background-color:#a1a1a1; font-size:16px; font-weight:bold; color:#fff; line-height:31px; text-align:center; letter-spacing:0;}
+.notice_pop_secret a:active.btn_cancel {border:1px solid #969696; background-color:#969696;}
+.notice_pop_secret a.btn_ok {position:absolute; bottom:10px; left:50%; width:107px; height:31px; margin-left:9px; border:1px solid #bf4c86; -webkit-border-radius:4px; border-radius:4px; background-color:#cc528f; font-size:16px; font-weight:bold; color:#fff; line-height:31px; text-align:center; letter-spacing:0;}
+.notice_pop_secret a:active.btn_ok {border:1px solid #b84981; background-color:#b84981;}
+/* 시크릿이용권 만료 알림 끝 */
+
+/* 로고 리플 */
+.logo_ripple{position:absolute; z-index:1000; top:-80px; left:-50px; width:140px; height:140px; border-radius:100%; box-sizing:border-box; background:#000; overflow:hidden; opacity:0; -webkit-opacity:0; -ms-opacity:0; -moz-opacity:0; -o-opacity:0;}
+.logo_ripple span{display:inline-block; position:absolute; top:53px; left:61px; width:45px; height:45px; border-radius:100%; box-sizing:border-box; background:#000; opacity:0.1; -webkit-opacity:0.1; -ms-opacity:0.1; -moz-opacity:0.1; -o-opacity:0.1; transform:scale(1.0); -webkit-transform:scale(1.0); -ms-transform:scale(1.0); -moz-transform:scale(1.0); -o-transform:scale(1.0); transform-origin:center center; -webkit-transform-origin:center center; -ms-transform-origin:center center; -moz-transform-origin:center center; -o-transform-origin:center center;}
+@keyframes logo_ripple { 0% {opacity:0;} 80% {opacity:0.2;} 100% {opacity:0;} }
+@-webkit-keyframes logo_ripple { 0% {-webkit-opacity:0;} 80% {-webkit-opacity:0.1;} 100% {-webkit-opacity:0;} }
+@-ms-keyframes logo_ripple { 0% {-ms-opacity:0;} 80% {-ms-opacity:0.1;} 100% {-ms-opacity:0;} }
+@-moz-keyframes logo_ripple { 0% {-moz-opacity:0;} 80% {-moz-opacity:0.1;} 100% {-moz-opacity:0;} }
+@-o-keyframes logo_ripple { 0% {-o-opacity:0;} 80% {-o-opacity:0.1;} 100% {-o-opacity:0;} }
+@keyframes ripple_span { 0% {transform:scale(1.0); opacity:0;} 30% {transform:scale(2); opacity:0.1;} 100% {transform:scale(4); opacity:0;} }
+@-webkit-keyframes ripple_span { 0% {-webkit-transform:scale(1.0); -webkit-opacity:0;} 30% {-webkit-transform:scale(2); -webkit-opacity:0.1;} 100% {-webkit-transform:scale(4); -webkit-opacity:0;} }
+@-ms-keyframes ripple_span { 0% {-ms-transform:scale(1.0); -ms-opacity:0;} 30% {-ms-transform:scale(2); -ms-opacity:0.1;} 100% {-ms-transform:scale(4); -ms-opacity:0;} }
+@-moz-keyframes ripple_span { 0% {-moz-transform:scale(1.0); -moz-opacity:0;} 30% {-moz-transform:scale(2); -moz-opacity:0.1;} 100% {-moz-transform:scale(4); -moz-opacity:0;} }
+@-o-keyframes ripple_span { 0% {-o-transform:scale(1.0); -o-opacity:0;} 30% {-o-transform:scale(2); -o-opacity:0.1;} 100% {-o-transform:scale(4); -o-opacity:0;} }
+.logo_ripple_on{z-index:1000; animation:logo_ripple 0.35s linear 1; -webkit-animation:logo_ripple 0.35s linear 1; -ms-animation:logo_ripple 0.35s linear 1; -moz-animation:logo_ripple 0.35s linear 1; -o-animation:logo_ripple 0.35s linear 1;}
+.logo_ripple_on span{animation:ripple_span 0.25s linear 1; -webkit-animation:ripple_span 0.25s linear 1; -ms-animation:ripple_span 0.25s linear 1; -moz-animation:ripple_span 0.25s linear 1; -o-animation:ripple_span 0.25s linear 1;}
+
+.result_rfsh{position:absolute; width:40px; height:30px; top:7px; right:10px; border:1px solid #3b2728; border-radius:6px; overflow:hidden; box-sizing:border-box; text-align:center; background: rgb(124,98,99);
+background: -moz-linear-gradient(top, rgba(124,98,99,1) 0%, rgba(110,81,83,1) 100%);
+background: -webkit-linear-gradient(top, rgba(124,98,99,1) 0%,rgba(110,81,83,1) 100%);
+background: linear-gradient(to bottom, rgba(124,98,99,1) 0%,rgba(110,81,83,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7c6263', endColorstr='#6e5153',GradientType=0 );}
+.result_rfsh a{display:block; position:relative; width:100%; height:100%;top:0;}
+.result_rfsh .circle_svg{position:absolute; top:5px; left:10px; width:20px; height:20px; transform:rotate(-60deg); -webkit-transform:rotate(-60deg); -ms-transform:rotate(-60deg); -moz-transform:rotate(-60deg); -o-transform:rotate(-60deg); transform-origin:50% 50%; -webkit-transform-origin:50% 50%; -ms-transform-origin:50% 50%; -moz-transform-origin:50% 50%; -o-transform-origin:50% 50%;}
+.result_rfsh .circle_inner{stroke-dashoffset:0;stroke-dasharray:180;stroke-width:10;stroke-miterlimit:10;stroke-linecap:round;stroke:#fff;fill:transparent;}
+.result_rfsh .arrow_span{position:absolute; top:5px; right:16px; display:inline-block; width:0; height:0; border-left:5px solid transparent; border-right:5px solid transparent; border-bottom:6px solid #fff; transform:rotate(45deg) scale(1.0); -webkit-transform:rotate(45deg) scale(1.0); -ms-transform:rotate(45deg) scale(1.0); -moz-transform:rotate(45deg) scale(1.0); -o-transform:rotate(45deg) scale(1.0); transform-origin:50% 50%; -webkit-transform-origin:50% 50%; -ms-transform-origin:50% 50%; -moz-transform-origin:50% 50%; -o-transform-origin:50% 50%; transition:all 0.1s ease-in-out; -webkit-transition:all 0.1s ease-in-out; -ms-transition:all 0.1s ease-in-out; -moz-transition:all 0.1s ease-in-out; -o-transition:all 0.1s ease-in-out;}
+@keyframes loading { 0% {transform:rotate(-60deg); } 100% {transform:rotate(300deg);} }
+@-webkit-keyframes loading { 0% {-webkit-transform:rotate(-60deg); } 100% {-webkit-transform:rotate(300deg);} }
+@-ms-keyframes loading { 0% {-ms-transform:rotate(-60deg); } 100% {-ms-transform:rotate(300deg);} }
+@-moz-keyframes loading { 0% {-moz-transform:rotate(-60deg); } 100% {-moz-transform:rotate(300deg);} }
+@-o-keyframes loading { 0% {-o-transform:rotate(-60deg); } 100% {-o-transform:rotate(300deg);} }
+@keyframes loading-circle {	0% {stroke-dashoffset:0;} 50% {stroke-dashoffset:-180;}	100% {stroke-dashoffset:-360} }
+@-webkit-keyframes loading-circle {	0% {-webkit-stroke-dashoffset:0;} 50% {-webkit-stroke-dashoffset:-180;}	100% {-webkit-stroke-dashoffset:-360} }
+@-ms-keyframes loading-circle {	0% {-ms-stroke-dashoffset:0;} 50% {-ms-stroke-dashoffset:-180;} 100% {-ms-stroke-dashoffset:-360} }
+@-moz-keyframes loading-circle { 0% {-moz-stroke-dashoffset:0;}	50% {-moz-stroke-dashoffset:-180;} 100% {-moz-stroke-dashoffset:-360} }
+@-o-keyframes loading-circle { 0% {-o-stroke-dashoffset:0;}	50% {-o-stroke-dashoffset:-180;} 100% {-o-stroke-dashoffset:-360} }
+.result_rfsh_on .circle_svg{animation:loading 0.6s ease-in-out 1; -webkit-animation:loading 0.6s ease-in-out 1; -ms-animation:loading 0.6s ease-in-out 1; -moz-animation:loading 0.6s ease-in-out 1; -o-animation:loading 0.6s ease-in-out 1;}
+.result_rfsh_on .circle_inner{animation:loading-circle 0.6s ease-in-out 1; -webkit-animation:loading-circle 0.6s ease-in-out 1; -ms-animation:loading-circle 0.6s ease-in-out 1; -moz-animation:loading-circle 0.6s ease-in-out 1; -o-animation:loading-circle 0.6s ease-in-out 1;}
+.result_rfsh .arrow_span_on{transform:rotate(45deg) scale(0.0); -webkit-transform:rotate(45deg) scale(0.0); -ms-transform:rotate(45deg) scale(0.0); -moz-transform:rotate(45deg) scale(0.0); -o-transform:rotate(45deg) scale(0.0);}
+
+/* 170418 시크릿 뱃지 */
+.scrt_on_badge{position:absolute; top:2px; left:5px; display:inline-block; width:60px; height:auto; background-color:#be4a82; color:#fff; border-radius:10px; text-align:center; font-size:12px;}
+.scrt_off_badge{position:absolute; top:2px; left:5px; display:inline-block; width:60px; height:auto; background-color:#8c8b97; color:#fff; border-radius:10px; text-align:center; font-size:12px;}
+
+.photo_box .count_scrt_img{position:absolute; width:20px; height:20px; top:3px; left:47px;}
+.photo_box .count_scrt_img .count_img{width:20px!important; height:20px!important; border:none!important; margin:0!important;}
+.photo_box .count_scrt_img p.count_num{position:absolute; top:0; left:0; width:20px; height:20px; font-size:12px; color:#fff; line-height:19px; text-align:center;}
+
+/*---------- 결혼재혼뱃지 수정 ----------*/
+.nw_badge{display:inline-block; width:32px; height:17px; margin-left:-8px; vertical-align:top; padding-top:4px; background:url(http://image.yeoboya.com/imgs/new_wedding/mobile_rnw/img01/ico_nw.png) no-repeat center bottom; background-size:32px 17px;}
+.rw_badge{display:inline-block; width:32px; height:17px; margin-left:-8px; vertical-align:top; padding-top:4px; background:url(http://image.yeoboya.com/imgs/new_wedding/mobile_rnw/img01/ico_rw.png) no-repeat center bottom; background-size:32px 17px;}
+
+/*---------- 170420 검색메뉴바 ----------*/
+#showNav {position:relative; height:42px; top:0; z-index:12;}
+.slct_ctrl {position:absolute;top:0;left:0;width:100%;height:30px;z-index:10}
+.slct_ctrl select {display:block;float:left;width:20%;height:auto}
+
+nav ul{height:42px;}
+nav li.top_menu{width:17.4%; height:42px; line-height:42px; padding-right:2px; box-sizing:border-box; background:url(http://image.yeoboya.com/imgs/new_wedding/mobile/srch_detail/bg_slct_line.png) right center no-repeat; background-size:2px 20px;}
+nav li.top_menu:nth-child(4){background:none;}
+nav li.btn_detail_srch{width:28%; background:none;}
+nav li.top_menu a.slct_ui{display:block; text-align:center; width:100%; height:100%; overflow:hidden; font-size:14px; font-weight:700; color:#483334; padding-top:0; line-height:0;}
+nav li.top_menu a.slct_ui span{display:block; width:42px; height:24px; line-height:14px; padding-top:15px; padding-right:8px; margin:0 auto; vertical-align:middle; background:url(http://image.yeoboya.com/imgs/new_wedding/mobile/srch_detail/bullet_nav.png) right 19px no-repeat; background-size:9px 6px;}
+nav li.top_menu a.slct_ui span.fltr_slcted{color:#de666b; border-bottom:3px solid #de666b; background:url(http://image.yeoboya.com/imgs/new_wedding/mobile/srch_detail/bullet_nav_slct.png) right 19px no-repeat; background-size:9px 6px;} /* 170714 선택된 필터 표기 */
+nav li.btn_detail_srch a.slct_detail{display:block; width:90%; height:30px; line-height:30px; margin:6px 0; padding:0; box-sizing:border-box; border-radius:5px; background:#ed9797 url(http://image.yeoboya.com/imgs/new_wedding/mobile/srch_detail/img_srch_more.png) center center no-repeat; background-size:58px 13px; position:absolute; right:10px;}
+nav li.btn_detail_srch a.slct_detail2{display:block; width:86%; height:34px; line-height:34px; margin:4px 0; padding:0; box-sizing:border-box; border-radius:5px; background:#ed9797 url(http://image.yeoboya.com/imgs/new_wedding/mobile/srch_detail/img_srch_more_slct.png) center 11px no-repeat; background-size:58px 21px; position:absolute; right:10px;}
+nav li.btn_detail_srch a.slct_detail:active{background-color:#e68d8d;}
+nav li.top_menu a.slct_ui:active{background:rgba(0,0,0,0.05);}
+
+nav li.align_lst{width:19.8%;}
+nav li.align_lst a.slct_ui span{width:42px; padding-right:11px;}
+.scroll_remove { overflow-y:hidden;height:100%; -webkit-overflow-scrolling: auto; }
+.scroll_add { overflow-y:scroll;height:100%; -webkit-overflow-scrolling: touch;}
+
+/* 170523 추가 _ 개인정보사진 유무표시 */
+.marry-info_cue_in-card {display:inline-block; position:relative; color:#333; font-size:0.75em; letter-spacing:-0.01em;}
+.marry-info_cue_in-card_badge {display:inline-block; position:relative; top:-1px; left:-2px; width:14px; height:14px; margin:0; margin-right:-3px; -webkit-border-radius:50%; border-radius:50%; background-color:#29bf00; font-size:10px; font-weight:bold; color:#fff; text-align:center; line-height:14px;}
+/* */
+
+/* 170526 _ 기간연장 or 시크릿가입하기  버튼 */
+.floating-btn_area_wrap {display:none; position:absolute; z-index:100; top:318px; width:100%; height:60px; background:none;}
+.floating-btn_area_1 {position:absolute; top:0; left:0; width:33.33%; height:42px; -webkit-border-radius:5px; border-radius:5px; box-shadow:2px 2px 3px rgba(0,0,0,.35); background-color:#d6639c;}
+.floating-btn_area_2 {position:absolute; top:0; left:0; width:33.33%; height:42px; -webkit-border-radius:5px; border-radius:5px; box-shadow:2px 2px 3px rgba(0,0,0,.35); background-color:#6862d6;}
+.floating-btn_secretMembers_1 {position:absolute; top:0; left:0; width:100%; height:42px; background:url('http://image.yeoboya.com/imgs/new_wedding/mobile/secret/floating-btn_secretMembers_1.png') no-repeat 0 0; background-size:100% 42px;}
+.floating-btn_secretMembers_1 .name {font-size:1em; font-weight:bold; color:#fff; letter-spacing:-0.03em; line-height:42px; text-align:center;}
+/*.floating-btn_secretMembers_2 {position:absolute; top:0; left:0; width:100%; height:42px; background:url('http://image.yeoboya.com/imgs/new_wedding/mobile/secret/floating-btn_members_1.png') no-repeat 0 0; background-size:100% 42px;}*/
+.floating-btn_secretMembers_2 .name {font-size:0.925em; font-weight:bold; color:#fff; letter-spacing:-0.03em; line-height:42px; text-align:center;}
+/* */
+
+/* 170526 _ 시크릿 미니스위치 */
+.banner_secret_mini_wrap {display:none; position:absolute; z-index:100; top:206px; left:33.33%; width:75px; height:62px; margin-left:8px; background:none;}
+.banner_secret_mini_area {position:absolute; top:0; left:0; width:65px; height:52px; background:url('http://image.yeoboya.com/imgs/new_wedding/mobile/secret/bg_secret_banner_mini.png') no-repeat 0 0; background-size:65px 52px;}
+/* */
+
+/* 170613 여성프로필등록활성화 배너 */
+/*.wrap_banner_wf{position:relative; width:100%; height:auto; display:none;}*/
+/*.wrap_banner_wf a{display:block; width:100%; height:auto;}*/
+/*.wrap_banner_wf a img{display:block; width:100%; height:auto;}*/
+
+/*20170718 정우아_롤링메시지영역 수정*/
+#contents .roll_bg_modal{position:fixed; top:88px; bottom:0; left:0; right:0; z-index:100; background:rgba(0,0,0,0.6); cursor:pointer; display:none;}
+#contents .rolling_wrap{position:relative; z-index:100; width:100%; height:29px; padding:2px 8px 0 8px; box-sizing:border-box; cursor:pointer; margin-bottom:2px; -webkit-transform:translateZ(0);}
+#contents .rolling_wrap:after{content:''; display:block; clear:both;}
+#contents .rolling_wrap .dot_fix{position:absolute; z-index:10; top:4px; left:9px; width:20px; height:28px; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_dot02.png) no-repeat 8px 8px; background-size:8px 8px;}
+#contents .rolling_wrap .rolling_div{position:relative; width:100%; height:28px; overflow-y:hidden; border-radius:3px; border:1px solid #c2c2c2; box-sizing:border-box; background-color:#fff; transition:all 0.3s ease-in-out; -webkit-transition:all 0.3s ease-in-out; -ms-transition:all 0.3s ease-in-out; -o-transition:all 0.3s ease-in-out; -moz-transition:all 0.3s ease-in-out; cursor:pointer;}
+#contents .rolling_wrap .rolling_div ul{margin:0; padding:0;}
+#contents .rolling_wrap .rolling_div ul .rolling_l{width:100%; height:auto; line-height:26px; padding:0 5px 0 20px!important; box-sizing:border-box; color:#483334; font-size:13px; font-weight:700; letter-spacing:-0.8px; cursor:pointer;}
+#contents .rolling_wrap .rolling_div ul .rolling_l .roll_red{color:#e8296c;}
+#contents .btn_toggle{position:absolute; top:1px; right:6px; height:28px; line-height:28px; cursor:pointer; color:#626262; font-size:15px; text-align:center; padding:0 10px; transition:transform 0.3s ease-in-out;}
+
+/*롤링메시지 열림*/
+#contents .rolling_wrap_on .rolling_div{height:210px!important; overflow-y:auto!important;}
+#contents .rolling_wrap_on .rolling_l{background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_dot02.png) no-repeat 8px 9px; background-size:8px 8px;}
+#contents .rolling_wrap_on .btn_toggle{transform:rotate(180deg);}
+
+/*글머리기호없애기*/
+#rolling_wrap_on .rolling_div ul li:nth-of-type(3), #rolling_wrap_on .rolling_div ul li:nth-of-type(5), #rolling_wrap_on .rolling_div ul li:nth-of-type(8), #rolling_wrap_on .rolling_div ul li:nth-of-type(11), #rolling_wrap_on .rolling_div ul li:nth-of-type(13), #rolling_wrap_on .rolling_div ul li:nth-of-type(17), #rolling_wrap_on .rolling_div ul li:nth-of-type(19), #rolling_wrap_on .rolling_div ul li:nth-of-type(21), #rolling_wrap_on .rolling_div ul li:nth-of-type(23), #rolling_wrap_on .rolling_div ul li:nth-of-type(25), #rolling_wrap_on .rolling_div ul li:nth-of-type(26), #rolling_wrap_on .rolling_div ul li:nth-of-type(26), #rolling_wrap_on .rolling_div ul li:nth-of-type(28), #rolling_wrap_on .rolling_div ul li:nth-of-type(31), #rolling_wrap_on .rolling_div ul li:nth-of-type(32){background:none;}
+
+/*리스트 닫힌상태에서 움직이는 롤링메시지 클릭시*/
+#contents .rolling_wrap .rolling_stop{background-color:#fffd60!important;}
+/*20170718 정우아_롤링메시지영역 수정//*/
+
+/* 170911 페이지 맨 상단으로 이동 & 맨 하단으로 이동 */
+#btnMoveTop{right:25px;}
+#btnMoveBottom{position:fixed; bottom:10px; right:80px; width:35px; height:35px; z-index:10;}
+
+/* 170913 로고애니메이션 */
+header .logo{-webkit-transform-style: preserve-3d; -moz-transform-style: preserve-3d; -ms-transform-style: preserve-3d; -o-transform-style: preserve-3d; transform-style: preserve-3d;}
+@keyframes spin {
+	0%{transform:rotateY(0deg);}
+	25%{transform:rotateY(180deg);}
+	50%{transform:rotateY(360deg); opacity:0.2;}
+	100%{opacity:1;}
+}
+header .logo_on{animation:spin 0.3s ease-in-out;}
+
+/*-------------------20170904 정우아----------------*/
+/* 170523 추가 _ 개인정보사진 유무표시 --20170904 수정*/
+/*메인리스트 프로필란 사진등록여부노출*/
+.ment_txt .info_cer, .ment_txt .info_sal, .ment_txt .info_level, .ment_txt .info_car, .ment_txt .pn_badge{display:inline-block; position:relative; vertical-align:middle; font-family:"NotoSansKR-Regular","sans-serif";}
+.ment_txt .info_cer, .ment_txt .info_sal, .ment_txt .info_level, .ment_txt .info_car{font-size:0.75em; letter-spacing:-0.01em; color:#333; margin-bottom:2px;}
+.ment_txt .pn_badge{background-color:#29bf00; border-radius:50%; color:#fff; font-weight:bold; width:14px; height:14px; line-height:14px; text-align:center; font-size:10px; margin-left:2px; margin-bottom:3px;}
+
+/* 171017  1:1답변 new표시(뱃지) @플로팅버튼 */
+.yby_newbadge_a {position:absolute; top:-1px; right:-3px; width:18px; height:18px; border:0; background:url('http://image.yeoboya.com/imgs/new_wedding/mobile/img4/icon_all_new.png') no-repeat 0 0; background-size:17px 17px;}
+/* 오늘 등록리스트인 경우 시간 뱃지 */
+.cs_regi_time {display:inline-block; padding:2px 5px; font-size:13px; color:#fff; background:#09F; text-align:center; line-height:25px; position:absolute; right:75px; font-family:NotoSansKR-Regular; }
+
+/*----- 20171218 정우아 ------*/
+/*여보야 웨딩전문관 홍보배너 추가*/    
+#yeo_list form{margin-bottom:0;}
+#contents .wshop_banner{width:100%; height:50px; background-color:#385693; text-align:center;}
+#contents .wshop_banner a{display:block;}
+#contents .wshop_banner a img{width:320px; height:50px;}
+/*시크릿 가입하기 버튼 수정*/
+.floating-btn_secretMembers_2 {position:absolute; top:0; left:0; width:100%; height:42px; background: rgb(242,150,193);
+background: -moz-linear-gradient(top, rgb(242,150,193) 0%, rgb(202,108,152) 100%);
+background: -webkit-linear-gradient(top, rgb(242,150,193) 0%,rgb(202,108,152) 100%);
+background: linear-gradient(to bottom, rgb(242,150,193) 0%,rgb(202,108,152) 100%); border-radius:5px;}
+/*Wshop 입장하기 버튼 추가*/
+.floating-btn_area_3{position:absolute; top:50px; left:0; width:33.33%; height:65px; border-radius:5px; box-shadow:2px 2px 3px rgba(0,0,0,0.35); background: rgb(69,101,171);
+background: -moz-linear-gradient(top, rgb(69,101,171) 1%, rgb(39,68,128) 100%);
+background: -webkit-linear-gradient(top, rgb(69,101,171) 1%,rgb(39,68,128) 100%);
+background: linear-gradient(to bottom, rgb(69,101,171) 1%,rgb(39,68,128) 100%);}
+.floating-btn_area_3 .floating_wshop{color:#fff; font-size:0.925em; text-align:center;}
+.floating-btn_area_3 .floating_wshop img{width:76px; height:23px; display:block; padding-top:12px; margin:0 auto;}
+/* wshop 플로팅 버튼 추가(아이템 구매하기 포함) */
+.float_wrap{position:fixed; z-index:11; width:50px; height:auto; bottom:10px; right:10px}
+.float_bg_modal{display:none; position:fixed; top:0; right:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:-1;}
+.float_btn {position:relative; z-index:10; width:50px; height:50px; border-radius:100%; background:#ff4a83 url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/btn_floating.png) no-repeat center center; background-size:17px 17px; transition:0.12s transform ease-in-out; cursor:pointer;}
+.float_item{display:none; position:absolute; top:-25px; right:0px; width:400%; height:50px; line-height:50px; transform:scale(0); transform-origin:87.5% center; opacity:0;}
+.float_item a{display:block; width:100%; height:100%;}
+.float_item a span.float_ico{position:absolute; width:50px; height:50px; top:0; right:0; border-radius:50%; background:#fff url(http://image.yeoboya.com/imgs/new_wedding/mobile/img4/ico_item.png) no-repeat center center; background-size:27px 27px;}
+
+.float_write{display:none; position:absolute; top:-25px; right:0px; width:400%; height:50px; line-height:50px; transform:scale(0); transform-origin:87.5% center; opacity:0;}
+.float_write a{display:block; width:100%; height:100%;}
+.float_write a span.float_ico{position:absolute; width:50px; height:50px; top:0; right:0; border-radius:50%; background:#fff url(http://image.yeoboya.com/imgs/new_wedding/mobile/img4/ico_write.png) no-repeat center center; background-size:21px 23px}
+
+.float_info{display:none; position:absolute; top:-25px; right:0px; width:400%; height:50px; line-height:50px; transform:scale(0); transform-origin:87.5% center; opacity:0;}
+.float_info a{display:block; width:100%; height:100%;}
+.float_info a span.float_ico{position:absolute; width:50px; height:50px; top:0; right:0; border-radius:50%; background:#fff url(http://image.yeoboya.com/imgs/new_wedding/mobile/img4/ico_myinfo.png) no-repeat center 13px; background-size:29px 23px}
+
+.float_question{display:none; position:absolute; top:-25px; right:0px; width:400%; height:50px; line-height:50px; transform:scale(0); transform-origin:87.5% center; opacity:0;}
+.float_question a{display:block; width:100%; height:100%;}
+.float_question a span.float_ico{position:absolute; width:50px; height:50px; top:0; right:0; border-radius:50%; background:#fff url(http://image.yeoboya.com/imgs/new_wedding/mobile/img4/ico_question.png) no-repeat center 13px; background-size:22px 24px;}
+
+.float_alarm{display:none; position:absolute; top:-25px; right:0px; width:400%; height:50px; line-height:50px; transform:scale(0); transform-origin:87.5% center; opacity:0;}
+.float_alarm a{display:block; width:100%; height:100%;}
+.float_alarm a span.float_ico{position:absolute; width:50px; height:50px; top:0; right:0; border-radius:50%; background:#fff url(http://image.yeoboya.com/imgs/new_wedding/mobile/img4/ico_alarm.png) no-repeat center 13px; background-size:24px 23px;}
+
+.float_marry{display:none; position:absolute; top:-25px; right:0px; width:400%; height:50px; line-height:50px; transform:scale(0); transform-origin:87.5% center; opacity:0;}
+.float_marry a{display:block; width:100%; height:100%;}
+.float_marry a span.float_ico{position:absolute; width:50px; height:50px; top:0; right:0; border-radius:50%; background:#fff url("http://image.yeoboya.com/imgs/new_wedding/mobile/img4/ico_marry.png") no-repeat center center; background-size:27px 27px;}
+.float_wshop{display:none; position:absolute; top:-25px; right:0px; width:400%; height:50px; line-height:50px; transform:scale(0); transform-origin:87.5% center; opacity:0;}
+.float_wshop a{display:block; width:100%; height:100%;}
+.float_wshop a span.float_ico{position:absolute; width:50px; height:50px; top:0; right:0; border-radius:50%; background:#fff url("http://image.yeoboya.com/imgs/new_wedding/mobile/wshop/ico_shop.png") no-repeat center center; background-size:30px 27px;}    
+.float_txt{width:75%; height:100%; padding-right:12px; box-sizing:border-box; font-size:15px; color:#fff; font-weight:700px; text-align:right; float:left;}
+@keyframes up01 { 0% {top:-25px; transform:scale(0); opacity:0;} 100% {top:-70px; transform:scale(1); opacity:1;} }
+@-webkit-keyframes up01 { 0% {top:-25px; transform:scale(0); opacity:0;} 100% {top:-70px; transform:scale(1); opacity:1;} }
+@-ms-keyframes up01 { 0% {top:-25px; transform:scale(0); opacity:0;} 100% {top:-70px; transform:scale(1); opacity:1;} }
+@-moz-keyframes up01 { 0% {top:-25px; transform:scale(0); opacity:0;} 100% {top:-70px; transform:scale(1); opacity:1;} }
+@-o-keyframes up01 { 0% {top:-25px; transform:scale(0); opacity:0;} 100% {top:-70px; transform:scale(1); opacity:1;} }
+@keyframes up02 { 0% {top:-25px; transform:scale(0); opacity:0;} 100% {top:-140px; transform:scale(1); opacity:1;} }
+@-webkit-keyframes up02 { 0% {top:-25px; transform:scale(0); opacity:0;} 100% {top:-140px; transform:scale(1); opacity:1;} }
+@-ms-keyframes up02 { 0% {top:-25px; transform:scale(0); opacity:0;} 100% {top:-140px; transform:scale(1); opacity:1;} }
+@-moz-keyframes up02 { 0% {top:-25px; transform:scale(0); opacity:0;} 100% {top:-140px; transform:scale(1); opacity:1;} }
+@-o-keyframes up02 { 0% {top:-25px; transform:scale(0); opacity:0;} 100% {top:-140px; transform:scale(1); opacity:1;} }
+@keyframes up03 { 0% {top:-25px; transform:scale(0); opacity:0;} 100% {top:-210px; transform:scale(1); opacity:1;} }
+@-webkit-keyframes up03 { 0% {top:-25px; transform:scale(0); opacity:0;} 100% {top:-210px; transform:scale(1); opacity:1;} }
+@-ms-keyframes up03 { 0% {top:-25px; transform:scale(0); opacity:0;} 100% {top:-210px; transform:scale(1); opacity:1;} }
+@-moz-keyframes up03 { 0% {top:-25px; transform:scale(0); opacity:0;} 100% {top:-210px; transform:scale(1); opacity:1;} }
+@-o-keyframes up03 { 0% {top:-25px; transform:scale(0); opacity:0;} 100% {top:-210px; transform:scale(1); opacity:1;} }
+@keyframes up04 { 0% {top:-25px; transform:scale(0); opacity:0;} 100% {top:-280px; transform:scale(1); opacity:1;} }
+@-webkit-keyframes up04 { 0% {top:-25px; transform:scale(0); opacity:0;} 100% {top:-280px; transform:scale(1); opacity:1;} }
+@-ms-keyframes up04 { 0% {top:-25px; transform:scale(0); opacity:0;} 100% {top:-280px; transform:scale(1); opacity:1;} }
+@-moz-keyframes up04 { 0% {top:-25px; transform:scale(0); opacity:0;} 100% {top:-280px; transform:scale(1); opacity:1;} }
+@-o-keyframes up04 { 0% {top:-25px; transform:scale(0); opacity:0;} 100% {top:-280px; transform:scale(1); opacity:1;} }
+@keyframes up05 { 0% {top:-25px; transform:scale(0); opacity:0;} 100% {top:-350px; transform:scale(1); opacity:1;} }
+@-webkit-keyframes up05 { 0% {top:-25px; transform:scale(0); opacity:0;} 100% {top:-350px; transform:scale(1); opacity:1;} }
+@-ms-keyframes up05 { 0% {top:-25px; transform:scale(0); opacity:0;} 100% {top:-350px; transform:scale(1); opacity:1;} }
+@-moz-keyframes up05 { 0% {top:-25px; transform:scale(0); opacity:0;} 100% {top:-350px; transform:scale(1); opacity:1;} }
+@-o-keyframes up05 { 0% {top:-25px; transform:scale(0); opacity:0;} 100% {top:-350px; transform:scale(1); opacity:1;} }
+@keyframes up06 { 0% {top:-25px; transform:scale(0); opacity:0;} 100% {top:-420px; transform:scale(1); opacity:1;} }
+@-webkit-keyframes up06 { 0% {top:-25px; transform:scale(0); opacity:0;} 100% {top:-420px; transform:scale(1); opacity:1;} }
+@-ms-keyframes up06 { 0% {top:-25px; transform:scale(0); opacity:0;} 100% {top:-420px; transform:scale(1); opacity:1;} }
+@-moz-keyframes up06 { 0% {top:-25px; transform:scale(0); opacity:0;} 100% {top:-420px; transform:scale(1); opacity:1;} }
+@-o-keyframes up06 { 0% {top:-25px; transform:scale(0); opacity:0;} 100% {top:-420px; transform:scale(1); opacity:1;} }
+@keyframes up07 { 0% {top:-25px; transform:scale(0); opacity:0;} 100% {top:-490px; transform:scale(1); opacity:1;} }
+@-webkit-keyframes up07 { 0% {top:-25px; transform:scale(0); opacity:0;} 100% {top:-490px; transform:scale(1); opacity:1;} }
+@-ms-keyframes up07 { 0% {top:-25px; transform:scale(0); opacity:0;} 100% {top:-490px; transform:scale(1); opacity:1;} }
+@-moz-keyframes up07 { 0% {top:-25px; transform:scale(0); opacity:0;} 100% {top:-490px; transform:scale(1); opacity:1;} }
+@-o-keyframes up07 { 0% {top:-25px; transform:scale(0); opacity:0;} 100% {top:-490px; transform:scale(1); opacity:1;} }    
+
+.float_wrap_on .float_btn{transform:rotate(-135deg); -webkit-transform:rotate(-135deg); -o-transform:rotate(-135deg); -moz-transform:rotate(-135deg); -ms-transform:rotate(-135deg);}
+.float_wrap_on .float_item{top:-56px; transform:scale(1); opacity:1; animation:up01 0.2s ease-in-out 1; -webkit-animation:up01 0.2s ease-in-out 1; -o-animation:up01 0.2s ease-in-out 1; -moz-animation:up01 0.2s ease-in-out 1; -ms-animation:up01 0.2s ease-in-out 1;}
+.float_wrap_on .float_write{top:-112px; transform:scale(1); opacity:1; animation:up02 0.2s ease-in-out 1; -webkit-animation:up02 0.2s ease-in-out 1; -o-animation:up02 0.2s ease-in-out 1; -moz-animation:up02 0.2s ease-in-out 1; -ms-animation:up02 0.2s ease-in-out 1;}
+.float_wrap_on .float_info{top:-168px; transform:scale(1); opacity:1; animation:up03 0.2s ease-in-out 1; -webkit-animation:up03 0.2s ease-in-out 1; -o-animation:up03 0.2s ease-in-out 1; -moz-animation:up03 0.2s ease-in-out 1; -ms-animation:up03 0.2s ease-in-out 1;}
+.float_wrap_on .float_question{top:-224px; transform:scale(1); opacity:1; animation:up04 0.2s ease-in-out 1; -webkit-animation:up04 0.2s ease-in-out 1; -o-animation:up04 0.2s ease-in-out 1; -moz-animation:up04 0.2s ease-in-out 1; -ms-animation:up04 0.2s ease-in-out 1;}
+.float_wrap_on .float_alarm{top:-280px; transform:scale(1); opacity:1; animation:up05 0.2s ease-in-out 1; -webkit-animation:up05 0.2s ease-in-out 1; -o-animation:up05 0.2s ease-in-out 1; -moz-animation:up05 0.2s ease-in-out 1; -ms-animation:up05 0.2s ease-in-out 1;}
+.float_wrap_on .float_marry{top:-336px; transform:scale(1); opacity:1; animation:up06 0.2s ease-in-out 1; -webkit-animation:up06 0.2s ease-in-out 1; -o-animation:up06 0.2s ease-in-out 1; -moz-animation:up06 0.2s ease-in-out 1; -ms-animation:up06 0.2s ease-in-out 1;}
+.float_wrap_on .float_wshop{top:-392px; transform:scale(1); opacity:1; animation:up05 0.2s ease-in-out 1; -webkit-animation:up05 0.2s ease-in-out 1; -o-animation:up05 0.2s ease-in-out 1; -moz-animation:up07 0.2s ease-in-out 1; -ms-animation:up05 0.2s ease-in-out 1;}
+#btnMoveTop{right:25px;}   
+
+</style>
+
+<div id="wrap">
+	<div class="logo_ripple" style="pointer-events:none;"><span></span></div>
+
+	<header id="header_sh" style="z-index: 12;">
+		<a href="javascript:void(0);" class="logo"></a>
+		<a href="javascript:void(0);" class="h_btn_all" data-clkey=""><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/btn_all_menu1.png" width="85" height="30" alt="메뉴_press"></a>
+		<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/icon_all_new.png" width="21" height="21" class="new_icon" alt="새메세지/프로필열람회원알림" style="">
+
+		<!-- 161026 dropdown menu -->
+		<div class="dropDown_menu" style="display: none;">
+			<ul class="dropMenu_1">
+				<li class="no_line">
+					<a href="javascript:void(0);" onclick="$.clickAllMenu('goMsgBox', '');"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/icon_msgbox.png" class="icon" width="40" height="35" alt="메세지함"></a>
+					<div class="count_alim1" style="">
+						<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/icon_badge1.png" width="23" height="23" class="count_alim1_img" alt="새메세지갯수 카운트">
+						<p class="alim1">44</p>
+					</div>
+				</li>
+				<li>
+					<a href="javascript:void(0);" onclick="$.clickAllMenu('goSecretMyRequestList','');"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/icon_secret.png" class="icon" width="54" height="40" alt="시크릿 내요청결과"></a>
+					<div class="count_alim4" style="display:none"> <img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/icon_badge1.png" width="23" height="23" class="count_alim1_img" alt="새메세지갯수 카운트">
+                        <p class="alim4"></p>
+                    </div>
+				</li>
+				<li>
+					<a href="javascript:void(0);" onclick="$.clickAllMenu('goProfileMore', 'visit','');"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/icon_profile2.png" class="icon" width="64" height="41" alt="프로필열람내역"></a>
+					<div class="count_alim2" id="newVisitCnt" style="">
+                    	<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/icon_badge1.png" width="23" height="23" class="count_alim2_img" alt="프로필열람회원 카운트">
+                    	<p class="alim2">37</p>
+					</div>
+				</li>
+				<!--li>
+					<a href="javascript:void(0);" onclick="$.clickAllMenu('goOpenProfileUser', '');"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/icon_profile_ticket2.png" class="icon" width="70" height="36" alt="내가 본 프로필"></a>
+				</li-->
+				<li>
+					<a href="javascript:void(0);" onclick="$.clickAllMenu('interestList','');"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/icon_add_interest.png" class="icon" width="40" height="38" alt="관심회원"></a>
+				</li>
+				<li>
+					<a href="javascript:void(0);" onclick="$.clickAllMenu('goNewMemberList', '');"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/icon_newmember.png" class="icon" width="60" height="39" alt="신규가입회원"></a>
+					<div class="count_alim3">
+						<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/icon_badge1.png" width="23" height="23" class="count_alim3_img" alt="신규가입회원 카운트">
+						<p class="alim3">99</p>
+					</div>
+				</li>
+				<li>
+					<a href="javascript:void(0);" onclick="$.clickAllMenu('goNotice', '');"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/icon_notice.png" class="icon" width="41" height="39" alt="공지사항"></a>
+					<div class="new_alim">
+						<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/icon_drop_new.png" width="23" height="23" class="new_alim_img" alt="새 공지사항">
+					</div>
+				</li>
+				<li>
+					<a href="javascript:void(0);" onclick="$.clickAllMenu('goThanksYeoboya', '');"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/icon_thanks_2.png" class="icon" width="60" height="38" alt="Thanks 여보야"></a>
+					<div class="new_alim2">
+						<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/icon_drop_new.png" width="23" height="23" class="new_alim_img" alt="새 감사글">
+					</div>
+				</li>
+				<li>
+					<a href="javascript:void(0);" onclick="$.clickAllMenu('goMoreView', '');"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/icon_more1.png" class="icon" width="29" height="38" alt="더보기"></a>
+				</li>
+			</ul>
+			<div id="banner_secret" class="banner_secret">
+				<div class="chk_wrap">
+					<input type="checkbox" id="secret_switch" name="secret_switch" onclick="$.secretSwitch(this);" value="1">
+					<label for="secret_switch"><span class="chk_handle"></span><span class="chk_on font_m">ON</span><span class="chk_off font_m">OFF</span></label>
+				</div>
+				<div class="list_link"><a href="javascript:void(0);" onclick="$.goSecretIntro();"><p class="hint">시크릿이란?</p></a></div>
+				<div class="scrt_count" style="display:none">
+					<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/icon_badge1.png" width="23" height="23" class="scrt_count_img" alt="새메세지갯수 카운트">
+					<p class="scrt_alim"></p>
+				</div>
+			</div>
+		<div class="banner_evnt"><a href="javascript:void(0);" onclick="$.openWin('/?chnl=cont&amp;ctrl=event&amp;dest=eventCommunity&amp;evtNo=28', 'commEvt', '');"><img src="http://image.yeoboya.com/imgs/new_wedding/com/hand/hand_icon.png" width="90" height="125" alt="커뮤니티 이벤트"></a></div></div>
+		<!-- 161026 dropdown menu -->
+
+		<a href="javascript:void(0);" onclick="$.goWrite();" class="h_btn_write"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img2/header_btn_wt.jpg" width="60" height="31"></a>
+		<div class="result_rfsh">
+            <a href="javascript:void(0)">
+				<svg class="circle_svg" x="0px" y="0px" viewBox="0 0 90 90"><circle class="circle_inner" cx="45" cy="45" r="35"></circle></svg>
+                <span class="arrow_span"></span>
+			</a>
+		</div>
+	<div style="position:absolute; left:0; top:0; z-index:2000; height:45px; width:0px;"><select id="testDomain" style="width: 20px; margin-left: 4px; margin-top: 8px;"><option value="http://m.yeoboya.com" selected="selected">실서버</option><option value="http://devm-marine.yeoboya.com">윤희안</option><option value="http://devm-ag315.yeoboya.com">유종철</option><option value="http://devm-osban.yeoboya.com">임재송</option><option value="http://devm-tiz.yeoboya.com">박찬경</option><option value="http://devm-dex.yeoboya.com">하민철</option><option value="http://devm-pogus55.yeoboya.com">송영호</option><option value="http://devm-kossy2k.yeoboya.com">고성수</option><option value="http://devm-cuteohj.yeoboya.com">오현지</option><option value="http://devm-ironynet.yeoboya.com">김훈</option><option value="http://devm-lynone.yeoboya.com">이영남</option><option value="http://devm-endymion.yeoboya.com">윤민수</option><option value="http://devm-yupitereu.yeoboya.com">한민구</option><option value="http://devm-minismart.yeoboya.com">오성민</option><option value="http://devm-es1668.yeoboya.com">신은선</option><option value="">Logout</option><option value="http://devm.yeoboya.com/etc/cookie/cookie.html">viewCookie</option></select></div><span id="connectionStatus" style="position:absolute; top:-5px; left:-3px;">&nbsp;<b><font color="red" size="2">OO</font></b></span><div style="position:absolute; left:0; top:0; z-index:2000; height:45px; width:0px;"><select id="testDomain" style="width: 20px; margin-left: 4px; margin-top: 8px;"><option value="http://m.yeoboya.com">실서버</option><option value="http://devm-marine.yeoboya.com">윤희안</option><option value="http://devm-ag315.yeoboya.com">유종철</option><option value="http://devm-osban.yeoboya.com">임재송</option><option value="http://devm-tiz.yeoboya.com">박찬경</option><option value="http://devm-dex.yeoboya.com">하민철</option><option value="http://devm-pogus55.yeoboya.com">송영호</option><option value="http://devm-kossy2k.yeoboya.com">고성수</option><option value="http://devm-cuteohj.yeoboya.com">오현지</option><option value="http://devm-lynone.yeoboya.com">이영남</option><option value="http://devm-endymion.yeoboya.com">윤민수</option><option value="http://devm-yupitereu.yeoboya.com">한민구</option><option value="http://devm-minismart.yeoboya.com">오성민</option><option value="http://devm-es1668.yeoboya.com">신은선</option><option value="">Logout</option><option value="http://devm.yeoboya.com/etc/cookie/cookie.html">viewCookie</option></select></div></header>
+
+	<nav id="showNav">
+		<div class="slct_ctrl">
+			<form name="formSlct" id="formSlct" autocomplete="off">
+				<select name="tmpMemLoc" id="tmpMemLoc" onchange="$.goSrch();">			<!-- 자리 차지용. -->
+				</select>
+				<select name="tmpMemAgeSlct" id="tmpMemAgeSlct" onchange="$.goSrch();">			<!-- 자리 차지용. -->
+				</select>
+
+				<input type="hidden" name="memLocCode" id="memLocCode" value="">
+				<input type="hidden" name="memNameCode" id="memNameCode" value="">
+				<input type="hidden" name="memAgeCode" id="memAgeCode" value="">
+				<input type="hidden" name="memSex" id="memSex" value="">
+				<input type="hidden" name="memDetailCode" id="memDetailCode" value="">
+				<input type="hidden" name="pageMode" id="pageMode" value="normal">
+			</form>
+		</div>
+		<!-- 170526 _ 시크릿 미니스위치 -->
+		<div id="banner_secret_mini" class="banner_secret_mini_wrap" style="display: none;">
+			<div class="banner_secret_mini_area">
+				<div class="chk_wrap" style="margin-top:-27px;">
+					<input type="checkbox" id="secret_switch_mini" name="secret_switch" onclick="$.secretSwitch(this);" value="1">
+					<label for="secret_switch_mini"><span class="chk_handle"></span><span class="chk_on font_m">ON</span><span class="chk_off font_m">OFF</span></label>
+				</div>
+			</div>
+		</div>
+		<!-- // 170526 _ 시크릿 미니스위치 -->
+		<!-- 170526 _ 기간연장 or 시크릿가입하기  버튼  : 미이용회원 -->
+		<div class="floating-btn_area_wrap" style="display: none;">
+			<a href="javascript:void(0);" onclick="$.goSecretIntro();" class="floating-btn_area_2">
+				<div class=" floating-btn_secretMembers_2"><p class="name">시크릿 <span style="font-weight:normal;">가입하기</span></p></div>
+			</a>
+			<!-- 171218 Wshop 입장하기 버튼 -->
+			<a href="#" class="floating-btn_area_3" style="display:none;">
+				<div class="floating_wshop">
+				    <img src="http://image.yeoboya.com/imgs/new_wedding/mobile/wshop/logo_gold.png" alt="wshop">입장하기
+				</div>
+			</a>
+			<!-- //171218 Wshop 입장하기 버튼 -->
+		</div>
+		<!-- 170526 _ 기간연장 or 시크릿가입하기  버튼  : 미이용회원 -->
+		<ul>
+			<li class="top_menu">
+				<a href="javascript:void(0);" class="slct_ui" id="t_mateSlct" style="position: static; z-index: 1;"><span style="">전체</span></a>
+			<input type="hidden" id="mateSlct" value=""><div class="layer_select_area" id="t_mateSlctLayer" value="1"><div class="layer_select_top_triangle" style="display: none; border-bottom: 8px solid rgb(195, 195, 197);"><div class="triangle" style="border-bottom: 7px solid rgb(254, 240, 145);"></div></div><div id="t_mateSlctBox" class="layerSel" style="display: none; margin-left: 0px;"><div id="t_mateSlctBoxOpt_0" class="layerSelOptSelected" data-opt="" data-selected="selected" style="border-top-left-radius: 0px; border-top-right-radius: 0px;"><span>전체</span></div><div id="t_mateSlctBoxOpt_1" class="layerSelOpt" data-opt="w"><span>결혼</span></div><div id="t_mateSlctBoxOpt_2" class="layerSelOpt" data-opt="r"><span>재혼</span></div><div id="t_mateSlctBoxOpt_3" class="layerSelOpt" data-opt="g"><span>시크릿회원</span></div><div id="t_mateSlctBoxOpt_4" class="layerSelOpt" data-opt="i" style="border-bottom-left-radius: 0px; border-bottom-right-radius: 0px; border-bottom: 0px;"><span>혼인관계증명</span></div></div></div></li>
+			<li class="top_menu align_lst">
+				<a href="javascript:void(0);" class="slct_ui" id="t_memLocCode">
+															<span class="">최신순</span>
+									</a>
+			</li>
+			<li class="top_menu">
+				<a href="javascript:void(0);" class="slct_ui" id="t_memAgeCode">
+															<span class="">성별</span>
+									</a>
+			</li>
+			<li class="top_menu">
+				<a href="javascript:void(0);" class="slct_ui" id="t_memNameCode">
+										<span class="">성씨</span>
+				</a>
+			</li>
+			<li class="top_menu btn_detail_srch" onclick="$.showDetailSearchPop();">
+								<a href="javascript:void(0);" class="slct_detail" id="t_memDetailCode"></a>
+			</li>
+		</ul>
+	</nav>
+
+	<div id="contents" class="list_wrap scroll_add" style="height:100%;">
+        <!-- 171218 Wshop 배너추가 -->
+	    <div class="wshop_banner">
+	        <a href="#"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/wshop/wshop_bn.png" alt="wshop"></a>
+	    </div>
+	    <!-- //171218 Wshop 배너추가 -->
+		<div id="infomation">
+			<div id="tikerBox" class="notice_box"><!-- 강조 red -->
+				<span class="icon"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img2/ico_bullet.png" width="8" height="8" alt="공지"></span>
+				<div id="infoTiker" style="overflow: hidden; position: relative; height: 25px;">
+					<ul style="display: block; position: absolute; margin: 0px; padding: 0px; top: -24.9842px;">
+					<li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">2017년 6월 27일부터 시행하고 있습니다.</li>
+					<li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;"><span class="roll_red">차단한 회원</span>의 프로필은 표시되지 않고,</li>
+					<li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">메시지도 주고 받을 수 없습니다.</li>
+					<li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;"><span class="roll_red">탈퇴하기는</span> 상단의 전체보기 &gt; 더보기 페이지로 이동 후 오른쪽 하단에서 할 수 있습니다.</li>
+					<li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">여보야는 대한민국에서</li>
+					<li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">가장 유명한</li>
+					<li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">"중매쟁이" 앱입니다.</li>
+					<li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">대한민국 선남선녀 모두가</li>
+					<li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">여보야에서</li>
+					<li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">성혼이 이루어지길 빕니다.</li>
+					<li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">여보야는 세계·대도시·농어촌 어디서나</li>
+					<li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">이용하시면 됩니다.</li>
+					<li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">천사량연(天賜良緣)</li>
+					<li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">하늘이 내려 준 좋은 인연.</li>
+					<li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">똑똑한 "중매쟁이"를</li>
+					<li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">찾으세요?</li>
+					<li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">여보야를 이용하시면 됩니다.</li>
+					<li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">커플매니저가 아닌</li>
+					<li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">내가 선택한 사람과</li>
+					<li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">인연맺어요.</li>
+					<li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">유명하신분도 보통이신분도</li>
+					<li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">여보야에서</li>
+					<li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">맞선을 준비합니다.</li>
+					<li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;"><span class="roll_red">100%</span> 확신합니다.</li>
+					<li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">"여보야"에서</li>
+					<li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">당신은 <span class="roll_red">결혼</span>할 수 있습니다.</li>
+					<li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">"중매쟁이"를 찾으세요?</li>
+					<li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">바로 여보야를</li>
+					<li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">이용하시면 됩니다.</li>
+					<li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">가진것 없어도</li>
+					<li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">잘난것 많아도</li>
+					<li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">결혼,재혼은</li>
+					<li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">여보야 입니다.</li>
+					<li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">청사초롱 불밝혀라</li>
+					<li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">여보야에서 만나요.</li>
+					<li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">단기간 가장 많은</li>
+					<li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">중매가 이루어지는 곳</li>
+					<li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">오직 여보야에서만</li>
+					<li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">가능합니다!</li>
+					<li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">대도시·농어촌·세계</li>
+					<li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">어디서나 여보야를 사용해보세요.</li>
+					<li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">열정을 가지고 찾아보세요!</li>
+					<li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">분명 좋은 결실이 있을겁니다!</li>
+					<li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">여보야는</li>
+					<li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">거짓말 안하는</li>
+					<li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">"중매쟁이"입니다.</li>
+					<li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">결혼을 빨리하면</li>
+					<li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">나와 국가의 이익에</li>
+					<li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">도움이됩니다.</li>
+					<li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">농촌·어촌에서 "중매쟁이"가</li>
+					<li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">없어졌네요</li>
+					<li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">그래서 여보야가</li>
+					<li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">"중매쟁이" 합니다.</li>
+					<li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">문의, 개선사항은 <span class="roll_red">1:1문의하기</span>를</li>
+					<li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">이용해주시기 바랍니다.</li>
+					<li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;"><span class="roll_red">GPS 상태를 확인해주세요!</span><br></li>
+					<li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">GPS가 꺼져있거나 수신이 안될경우 거리정보가</li>
+					<li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">지역으로 표기됩니다.</li>
+					<li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">여보야는 2015년 7월에 오픈했습니다.</li><li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">2017년 12월 10일까지 약26만8500여 명이</li><li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">사용했습니다!</li><li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">여보야는 성혼율을 높이기 위해</li><li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;"><span class="roll_red">2017년 5월22일부터 TV광고를 시작</span>하였습니다.</li><li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">여보야는 <span class="roll_red">모바일 어플, 모바일 웹, PC </span>에서 모두</li><li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">사용하실 수 있습니다.</li><li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">핸드폰 <span class="roll_red">번호당 오직 한 분만</span> 가입할 수 있습니다.</li><li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;"><span class="roll_red">프로필에 카톡 아이디나 전화번호 등록시 </span></li><li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;"><span class="roll_red">이용정지</span>됩니다.</li><li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">결혼, 재혼과 무관한 소개글은 삭제 후</li><li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;"> 이용정지 됩니다.</li><li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">원하시는 지역을 설정하시면 신규이성회원의</li><li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">가입 알림을 받을 수 있습니다.</li><li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;"><span class="roll_red">금전요구, 음란·저속어, 폭언</span>등은 사용시</li><li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">바로 <span class="roll_red">이용정지/강퇴</span>됩니다.</li><li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">대화명, 나이, 성혼유형은 가입 후</li><li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;"><span class="roll_red">1회만 변경</span> 가능합니다.</li><li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">프로필사진, 소개사진을 등록하면</li><li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">성사율이 높아집니다.</li><li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;"><span class="roll_red">혼인관계증명서,직업,연봉,학력,차량 사진은</span></li><li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">내프로필에서 등록 가능하며 <span class="roll_red">이성회원만 확인</span>할 수 있습니다.</li><li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">대한민국 성혼이 잘 이루어지는 그날까지</li><li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">노력하겠습니다.</li><li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">여보야에서 결혼하시면 사용하신 비용을</li><li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;"> &nbsp;100% &nbsp;돌려드리는 <span class="roll_red">&nbsp;성혼 환불제도</span>를&nbsp;</li><li class="roll_gray" style="font-weight: bold; margin: 0px; padding: 0px; height: 25px;">2017년 6월 27일부터 시행하고 있습니다.</li></ul>
+				</div>
+				<div id="noticeOpen" class="info_btn">
+					<div class="info_tri"></div>
+				</div>
+			</div>
+			<div id="tikerBox2">
+				<div class="open_msg_box_wrap font_m">
+					<ul>
+					<li class="roll_black"><span class="icon">·</span>여보야는 2015년 7월에 오픈했습니다.<div id="noticeClose" onclick="$.noticeClose();" class="info_btn" style="position:absolute;top:0;right:0;"><div class="info_tri info_close"></div></div></li>
+					<li class="roll_black"><span class="icon">·</span>2017년 12월 10일까지 약26만8500여 명이 사용했습니다!</li>
+					<li class="roll_black"><span class="icon">·</span>여보야는 성혼율을 높이기 위해 <span class="roll_red">2017년 5월22일부터 TV광고를 시작</span>하였습니다.</li>
+					<li class="roll_black"><span class="icon">·</span>여보야는 <span class="roll_red">모바일 어플, 모바일 웹, PC </span>에서 모두 사용하실 수 있습니다.</li>
+					<li class="roll_black"><span class="icon">·</span>핸드폰 <span class="roll_red">번호당 오직 한 분만</span> 가입할 수 있습니다.</li>
+					<li class="roll_black"><span class="icon">·</span><span class="roll_red">프로필에 카톡 아이디나 전화번호 등록시 </span> <span class="roll_red">이용정지</span>됩니다.</li>
+					<li class="roll_black"><span class="icon">·</span>결혼, 재혼과 무관한 소개글은 삭제 후  이용정지 됩니다.</li>
+					<li class="roll_black"><span class="icon">·</span>원하시는 지역을 설정하시면 신규이성회원의 가입 알림을 받을 수 있습니다.</li>
+					<li class="roll_black"><span class="icon">·</span><span class="roll_red">금전요구, 음란·저속어, 폭언</span>등은 사용시 바로 <span class="roll_red">이용정지/강퇴</span>됩니다.</li>
+					<li class="roll_black"><span class="icon">·</span>대화명, 나이, 성혼유형은 가입 후 <span class="roll_red">1회만 변경</span> 가능합니다.</li>
+					<li class="roll_black"><span class="icon">·</span>프로필사진, 소개사진을 등록하면 성사율이 높아집니다.</li>
+					<li class="roll_black"><span class="icon">·</span><span class="roll_red">혼인관계증명서,직업,연봉,학력,차량 사진은</span> 내프로필에서 등록 가능하며 <span class="roll_red">이성회원만 확인</span>할 수 있습니다.</li>
+					<li class="roll_black"><span class="icon">·</span>대한민국 성혼이 잘 이루어지는 그날까지 노력하겠습니다.</li>
+					<li class="roll_black"><span class="icon">·</span>여보야에서 결혼하시면 사용하신 비용을  &nbsp;100% &nbsp;돌려드리는 <span class="roll_red">&nbsp;성혼 환불제도</span>를&nbsp; 2017년 6월 27일부터 시행하고 있습니다.</li>
+					<li class="roll_black"><span class="icon">·</span><span class="roll_red">차단한 회원</span>의 프로필은 표시되지 않고, 메시지도 주고 받을 수 없습니다.</li>
+					<li class="roll_black"><span class="icon">·</span><span class="roll_red">탈퇴하기는</span> 상단의 전체보기 &gt; 더보기 페이지로 이동 후 오른쪽 하단에서 할 수 있습니다.</li>
+					<li class="roll_black"><span class="icon">·</span>여보야는 대한민국에서 가장 유명한 "중매쟁이" 앱입니다.</li>
+					<li class="roll_black"><span class="icon">·</span>대한민국 선남선녀 모두가 여보야에서 성혼이 이루어지길 빕니다.</li>
+					<li class="roll_black"><span class="icon">·</span>여보야는 세계·대도시·농어촌 어디서나 이용하시면 됩니다.</li>
+					<li class="roll_black"><span class="icon">·</span>천사량연(天賜良緣) 하늘이 내려 준 좋은 인연.</li>
+					<li class="roll_black"><span class="icon">·</span>똑똑한 "중매쟁이"를 찾으세요? 여보야를 이용하시면 됩니다.</li>
+					<li class="roll_black"><span class="icon">·</span>커플매니저가 아닌 내가 선택한 사람과 인연맺어요.</li>
+					<li class="roll_black"><span class="icon">·</span>유명하신분도 보통이신분도 여보야에서 맞선을 준비합니다.</li>
+					<li class="roll_black"><span class="icon">·</span><span class="roll_red">100%</span> 확신합니다. "여보야"에서 당신은 <span class="roll_red">결혼</span>할 수 있습니다.</li>
+					<li class="roll_black"><span class="icon">·</span>"중매쟁이"를 찾으세요? 바로 여보야를 이용하시면 됩니다.</li>
+					<li class="roll_black"><span class="icon">·</span>가진것 없어도 잘난것 많아도 결혼,재혼은 여보야 입니다.</li>
+					<li class="roll_black"><span class="icon">·</span>청사초롱 불밝혀라 여보야에서 만나요.</li>
+					<li class="roll_black"><span class="icon">·</span>단기간 가장 많은 중매가 이루어지는 곳 오직 여보야에서만 가능합니다!</li>
+					<li class="roll_black"><span class="icon">·</span>대도시·농어촌·세계 어디서나 여보야를 사용해보세요.</li>
+					<li class="roll_black"><span class="icon">·</span>열정을 가지고 찾아보세요! 분명 좋은 결실이 있을겁니다!</li>
+					<li class="roll_black"><span class="icon">·</span>여보야는 거짓말 안하는 "중매쟁이"입니다.</li>
+					<li class="roll_black"><span class="icon">·</span>결혼을 빨리하면 나와 국가의 이익에 도움이됩니다.</li>
+					<li class="roll_black"><span class="icon">·</span>농촌·어촌에서 "중매쟁이"가 없어졌네요 그래서 여보야가 "중매쟁이" 합니다.</li>
+					<li class="roll_black"><span class="icon">·</span>문의, 개선사항은 <span class="roll_red">1:1문의하기</span>를 이용해주시기 바랍니다.</li>
+					<li class="roll_black"><span class="icon">·</span><span class="roll_red">GPS 상태를 확인해주세요!</span><br> GPS가 꺼져있거나 수신이 안될경우 거리정보가 지역으로 표기됩니다.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="yeo_list" style="position:relative;"><div id="cheongsachorong" class="img_chung on" style="cursor: pointer; display: none;"></div><ul id="yeo_list_1" style="height: 6195px;">
+		<li id="ID_208629">
+		<form name="fmeet_208629" id="fmeet_208629" method="post" onsubmit="return false;">
+				<input type="hidden" name="memNo" value="208629">
+				<input type="hidden" name="memNick" value="곰이곰이">
+				<input type="hidden" name="meetSlct" value="1">
+				<input type="hidden" name="meetText" value="avata">
+				<input type="hidden" name="chrgrNm" value="">
+
+				<div class="ment_area" onclick="$.checkHaveMsgItemAndGoProfile(this,'208629','man','meetList');">
+					<span class="photo_box">
+						<div class="count_scrt_img"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/icon_badge2.png" width="23" height="23" class="count_img" alt="프로필사진갯수"><p class="count_num">3</p></div>
+						<a href="javascript:void(0);" id="mem_photo" onclick="">
+							<div class="ripple"></div>
+							<img src="http://photo.yeoboya.com/prg/yimg.php?type=photo&amp;sdir=&amp;viewname=YVhtR2ZJR0xwSXBVYW1waWNIdUZlSUdFZVkxWW1KVmdvYm0x" align="left" onerror="$.noImgProc(this,'man');">
+						</a>
+					</span>
+					<span class="ment_txt font_r" style="line-height:1.4">
+						<a href="javascript:void(0);" onclick="$.togChung(this);" class="img_chung"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/img_chung_s.gif" height="26" alt="청사초롱" align="left" style="-webkit-transform:translateZ(0);"></a>
+						<a href="javascript:void(0);" class="goMemProfile">
+							&nbsp;&nbsp;
+                            <span class="nw_badge"></span>
+							<span class="mem_nick man">곰이곰이
+							
+							</span>
+							
+							&nbsp;&nbsp;
+							<span class="ment_conts" style="color:#3d3f4e;font-size:0.9em; margin-right:10px;">어릴적엔 혼자와 친구가 좋았는데 지금은 항상 곁에같이 있을 내사람이 있으면 좋겠다라는 생각을합니다
+제성격은 겉으로 표현은 잘못하지만 이해심많고 깊이있는 남자라고 생각합니다. 조건 따지시는분 죄송합니다.</span>
+
+						</a>
+					</span>
+				</div>
+
+				<div class="list_info font_b">
+					<a href="javascript:void(0);" onclick="$.goCall({memNo:'208629', memNick:'곰이곰이', memName: '김○○님', memSex:'m', memAge:'40', distance:'충남'});">
+											<span class="mem_info man">
+							<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/ico_man.jpg" width="15" height="13" class="sex">
+							| 김○○님
+							| 40세
+							| 말띠
+							| 충남
+						</span>
+						<div class="list_btn font_m">연락하기</div>
+											</a>
+				</div>
+			</form>
+		</li>
+		<li id="ID_163063">
+		<form name="fmeet_163063" id="fmeet_163063" method="post" onsubmit="return false;">
+				<input type="hidden" name="memNo" value="163063">
+				<input type="hidden" name="memNick" value="본드장">
+				<input type="hidden" name="meetSlct" value="0">
+				<input type="hidden" name="meetText" value="">
+				<input type="hidden" name="chrgrNm" value="">
+
+				<div class="ment_area" onclick="$.checkHaveMsgItemAndGoProfile(this,'163063','man','meetList');">
+					<span class="photo_box">
+						<div class="count_scrt_img"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/icon_badge2.png" width="23" height="23" class="count_img" alt="프로필사진갯수"><p class="count_num">28</p></div>
+						<a href="javascript:void(0);" id="mem_photo" onclick="">
+							<div class="ripple"></div>
+							<img src="http://photo.yeoboya.com/prg/yimg.php?type=photo&amp;sdir=&amp;viewname=YUgrQmRvV0ZwSXBVYW1waWJudURlSUtEZDR4V21KVmdvYm0x" align="left" onerror="$.noImgProc(this,'man');">
+						</a>
+					</span>
+					<span class="ment_txt font_r" style="line-height:1.4">
+						<a href="javascript:void(0);" onclick="$.togChung(this);" class="img_chung"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/img_chung_s.gif" height="26" alt="청사초롱" align="left" style="-webkit-transform:translateZ(0);"></a>
+						<a href="javascript:void(0);" class="goMemProfile">
+							&nbsp;&nbsp;
+                            <span class="rw_badge"></span>
+							<span class="mem_nick man">본드장
+							
+							</span>
+							
+							&nbsp;&nbsp;
+							<span class="ment_conts" style="color:#;font-size:0.9em; margin-right:10px;">안녕하세요? 다시 시작해보려고 마음을 추스려봅니다. 제소박한 버킷리스트는 1.앞으로생활에서 의료비Zero를 목표로 운동짱을 서로 함께해 즐겁게생활하구, 2.집시맨같은여행을 같이 함께해 몸과마음을 힐링하면서 잼나게 지내며, 3.HelpersHigh(헬퍼스하이)를 소외된분들과 서로 공유하여 미흡하지만 만족하고 즐겁게 생활하려고 노력중입니다. 같은 생각에 공감하거나 공통점을 갖고있는분이 계시다면 참 좋겠다는 생각을하며, 관심있는분이 연락처를주시면 소식드리도록 하겠습니다. 그럼 오늘도 건강하시구, 내일은 더행복하시길기원드립니다.감사합니다.</span>
+
+								<span class="marry-info_cue_in-card">학</span><span class="marry-info_cue_in-card">력</span>
+								<span class="marry-info_cue_in-card_badge">5</span>
+								<span class="marry-info_cue_in-card">차</span><span class="marry-info_cue_in-card">량</span>
+								<span class="marry-info_cue_in-card_badge">3</span>
+						</a>
+					</span>
+				</div>
+
+				<div class="list_info font_b">
+					<a href="javascript:void(0);" onclick="$.goCall({memNo:'163063', memNick:'본드장', memName: '장○○님', memSex:'m', memAge:'59', distance:'서울'});">
+											<span class="mem_info man">
+							<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/ico_man.jpg" width="15" height="13" class="sex">
+							| 장○○님
+							| 59세
+							| 돼지띠
+							| 서울
+						</span>
+						<div class="list_btn font_m">연락하기</div>
+											</a>
+				</div>
+			</form>
+		</li>
+		<li id="ID_178054">
+		<form name="fmeet_178054" id="fmeet_178054" method="post" onsubmit="return false;">
+				<input type="hidden" name="memNo" value="178054">
+				<input type="hidden" name="memNick" value="나홀로길을걷네">
+				<input type="hidden" name="meetSlct" value="1">
+				<input type="hidden" name="meetText" value="avata">
+				<input type="hidden" name="chrgrNm" value="">
+
+				<div class="ment_area" onclick="$.checkHaveMsgItemAndGoProfile(this,'178054','man','meetList');">
+					<span class="photo_box">
+						<div class="count_scrt_img"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/icon_badge2.png" width="23" height="23" class="count_img" alt="프로필사진갯수"><p class="count_num">8</p></div>
+						<a href="javascript:void(0);" id="mem_photo" onclick="">
+							<div class="ripple"></div>
+							<img src="http://photo.yeoboya.com/prg/yimg.php?type=photo&amp;sdir=&amp;viewname=YUlDR2RvU0dwSXBVYW1waWNIdUhkb0dFZlloWm1KVmdvYm0x" align="left" onerror="$.noImgProc(this,'man');">
+						</a>
+					</span>
+					<span class="ment_txt font_r" style="line-height:1.4">
+						<a href="javascript:void(0);" onclick="$.togChung(this);" class="img_chung"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/img_chung_s.gif" height="26" alt="청사초롱" align="left" style="-webkit-transform:translateZ(0);"></a>
+						<a href="javascript:void(0);" class="goMemProfile">
+							&nbsp;&nbsp;
+                            <span class="nw_badge"></span>
+							<span class="mem_nick man">나홀로길을걷네
+							
+							</span>
+							
+							&nbsp;&nbsp;
+							<span class="ment_conts" style="color:#e1824e;font-size:0.9em; margin-right:10px;">부드럽고 다정해요
+배려하는 마음 한가득
+일단 좋아하게되면 그사람에게만 신경씁니다
+내가 사랑할수있다면 님은 무일푼이라도 괜챦읍니다
+고운심성에 적당히 시각적인분을 좋아합니다
+돌싱이라도  자녀없으면 ok입니다
+피아노실력이 준프로급이면 못난이도
+다 용서합니다^-^</span>
+
+						</a>
+					</span>
+				</div>
+
+				<div class="list_info font_b">
+					<a href="javascript:void(0);" onclick="$.goCall({memNo:'178054', memNick:'나홀로길을걷네', memName: '양○○님', memSex:'m', memAge:'49', distance:'경기'});">
+											<span class="mem_info man">
+							<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/ico_man.jpg" width="15" height="13" class="sex">
+							| 양○○님
+							| 49세
+							| 닭띠
+							| 경기
+						</span>
+						<div class="list_btn font_m">연락하기</div>
+											</a>
+				</div>
+			</form>
+		</li>
+		<li id="ID_237026">
+		<form name="fmeet_237026" id="fmeet_237026" method="post" onsubmit="return false;">
+				<input type="hidden" name="memNo" value="237026">
+				<input type="hidden" name="memNick" value="좋은분만나고싶다">
+				<input type="hidden" name="meetSlct" value="1">
+				<input type="hidden" name="meetText" value="avata">
+				<input type="hidden" name="chrgrNm" value="">
+
+				<div class="ment_area" onclick="$.checkHaveMsgItemAndGoProfile(this,'237026','man','meetList');">
+					<span class="photo_box">
+						<div class="count_scrt_img"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/icon_badge2.png" width="23" height="23" class="count_img" alt="프로필사진갯수"><p class="count_num">4</p></div>
+						<a href="javascript:void(0);" id="mem_photo" onclick="">
+							<div class="ripple"></div>
+							<img src="http://photo.yeoboya.com/prg/yimg.php?type=photo&amp;sdir=&amp;viewname=YVh5RmRvR0lwSXBVYW1wamFIbUVkb09FZUkxY21KVmdvYm0x" align="left" onerror="$.noImgProc(this,'man');">
+						</a>
+					</span>
+					<span class="ment_txt font_r" style="line-height:1.4">
+						<a href="javascript:void(0);" onclick="$.togChung(this);" class="img_chung"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/img_chung_s.gif" height="26" alt="청사초롱" align="left" style="-webkit-transform:translateZ(0);"></a>
+						<a href="javascript:void(0);" class="goMemProfile">
+							&nbsp;&nbsp;
+                            <span class="nw_badge"></span>
+							<span class="mem_nick man">좋은분만나고싶다
+							
+							</span>
+							
+							&nbsp;&nbsp;
+							<span class="ment_conts" style="color:#459c6e;font-size:0.9em; margin-right:10px;">거짓아닌 진심으로 좋은 만나고싶내요 제성격은 재미도있고 착해요 ^^ 자기여자생기면올인하는성격입니다 여기에서정말좋은분만나 행복한가정을같고싶어요 맛있는음먹을때.여행갈때.영화보러갈때 제옆에있는분과함께하고싶어요^^ 가진것없어도 제여자를위해선뭐든할것이고 행복하게해주고싶내요^^(재혼분은애없으면가능하고 장거리도가능합니다^^)나이차이는 저보단1살위 그리고저보단어린분은가능합니다^^</span>
+
+						</a>
+					</span>
+				</div>
+
+				<div class="list_info font_b">
+					<a href="javascript:void(0);" onclick="$.goCall({memNo:'237026', memNick:'좋은분만나고싶다', memName: '김○○님', memSex:'m', memAge:'36', distance:'경기'});">
+											<span class="mem_info man">
+							<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/ico_man.jpg" width="15" height="13" class="sex">
+							| 김○○님
+							| 36세
+							| 개띠
+							| 경기
+						</span>
+						<div class="list_btn font_m">연락하기</div>
+											</a>
+				</div>
+			</form>
+		</li>
+		<li id="ID_166401">
+		<form name="fmeet_166401" id="fmeet_166401" method="post" onsubmit="return false;">
+				<input type="hidden" name="memNo" value="166401">
+				<input type="hidden" name="memNick" value="하늘의힘북두칠성">
+				<input type="hidden" name="meetSlct" value="0">
+				<input type="hidden" name="meetText" value="">
+				<input type="hidden" name="chrgrNm" value="">
+
+				<div class="ment_area" onclick="$.checkHaveMsgItemAndGoProfile(this,'166401','man','meetList');">
+					<span class="photo_box">
+						<div class="count_scrt_img"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/icon_badge2.png" width="23" height="23" class="count_img" alt="프로필사진갯수"><p class="count_num">6</p></div>
+						<div class="ripple"></div>
+						<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/avata_man.jpg" align="left">
+					</span>
+					<span class="ment_txt font_r" style="line-height:1.4">
+						<a href="javascript:void(0);" onclick="$.togChung(this);" class="img_chung"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/img_chung_s.gif" height="26" alt="청사초롱" align="left" style="-webkit-transform:translateZ(0);"></a>
+						<a href="javascript:void(0);" class="goMemProfile">
+							&nbsp;&nbsp;
+                            <span class="rw_badge"></span>
+							<span class="mem_nick man">하늘의힘북두칠성
+							
+							</span>
+							<span class="scrt_logo_badge_on"></span>
+							&nbsp;&nbsp;
+							<span class="ment_conts" style="color:#;font-size:0.9em; margin-right:10px;">서로 의지하며 지혜로운 사람이면  좋겠습니다   
+키 175cm 몸무게 73kg  입니다
+      여성분 키 160cm 이상 이면좋고요 자기만족과 자신감  있는분  서로 즐거움을 만들며살아가고싶네요
+산전~ 수전 ~ 공수전까지  다 겪었봤잖아요  이제 므든  다 할수 있잖아요 사진은 따로 필 하신분만 드릴께요
+기회는 사람을 기다리지 않고 운은 스스로움직이는 기운으로 부터 오며 산삼밭에가야 산삼도캘수있다</span>
+
+								<span class="marry-info_cue_in-card">차</span><span class="marry-info_cue_in-card">량</span>
+								<span class="marry-info_cue_in-card_badge">1</span>
+						</a>
+					</span>
+				</div>
+
+				<div class="list_info font_b">
+					<a href="javascript:void(0);" onclick="$.goCall({memNo:'166401', memNick:'하늘의힘북두칠성', memName: '김○○님', memSex:'m', memAge:'54', distance:'경남'});">
+											<span class="mem_info man">
+							<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/ico_man.jpg" width="15" height="13" class="sex">
+							| 김○○님
+							| 54세
+							| 용띠
+							| 경남
+						</span>
+						<div class="list_btn font_m">연락하기</div>
+											</a>
+				</div>
+			</form>
+		</li>
+		<li id="ID_241076">
+		<form name="fmeet_241076" id="fmeet_241076" method="post" onsubmit="return false;">
+				<input type="hidden" name="memNo" value="241076">
+				<input type="hidden" name="memNick" value="빨리어플지우자">
+				<input type="hidden" name="meetSlct" value="0">
+				<input type="hidden" name="meetText" value="">
+				<input type="hidden" name="chrgrNm" value="">
+
+				<div class="ment_area" onclick="$.checkHaveMsgItemAndGoProfile(this,'241076','man','meetList');">
+					<span class="photo_box">
+						<div class="count_scrt_img"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/icon_badge2.png" width="23" height="23" class="count_img" alt="프로필사진갯수"><p class="count_num">2</p></div>
+						<a href="javascript:void(0);" id="mem_photo" onclick="">
+							<div class="ripple"></div>
+							<img src="http://photo.yeoboya.com/prg/yimg.php?type=photo&amp;sdir=&amp;viewname=YVgxL2RvYUlwSXBVYW1wamFIcC9kNEdGZm8xY21KVmdvYm0x" align="left" onerror="$.noImgProc(this,'man');">
+						</a>
+					</span>
+					<span class="ment_txt font_r" style="line-height:1.4">
+						<a href="javascript:void(0);" onclick="$.togChung(this);" class="img_chung"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/img_chung_s.gif" height="26" alt="청사초롱" align="left" style="-webkit-transform:translateZ(0);"></a>
+						<a href="javascript:void(0);" class="goMemProfile">
+							&nbsp;&nbsp;
+                            <span class="nw_badge"></span>
+							<span class="mem_nick man">빨리어플지우자
+							
+							</span>
+							
+							&nbsp;&nbsp;
+							<span class="ment_conts" style="color:#;font-size:0.9em; margin-right:10px;">안녕하세요 같이 영화보러 가고 같이 어플 삭제할 사람 만나고 싶어요 힘들 내세요 화이팅</span>
+
+						</a>
+					</span>
+				</div>
+
+				<div class="list_info font_b">
+					<a href="javascript:void(0);" onclick="$.goCall({memNo:'241076', memNick:'빨리어플지우자', memName: '임○○님', memSex:'m', memAge:'30', distance:'대구'});">
+											<span class="mem_info man">
+							<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/ico_man.jpg" width="15" height="13" class="sex">
+							| 임○○님
+							| 30세
+							| 용띠
+							| 대구
+						</span>
+						<div class="list_btn font_m">연락하기</div>
+											</a>
+				</div>
+			</form>
+		</li>
+		<li id="ID_266235">
+		<form name="fmeet_266235" id="fmeet_266235" method="post" onsubmit="return false;">
+				<input type="hidden" name="memNo" value="266235">
+				<input type="hidden" name="memNick" value="착하고귀여운나">
+				<input type="hidden" name="meetSlct" value="0">
+				<input type="hidden" name="meetText" value="">
+				<input type="hidden" name="chrgrNm" value="">
+
+				<div class="ment_area" onclick="$.checkHaveMsgItemAndGoProfile(this,'266235','woman','meetList');">
+					<span class="photo_box">
+						<div class="count_scrt_img"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/icon_badge2.png" width="23" height="23" class="count_img" alt="프로필사진갯수"><p class="count_num">6</p></div>
+						<a href="javascript:void(0);" id="mem_photo" onclick="">
+							<div class="ripple"></div>
+							<img src="http://photo.yeoboya.com/prg/yimg.php?type=photo&amp;sdir=&amp;viewname=YVgrRWVJS0hwSXBVYW1wamFYbUhkbitFZm9sY2FXcHJiYWl3ZExuQ3JBPT0." align="left" onerror="$.noImgProc(this,'woman');">
+						</a>
+					</span>
+					<span class="ment_txt font_r" style="line-height:1.4">
+						<a href="javascript:void(0);" onclick="$.togChung(this);" class="img_chung"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/img_chung_s.gif" height="26" alt="청사초롱" align="left" style="-webkit-transform:translateZ(0);"></a>
+						<a href="javascript:void(0);" class="goMemProfile">
+							&nbsp;&nbsp;
+                            <span class="rw_badge"></span>
+							<span class="mem_nick woman">착하고귀여운나
+							
+							</span>
+							
+							&nbsp;&nbsp;
+							<span class="ment_conts" style="color:#;font-size:0.9em; margin-right:10px;">직접 만나보면 아실꺼예요. 어떤여자인지
+ 별명은 귀여운청개구리,페르시안공주 여요.
+사진은 다 올해 사진이예요.
+ 인성을 중요시 여기는 여자 입니다.
+가볍게 연애는 안합니다.
+ 다정다감하고 진실된분을 만나고 싶어요. 
+조건보다 한분의 내사랑을 찾아요.^^
+( 키170이하 이신분 , 60세 이상 이신분은 쪽지 보내지 마시길....)</span>
+
+						</a>
+					</span>
+				</div>
+
+				<div class="list_info font_b">
+					<a href="javascript:void(0);" onclick="$.goCall({memNo:'266235', memNick:'착하고귀여운나', memName: '김○○님', memSex:'f', memAge:'53', distance:'부산'});">
+											<span class="mem_info woman">
+							<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/ico_woman.jpg" width="11" height="15" class="sex">
+							| 김○○님
+							| 53세
+							| 뱀띠
+							| 부산
+						</span>
+						<div class="list_btn font_m">연락하기</div>
+											</a>
+				</div>
+			</form>
+		</li>
+		<li id="ID_263318">
+		<form name="fmeet_263318" id="fmeet_263318" method="post" onsubmit="return false;">
+				<input type="hidden" name="memNo" value="263318">
+				<input type="hidden" name="memNick" value="정말하고싶다결혼">
+				<input type="hidden" name="meetSlct" value="1">
+				<input type="hidden" name="meetText" value="avata">
+				<input type="hidden" name="chrgrNm" value="">
+
+				<div class="ment_area" onclick="$.checkHaveMsgItemAndGoProfile(this,'263318','man','meetList');">
+					<span class="photo_box">
+						<div class="count_scrt_img"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/icon_badge2.png" width="23" height="23" class="count_img" alt="프로필사진갯수"><p class="count_num">3</p></div>
+						<a href="javascript:void(0);" id="mem_photo" onclick="">
+							<div class="ripple"></div>
+							<img src="http://photo.yeoboya.com/prg/yimg.php?type=photo&amp;sdir=&amp;viewname=YVgrQmVZQ0twSXBVYW1wamFYbUVlSCtDZUlsWmEyWmpjS2l3ZExuQ3JBPT0." align="left" onerror="$.noImgProc(this,'man');">
+						</a>
+					</span>
+					<span class="ment_txt font_r" style="line-height:1.4">
+						<a href="javascript:void(0);" onclick="$.togChung(this);" class="img_chung"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/img_chung_s.gif" height="26" alt="청사초롱" align="left" style="-webkit-transform:translateZ(0);"></a>
+						<a href="javascript:void(0);" class="goMemProfile">
+							&nbsp;&nbsp;
+                            <span class="nw_badge"></span>
+							<span class="mem_nick man">정말하고싶다결혼
+							
+							</span>
+							
+							&nbsp;&nbsp;
+							<span class="ment_conts" style="color:#bd41eb;font-size:0.9em; margin-right:10px;">안녕하세요.경남 진주에사는 공무원입니다.
+늦엊지만 좋은분만나 행복하게 지내고싶네요.
+톡아이디 남겨주세요.대화로서 서로를 알아갑시다..
+눈치 빠른분은 아실껍니다.^.~
+남자는 돈 들어가니 그돈아껴 맛난거 사먹어요.^0^</span>
+
+								<span class="marry-info_cue_in-card">차</span><span class="marry-info_cue_in-card">량</span>
+								<span class="marry-info_cue_in-card_badge">1</span>
+						</a>
+					</span>
+				</div>
+
+				<div class="list_info font_b">
+					<a href="javascript:void(0);" onclick="$.goCall({memNo:'263318', memNick:'정말하고싶다결혼', memName: '하○○님', memSex:'m', memAge:'43', distance:'경남'});">
+											<span class="mem_info man">
+							<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/ico_man.jpg" width="15" height="13" class="sex">
+							| 하○○님
+							| 43세
+							| 토끼띠
+							| 경남
+						</span>
+						<div class="list_btn font_m">연락하기</div>
+											</a>
+				</div>
+			</form>
+		</li>
+		<li id="ID_187856">
+		<form name="fmeet_187856" id="fmeet_187856" method="post" onsubmit="return false;">
+				<input type="hidden" name="memNo" value="187856">
+				<input type="hidden" name="memNick" value="루사">
+				<input type="hidden" name="meetSlct" value="1">
+				<input type="hidden" name="meetText" value="avata">
+				<input type="hidden" name="chrgrNm" value="">
+
+				<div class="ment_area" onclick="$.checkHaveMsgItemAndGoProfile(this,'187856','woman','meetList');">
+					<span class="photo_box">
+						
+						<div class="ripple"></div>
+						<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/avata_woman.jpg" align="left">
+					</span>
+					<span class="ment_txt font_r" style="line-height:1.4">
+						<a href="javascript:void(0);" onclick="$.togChung(this);" class="img_chung"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/img_chung_s.gif" height="26" alt="청사초롱" align="left" style="-webkit-transform:translateZ(0);"></a>
+						<a href="javascript:void(0);" class="goMemProfile">
+							&nbsp;&nbsp;
+                            <span class="rw_badge"></span>
+							<span class="mem_nick woman">루사
+							
+							</span>
+							
+							&nbsp;&nbsp;
+							<span class="ment_conts" style="color:#9450f9;font-size:0.9em; margin-right:10px;">안녕 하세요
+같은 마음.같은생각
+ 같은취미(클래식.등산.여행)
+같은종교.기독교 ᆢ(비흡연자)
+좋은 만남기대 합니다</span>
+
+						</a>
+					</span>
+				</div>
+
+				<div class="list_info font_b">
+					<a href="javascript:void(0);" onclick="$.goCall({memNo:'187856', memNick:'루사', memName: '이○님', memSex:'f', memAge:'60', distance:'강원'});">
+											<span class="mem_info woman">
+							<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/ico_woman.jpg" width="11" height="15" class="sex">
+							| 이○님
+							| 60세
+							| 개띠
+							| 강원
+						</span>
+						<div class="list_btn font_m">연락하기</div>
+											</a>
+				</div>
+			</form>
+		</li>
+		<li id="ID_265283">
+		<form name="fmeet_265283" id="fmeet_265283" method="post" onsubmit="return false;">
+				<input type="hidden" name="memNo" value="265283">
+				<input type="hidden" name="memNick" value="꽐라마초">
+				<input type="hidden" name="meetSlct" value="1">
+				<input type="hidden" name="meetText" value="avata">
+				<input type="hidden" name="chrgrNm" value="">
+
+				<div class="ment_area" onclick="$.checkHaveMsgItemAndGoProfile(this,'265283','man','meetList');">
+					<span class="photo_box">
+						<div class="count_scrt_img"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/icon_badge2.png" width="23" height="23" class="count_img" alt="프로필사진갯수"><p class="count_num">5</p></div>
+						<a href="javascript:void(0);" id="mem_photo" onclick="">
+							<div class="ripple"></div>
+							<img src="http://photo.yeoboya.com/prg/yimg.php?type=photo&amp;sdir=&amp;viewname=YVgrRGVJZUZwSXBVYW1wamFYbUZlSCtFZklsYWJXZVJtWGU0dHJZPQ.." align="left" onerror="$.noImgProc(this,'man');">
+						</a>
+					</span>
+					<span class="ment_txt font_r" style="line-height:1.4">
+						<a href="javascript:void(0);" onclick="$.togChung(this);" class="img_chung"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/img_chung_s.gif" height="26" alt="청사초롱" align="left" style="-webkit-transform:translateZ(0);"></a>
+						<a href="javascript:void(0);" class="goMemProfile">
+							&nbsp;&nbsp;
+                            <span class="nw_badge"></span>
+							<span class="mem_nick man">꽐라마초
+							
+							</span>
+							
+							&nbsp;&nbsp;
+							<span class="ment_conts" style="color:#3d3f4e;font-size:0.9em; margin-right:10px;">파주에사는46세남자입니다
+직업은조그만공장운영하고있구요..
+애교있고~~성격발랄한..분이면좋겠네요^^
+가능할까요?</span>
+
+								<span class="marry-info_cue_in-card">차</span><span class="marry-info_cue_in-card">량</span>
+								<span class="marry-info_cue_in-card_badge">1</span>
+								<span class="marry-info_cue_in-card">움</span><span class="marry-info_cue_in-card">짤</span>
+								<span class="marry-info_cue_in-card_badge">1</span>
+						</a>
+					</span>
+				</div>
+
+				<div class="list_info font_b">
+					<a href="javascript:void(0);" onclick="$.goCall({memNo:'265283', memNick:'꽐라마초', memName: '민○○님', memSex:'m', memAge:'46', distance:'경기'});">
+											<span class="mem_info man">
+							<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/ico_man.jpg" width="15" height="13" class="sex">
+							| 민○○님
+							| 46세
+							| 쥐띠
+							| 경기
+						</span>
+						<div class="list_btn font_m">연락하기</div>
+											</a>
+				</div>
+			</form>
+		</li>
+		<li id="ID_153740">
+		<form name="fmeet_153740" id="fmeet_153740" method="post" onsubmit="return false;">
+				<input type="hidden" name="memNo" value="153740">
+				<input type="hidden" name="memNick" value="다래">
+				<input type="hidden" name="meetSlct" value="0">
+				<input type="hidden" name="meetText" value="">
+				<input type="hidden" name="chrgrNm" value="">
+
+				<div class="ment_area" onclick="$.checkHaveMsgItemAndGoProfile(this,'153740','woman','meetList');">
+					<span class="photo_box">
+						
+						<div class="ripple"></div>
+						<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/avata_woman.jpg" align="left">
+					</span>
+					<span class="ment_txt font_r" style="line-height:1.4">
+						<a href="javascript:void(0);" onclick="$.togChung(this);" class="img_chung"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/img_chung_s.gif" height="26" alt="청사초롱" align="left" style="-webkit-transform:translateZ(0);"></a>
+						<a href="javascript:void(0);" class="goMemProfile">
+							&nbsp;&nbsp;
+                            <span class="rw_badge"></span>
+							<span class="mem_nick woman">다래
+							
+							</span>
+							
+							&nbsp;&nbsp;
+							<span class="ment_conts" style="color:#;font-size:0.9em; margin-right:10px;">밝고 긍정적이고 낙천적입니다~~
+모든일을 긍정적으로 이해하고자 노력하면서 살려고 합니다^~^</span>
+
+						</a>
+					</span>
+				</div>
+
+				<div class="list_info font_b">
+					<a href="javascript:void(0);" onclick="$.goCall({memNo:'153740', memNick:'다래', memName: '신○○님', memSex:'f', memAge:'55', distance:'경기'});">
+											<span class="mem_info woman">
+							<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/ico_woman.jpg" width="11" height="15" class="sex">
+							| 신○○님
+							| 55세
+							| 토끼띠
+							| 경기
+						</span>
+						<div class="list_btn font_m">연락하기</div>
+											</a>
+				</div>
+			</form>
+		</li>
+		<li id="ID_250195">
+		<form name="fmeet_250195" id="fmeet_250195" method="post" onsubmit="return false;">
+				<input type="hidden" name="memNo" value="250195">
+				<input type="hidden" name="memNick" value="정이뭔지">
+				<input type="hidden" name="meetSlct" value="1">
+				<input type="hidden" name="meetText" value="avata">
+				<input type="hidden" name="chrgrNm" value="">
+
+				<div class="ment_area" onclick="$.checkHaveMsgItemAndGoProfile(this,'250195','man','meetList');">
+					<span class="photo_box">
+						
+						<div class="ripple"></div>
+						<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/avata_man.jpg" align="left">
+					</span>
+					<span class="ment_txt font_r" style="line-height:1.4">
+						<a href="javascript:void(0);" onclick="$.togChung(this);" class="img_chung"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/img_chung_s.gif" height="26" alt="청사초롱" align="left" style="-webkit-transform:translateZ(0);"></a>
+						<a href="javascript:void(0);" class="goMemProfile">
+							&nbsp;&nbsp;
+                            <span class="rw_badge"></span>
+							<span class="mem_nick man">정이뭔지
+							
+							</span>
+							
+							&nbsp;&nbsp;
+							<span class="ment_conts" style="color:#bd41eb;font-size:0.9em; margin-right:10px;">욕심의 끝은어디인가?
+경제력 중요하죠  요즘, 외모  중요한가요?
+(잘생긴거 )잘생겼다고 돈 많이 버는거아니잖아요 못생겨도 잘벌수 있잖아요 하지만 전 많이 못벌어요 잘난거 하나도없어요 외모못생겼어요  하지만 그래도 평균은 합니다.
+잘난거 보다 잘사는게 좋은거 아닌가요.
+시골에  살고있어요  시골 생활 가능하신분?</span>
+
+						</a>
+					</span>
+				</div>
+
+				<div class="list_info font_b">
+					<a href="javascript:void(0);" onclick="$.goCall({memNo:'250195', memNick:'정이뭔지', memName: '민○○님', memSex:'m', memAge:'45', distance:'경기'});">
+											<span class="mem_info man">
+							<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/ico_man.jpg" width="15" height="13" class="sex">
+							| 민○○님
+							| 45세
+							| 소띠
+							| 경기
+						</span>
+						<div class="list_btn font_m">연락하기</div>
+											</a>
+				</div>
+			</form>
+		</li>
+		<li id="ID_239607">
+		<form name="fmeet_239607" id="fmeet_239607" method="post" onsubmit="return false;">
+				<input type="hidden" name="memNo" value="239607">
+				<input type="hidden" name="memNick" value="진실한여자만들어">
+				<input type="hidden" name="meetSlct" value="0">
+				<input type="hidden" name="meetText" value="">
+				<input type="hidden" name="chrgrNm" value="">
+
+				<div class="ment_area" onclick="$.checkHaveMsgItemAndGoProfile(this,'239607','man','meetList');">
+					<span class="photo_box">
+						
+						<div class="ripple"></div>
+						<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/avata_man.jpg" align="left">
+					</span>
+					<span class="ment_txt font_r" style="line-height:1.4">
+						<a href="javascript:void(0);" onclick="$.togChung(this);" class="img_chung"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/img_chung_s.gif" height="26" alt="청사초롱" align="left" style="-webkit-transform:translateZ(0);"></a>
+						<a href="javascript:void(0);" class="goMemProfile">
+							&nbsp;&nbsp;
+                            <span class="rw_badge"></span>
+							<span class="mem_nick man">진실한여자만들어
+							
+							</span>
+							
+							&nbsp;&nbsp;
+							<span class="ment_conts" style="color:#;font-size:0.9em; margin-right:10px;">성큼겨울찬바람이네요
+혼자사는건 편함보다는 외로움이더큰것같아요
+먼저간단소개드립니다 ㆍ서울ㆍ임대업ㆍ자녀무
+술담배안함ㆍ음악과ㆍ여행좋아함니다
+혼자계신분으로
+자연을좋아하고 황토방집좋아하는 정서가 있는분이면 노후에 조용한 바닷가 황토집에서 텃밭채소가꾸며살고싶은ㆍ단순한생각에여성분 꼭ㆍ노크해요
+준비된남자입니다
+그리고
+오픈할게요ㅡ##남아있는삶에날들은 ㆍ건강최고같아요</span>
+
+						</a>
+					</span>
+				</div>
+
+				<div class="list_info font_b">
+					<a href="javascript:void(0);" onclick="$.goCall({memNo:'239607', memNick:'진실한여자만들어', memName: '김철님', memSex:'m', memAge:'60', distance:'서울'});">
+											<span class="mem_info man">
+							<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/ico_man.jpg" width="15" height="13" class="sex">
+							| 김철님
+							| 60세
+							| 개띠
+							| 서울
+						</span>
+						<div class="list_btn font_m">연락하기</div>
+											</a>
+				</div>
+			</form>
+		</li>
+		<li id="ID_269854">
+		<form name="fmeet_269854" id="fmeet_269854" method="post" onsubmit="return false;">
+				<input type="hidden" name="memNo" value="269854">
+				<input type="hidden" name="memNick" value="하늘맑은날">
+				<input type="hidden" name="meetSlct" value="1">
+				<input type="hidden" name="meetText" value="avata">
+				<input type="hidden" name="chrgrNm" value="">
+
+				<div class="ment_area" onclick="$.checkHaveMsgItemAndGoProfile(this,'269854','man','meetList');">
+					<span class="photo_box">
+						<div class="count_scrt_img"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/icon_badge2.png" width="23" height="23" class="count_img" alt="프로필사진갯수"><p class="count_num">4</p></div>
+						<a href="javascript:void(0);" id="mem_photo" onclick="">
+							<div class="ripple"></div>
+							<img src="http://photo.yeoboya.com/prg/yimg.php?type=photo&amp;sdir=&amp;viewname=YVgrSGZvU0dwSXBVYW1wamFYcUFkb2lHZll0WGNtVmpscXQ4c0wrNQ.." align="left" onerror="$.noImgProc(this,'man');">
+						</a>
+					</span>
+					<span class="ment_txt font_r" style="line-height:1.4">
+						<a href="javascript:void(0);" onclick="$.togChung(this);" class="img_chung"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/img_chung_s.gif" height="26" alt="청사초롱" align="left" style="-webkit-transform:translateZ(0);"></a>
+						<a href="javascript:void(0);" class="goMemProfile">
+							&nbsp;&nbsp;
+                            <span class="nw_badge"></span>
+							<span class="mem_nick man">하늘맑은날
+							
+							</span>
+							
+							&nbsp;&nbsp;
+							<span class="ment_conts" style="color:#3d3f4e;font-size:0.9em; margin-right:10px;">안녕하세요
+인도네시아에서 무역업(의류)을 하고 있고,
+비지니스,재테크,건강에 관심이 많고 종교는 불교입니다.
+일본어 회화는 잘합니다.
+스포츠마사지도 잘해서 뭉친 근육도 풀어 드릴수 있습니다
+저와 같이 남은 인생을 행복하게 만드실 분을 만나기 위해 가입하게 돼었습니다.
+진실하고 성실하고 매너가 있으신 분을 만나고 싶어요
+저에게 관심이 있으신 분은 연락 주시기 바랍니다.</span>
+
+						</a>
+					</span>
+				</div>
+
+				<div class="list_info font_b">
+					<a href="javascript:void(0);" onclick="$.goCall({memNo:'269854', memNick:'하늘맑은날', memName: '장○○님', memSex:'m', memAge:'47', distance:'경기'});">
+											<span class="mem_info man">
+							<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/ico_man.jpg" width="15" height="13" class="sex">
+							| 장○○님
+							| 47세
+							| 돼지띠
+							| 경기
+						</span>
+						<div class="list_btn font_m">연락하기</div>
+											</a>
+				</div>
+			</form>
+		</li>
+		<li id="ID_191158">
+		<form name="fmeet_191158" id="fmeet_191158" method="post" onsubmit="return false;">
+				<input type="hidden" name="memNo" value="191158">
+				<input type="hidden" name="memNick" value="애인구하기">
+				<input type="hidden" name="meetSlct" value="1">
+				<input type="hidden" name="meetText" value="avata">
+				<input type="hidden" name="chrgrNm" value="">
+
+				<div class="ment_area" onclick="$.checkHaveMsgItemAndGoProfile(this,'191158','man','meetList');">
+					<span class="photo_box">
+						<div class="count_scrt_img"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/icon_badge2.png" width="23" height="23" class="count_img" alt="프로필사진갯수"><p class="count_num">6</p></div>
+						<a href="javascript:void(0);" id="mem_photo" onclick="">
+							<div class="ripple"></div>
+							<img src="http://photo.yeoboya.com/prg/yimg.php?type=photo&amp;sdir=&amp;viewname=YUlKL2Q0U0twSXBVYW1walozeC9lSUNDZG9sV21KVmdvYm0x" align="left" onerror="$.noImgProc(this,'man');">
+						</a>
+					</span>
+					<span class="ment_txt font_r" style="line-height:1.4">
+						<a href="javascript:void(0);" onclick="$.togChung(this);" class="img_chung"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/img_chung_s.gif" height="26" alt="청사초롱" align="left" style="-webkit-transform:translateZ(0);"></a>
+						<a href="javascript:void(0);" class="goMemProfile">
+							&nbsp;&nbsp;
+                            <span class="rw_badge"></span>
+							<span class="mem_nick man">애인구하기
+							
+							</span>
+							
+							&nbsp;&nbsp;
+							<span class="ment_conts" style="color:#3d3f4e;font-size:0.9em; margin-right:10px;">이혼 이라는 아픈 상처가 있지만 늦기 전에 사랑하는 나의
+반쪽을 찾아 행복하게 살고 싶어 여보야에 문을 두드렸습니다ㆍ항상 젊은 열정을 가지고 살려고 노력하고자 운동을 하루에 1시간씩 꾸준히 하고 있는 자기몸 관리에 충실한 사람입니다ㆍ사랑하는 사람을 만나게 되면 맛있는 요리를 만들어 주고 싶어 요리학원을 3개월 정도 다녔으며
+지금은 주말에 종종 연습겸 요리를 하고 있습니다ㆍ
+똑같은 실수를  되풀이 하지 않도록 이해하고 배려하는 마음을 가슴속 깊은곳에서 매일 키우고 있는 다정 다감한 사람입니다ㆍ관심 있는 여성 분은 연락주세요</span>
+
+								<span class="marry-info_cue_in-card">혼</span><span class="marry-info_cue_in-card">인</span><span class="marry-info_cue_in-card">관</span><span class="marry-info_cue_in-card">계</span><span class="marry-info_cue_in-card">증</span><span class="marry-info_cue_in-card">명</span><span class="marry-info_cue_in-card">서</span>
+								<span class="marry-info_cue_in-card_badge">2</span>
+						</a>
+					</span>
+				</div>
+
+				<div class="list_info font_b">
+					<a href="javascript:void(0);" onclick="$.goCall({memNo:'191158', memNick:'애인구하기', memName: '박○○님', memSex:'m', memAge:'49', distance:'대구'});">
+											<span class="mem_info man">
+							<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/ico_man.jpg" width="15" height="13" class="sex">
+							| 박○○님
+							| 49세
+							| 닭띠
+							| 대구
+						</span>
+						<div class="list_btn font_m">연락하기</div>
+											</a>
+				</div>
+			</form>
+		</li>
+		<li id="ID_219304">
+		<form name="fmeet_219304" id="fmeet_219304" method="post" onsubmit="return false;">
+				<input type="hidden" name="memNo" value="219304">
+				<input type="hidden" name="memNick" value="거송">
+				<input type="hidden" name="meetSlct" value="1">
+				<input type="hidden" name="meetText" value="avata">
+				<input type="hidden" name="chrgrNm" value="">
+
+				<div class="ment_area" onclick="$.checkHaveMsgItemAndGoProfile(this,'219304','man','meetList');">
+					<span class="photo_box">
+						<div class="count_scrt_img"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/icon_badge2.png" width="23" height="23" class="count_img" alt="프로필사진갯수"><p class="count_num">1</p></div>
+						<a href="javascript:void(0);" id="mem_photo" onclick="">
+							<div class="ripple"></div>
+							<img src="http://photo.yeoboya.com/prg/yimg.php?type=photo&amp;sdir=&amp;viewname=YVhxSGVYK0dwSXBVYW1walozcUVkbitGZlloZG1KVmdvYm0x" align="left" onerror="$.noImgProc(this,'man');">
+						</a>
+					</span>
+					<span class="ment_txt font_r" style="line-height:1.4">
+						<a href="javascript:void(0);" onclick="$.togChung(this);" class="img_chung"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/img_chung_s.gif" height="26" alt="청사초롱" align="left" style="-webkit-transform:translateZ(0);"></a>
+						<a href="javascript:void(0);" class="goMemProfile">
+							&nbsp;&nbsp;
+                            <span class="rw_badge"></span>
+							<span class="mem_nick man">거송
+							
+							</span>
+							
+							&nbsp;&nbsp;
+							<span class="ment_conts" style="color:#3d3f4e;font-size:0.9em; margin-right:10px;">더가까이 서로를 알아가면서 느낄수있는사람  어디없나요~~??  깊이있고 진실한친구처럼  눈을맞추고 서로의  어깨를 내어주는 포근한마음  연인으로 발전시켜 한평생 남은여생을 친구처럼 즐길수있는 동반자를 찾습니다</span>
+
+						</a>
+					</span>
+				</div>
+
+				<div class="list_info font_b">
+					<a href="javascript:void(0);" onclick="$.goCall({memNo:'219304', memNick:'거송', memName: '장○○님', memSex:'m', memAge:'63', distance:'전북'});">
+											<span class="mem_info man">
+							<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/ico_man.jpg" width="15" height="13" class="sex">
+							| 장○○님
+							| 63세
+							| 양띠
+							| 전북
+						</span>
+						<div class="list_btn font_m">연락하기</div>
+											</a>
+				</div>
+			</form>
+		</li>
+		<li id="ID_254136">
+		<form name="fmeet_254136" id="fmeet_254136" method="post" onsubmit="return false;">
+				<input type="hidden" name="memNo" value="254136">
+				<input type="hidden" name="memNick" value="천하무적다깡">
+				<input type="hidden" name="meetSlct" value="1">
+				<input type="hidden" name="meetText" value="avata">
+				<input type="hidden" name="chrgrNm" value="">
+
+				<div class="ment_area" onclick="$.checkHaveMsgItemAndGoProfile(this,'254136','man','meetList');">
+					<span class="photo_box">
+						<div class="count_scrt_img"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/icon_badge2.png" width="23" height="23" class="count_img" alt="프로필사진갯수"><p class="count_num">3</p></div>
+						<a href="javascript:void(0);" id="mem_photo" onclick="">
+							<div class="ripple"></div>
+							<img src="http://photo.yeoboya.com/prg/yimg.php?type=photo&amp;sdir=&amp;viewname=YVg2Q2Q0S0lwSXBVYW1wamFYbC9lSUdEZUkxWGNXUmxiYWl3ZExuQ3JBPT0." align="left" onerror="$.noImgProc(this,'man');">
+						</a>
+					</span>
+					<span class="ment_txt font_r" style="line-height:1.4">
+						<a href="javascript:void(0);" onclick="$.togChung(this);" class="img_chung"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/img_chung_s.gif" height="26" alt="청사초롱" align="left" style="-webkit-transform:translateZ(0);"></a>
+						<a href="javascript:void(0);" class="goMemProfile">
+							&nbsp;&nbsp;
+                            <span class="nw_badge"></span>
+							<span class="mem_nick man">천하무적다깡
+							
+							</span>
+							
+							&nbsp;&nbsp;
+							<span class="ment_conts" style="color:#3d3f4e;font-size:0.9em; margin-right:10px;">올해 31살  이고요 좋은사람만나서인연닿길바라는마음에  남김니다  외모는많이안보고  어르신께잘하고 예의바른사람을원하고요 운동이나 요리 여행등활동적인분이었으면좋겠습니다</span>
+
+						</a>
+					</span>
+				</div>
+
+				<div class="list_info font_b">
+					<a href="javascript:void(0);" onclick="$.goCall({memNo:'254136', memNick:'천하무적다깡', memName: '박○○님', memSex:'m', memAge:'31', distance:'경기'});">
+											<span class="mem_info man">
+							<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/ico_man.jpg" width="15" height="13" class="sex">
+							| 박○○님
+							| 31세
+							| 토끼띠
+							| 경기
+						</span>
+						<div class="list_btn font_m">연락하기</div>
+											</a>
+				</div>
+			</form>
+		</li>
+		<li id="ID_265777">
+		<form name="fmeet_265777" id="fmeet_265777" method="post" onsubmit="return false;">
+				<input type="hidden" name="memNo" value="265777">
+				<input type="hidden" name="memNick" value="어정선">
+				<input type="hidden" name="meetSlct" value="1">
+				<input type="hidden" name="meetText" value="avata">
+				<input type="hidden" name="chrgrNm" value="">
+
+				<div class="ment_area" onclick="$.checkHaveMsgItemAndGoProfile(this,'265777','man','meetList');">
+					<span class="photo_box">
+						<div class="count_scrt_img"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/icon_badge2.png" width="23" height="23" class="count_img" alt="프로필사진갯수"><p class="count_num">1</p></div>
+						<a href="javascript:void(0);" id="mem_photo" onclick="">
+							<div class="ripple"></div>
+							<img src="http://photo.yeoboya.com/prg/yimg.php?type=photo&amp;sdir=&amp;viewname=YVgrRGZZYUpwSXBVYW1wamFYcUFkb2lHZm9wYWJXWm9hS2l3ZExuQ3JBPT0." align="left" onerror="$.noImgProc(this,'man');">
+						</a>
+					</span>
+					<span class="ment_txt font_r" style="line-height:1.4">
+						<a href="javascript:void(0);" onclick="$.togChung(this);" class="img_chung"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/img_chung_s.gif" height="26" alt="청사초롱" align="left" style="-webkit-transform:translateZ(0);"></a>
+						<a href="javascript:void(0);" class="goMemProfile">
+							&nbsp;&nbsp;
+                            <span class="nw_badge"></span>
+							<span class="mem_nick man">어정선
+							(한국)
+							</span>
+							
+							&nbsp;&nbsp;
+							<span class="ment_conts" style="color:#3d3f4e;font-size:0.9em; margin-right:10px;">현재 브라질에서 살고 있습니다. 어렸을때 이민와서 한국 돌아 간적이 없습니다. 1~2년 후 헌국 들어가서 살생각입니다. 지금 부터 좋은 인연을 맺을수 있다면 좋겠습니다.</span>
+
+						</a>
+					</span>
+				</div>
+
+				<div class="list_info font_b">
+					<a href="javascript:void(0);" onclick="$.goCall({memNo:'265777', memNick:'어정선', memName: '어○○님', memSex:'m', memAge:'38', distance:'해외'});">
+											<span class="mem_info man">
+							<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/ico_man.jpg" width="15" height="13" class="sex">
+							| 어○○님
+							| 38세
+							| 원숭이띠
+							| 해외
+						</span>
+						<div class="list_btn font_m">연락하기</div>
+											</a>
+				</div>
+			</form>
+		</li>
+		<li id="ID_217504">
+		<form name="fmeet_217504" id="fmeet_217504" method="post" onsubmit="return false;">
+				<input type="hidden" name="memNo" value="217504">
+				<input type="hidden" name="memNick" value="처음끝">
+				<input type="hidden" name="meetSlct" value="1">
+				<input type="hidden" name="meetText" value="avata">
+				<input type="hidden" name="chrgrNm" value="">
+
+				<div class="ment_area" onclick="$.checkHaveMsgItemAndGoProfile(this,'217504','man','meetList');">
+					<span class="photo_box">
+						<div class="count_scrt_img"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/icon_badge2.png" width="23" height="23" class="count_img" alt="프로필사진갯수"><p class="count_num">6</p></div>
+						<a href="javascript:void(0);" id="mem_photo" onclick="">
+							<div class="ripple"></div>
+							<img src="http://photo.yeoboya.com/prg/yimg.php?type=photo&amp;sdir=&amp;viewname=YVhxRmUzK0dwSXBVYW1wamFYbUhkb2FDZG9sY2EyTm5icWl3ZExuQ3JBPT0." align="left" onerror="$.noImgProc(this,'man');">
+						</a>
+					</span>
+					<span class="ment_txt font_r" style="line-height:1.4">
+						<a href="javascript:void(0);" onclick="$.togChung(this);" class="img_chung"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/img_chung_s.gif" height="26" alt="청사초롱" align="left" style="-webkit-transform:translateZ(0);"></a>
+						<a href="javascript:void(0);" class="goMemProfile">
+							&nbsp;&nbsp;
+                            <span class="rw_badge"></span>
+							<span class="mem_nick man">처음끝
+							
+							</span>
+							
+							&nbsp;&nbsp;
+							<span class="ment_conts" style="color:#3d3f4e;font-size:0.9em; margin-right:10px;">충북청주 살고 있습니다
+아저씨 스탈은  아닙니다..잘 챙기고 자상한편이라고 생각합니다.
+좋은 인연 만나서  좋은  추억  쌓고  싶내여~
+여행  등산 캠핑  낚시 스포츠관련취미  사회봉사활동  이런거 함께  하고싶어요!
+정치 사회  영화  공연 역사  문화 경제  다양한 분야에   잘 알지는 못 해도 관심이 많습니다.
+강아지 키우고 싶은데 2년 넘게  고민 중 입니다.
+바쁘편이라 혹시라도 상처 줄까봐 인데.애완동물키우시는분들 좋아요~~
+남은  인생  함께 하고 싶습니다^^</span>
+
+						</a>
+					</span>
+				</div>
+
+				<div class="list_info font_b">
+					<a href="javascript:void(0);" onclick="$.goCall({memNo:'217504', memNick:'처음끝', memName: '박○○님', memSex:'m', memAge:'35', distance:'충북'});">
+											<span class="mem_info man">
+							<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/ico_man.jpg" width="15" height="13" class="sex">
+							| 박○○님
+							| 35세
+							| 돼지띠
+							| 충북
+						</span>
+						<div class="list_btn font_m">연락하기</div>
+											</a>
+				</div>
+			</form>
+		</li>
+		<li id="ID_243221">
+		<form name="fmeet_243221" id="fmeet_243221" method="post" onsubmit="return false;">
+				<input type="hidden" name="memNo" value="243221">
+				<input type="hidden" name="memNick" value="황금빛갈">
+				<input type="hidden" name="meetSlct" value="0">
+				<input type="hidden" name="meetText" value="">
+				<input type="hidden" name="chrgrNm" value="">
+
+				<div class="ment_area" onclick="$.checkHaveMsgItemAndGoProfile(this,'243221','man','meetList');">
+					<span class="photo_box">
+						<div class="count_scrt_img"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/icon_badge2.png" width="23" height="23" class="count_img" alt="프로필사진갯수"><p class="count_num">3</p></div>
+						<a href="javascript:void(0);" id="mem_photo" onclick="">
+							<div class="ripple"></div>
+							<img src="http://photo.yeoboya.com/prg/yimg.php?type=photo&amp;sdir=&amp;viewname=YVgyQmVJR0RwSXBVYW1wamFYcUFkb2lFZUloY2JtaG9iYWl3ZExuQ3JBPT0." align="left" onerror="$.noImgProc(this,'man');">
+						</a>
+					</span>
+					<span class="ment_txt font_r" style="line-height:1.4">
+						<a href="javascript:void(0);" onclick="$.togChung(this);" class="img_chung"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/img_chung_s.gif" height="26" alt="청사초롱" align="left" style="-webkit-transform:translateZ(0);"></a>
+						<a href="javascript:void(0);" class="goMemProfile">
+							&nbsp;&nbsp;
+                            <span class="nw_badge"></span>
+							<span class="mem_nick man">황금빛갈
+							
+							</span>
+							
+							&nbsp;&nbsp;
+							<span class="ment_conts" style="color:#;font-size:0.9em; margin-right:10px;">정신적 육체적으로 건강한 남성입니다 관심있어시면 메세지 남겨주셔요</span>
+
+						</a>
+					</span>
+				</div>
+
+				<div class="list_info font_b">
+					<a href="javascript:void(0);" onclick="$.goCall({memNo:'243221', memNick:'황금빛갈', memName: '최○○님', memSex:'m', memAge:'58', distance:'부산'});">
+											<span class="mem_info man">
+							<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/ico_man.jpg" width="15" height="13" class="sex">
+							| 최○○님
+							| 58세
+							| 쥐띠
+							| 부산
+						</span>
+						<div class="list_btn font_m">연락하기</div>
+											</a>
+				</div>
+			</form>
+		</li>
+		<li id="ID_214107">
+		<form name="fmeet_214107" id="fmeet_214107" method="post" onsubmit="return false;">
+				<input type="hidden" name="memNo" value="214107">
+				<input type="hidden" name="memNick" value="당두요">
+				<input type="hidden" name="meetSlct" value="1">
+				<input type="hidden" name="meetText" value="avata">
+				<input type="hidden" name="chrgrNm" value="">
+
+				<div class="ment_area" onclick="$.checkHaveMsgItemAndGoProfile(this,'214107','man','meetList');">
+					<span class="photo_box">
+						<div class="count_scrt_img"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/icon_badge2.png" width="23" height="23" class="count_img" alt="프로필사진갯수"><p class="count_num">1</p></div>
+						<a href="javascript:void(0);" id="mem_photo" onclick="">
+							<div class="ripple"></div>
+							<img src="http://photo.yeoboya.com/prg/yimg.php?type=photo&amp;sdir=&amp;viewname=YVhxQ2QzK0pwSXBVYW1walozcUNkNE9FZG9wY21KVmdvYm0x" align="left" onerror="$.noImgProc(this,'man');">
+						</a>
+					</span>
+					<span class="ment_txt font_r" style="line-height:1.4">
+						<a href="javascript:void(0);" onclick="$.togChung(this);" class="img_chung"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/img_chung_s.gif" height="26" alt="청사초롱" align="left" style="-webkit-transform:translateZ(0);"></a>
+						<a href="javascript:void(0);" class="goMemProfile">
+							&nbsp;&nbsp;
+                            <span class="nw_badge"></span>
+							<span class="mem_nick man">당두요
+							
+							</span>
+							
+							&nbsp;&nbsp;
+							<span class="ment_conts" style="color:#3d3f4e;font-size:0.9em; margin-right:10px;">안녕하세요.
+처음 가입해서 어떻게 적어야할지 잘 모르겠네요
+좋은 사람 만나서 가정꾸리고 싶네요
+좋은 인연 만나서 달콤하게 여행도 다니고 술도 한잔하고 즐겁게 웃으면서 살고 싶네요.
+
+제가 비흡연자라 담배는 싫어합니다
+감사합니다</span>
+
+						</a>
+					</span>
+				</div>
+
+				<div class="list_info font_b">
+					<a href="javascript:void(0);" onclick="$.goCall({memNo:'214107', memNick:'당두요', memName: '서○○님', memSex:'m', memAge:'42', distance:'경기'});">
+											<span class="mem_info man">
+							<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/ico_man.jpg" width="15" height="13" class="sex">
+							| 서○○님
+							| 42세
+							| 용띠
+							| 경기
+						</span>
+						<div class="list_btn font_m">연락하기</div>
+											</a>
+				</div>
+			</form>
+		</li>
+		<li id="ID_238217">
+		<form name="fmeet_238217" id="fmeet_238217" method="post" onsubmit="return false;">
+				<input type="hidden" name="memNo" value="238217">
+				<input type="hidden" name="memNick" value="장면">
+				<input type="hidden" name="meetSlct" value="1">
+				<input type="hidden" name="meetText" value="avata">
+				<input type="hidden" name="chrgrNm" value="">
+
+				<div class="ment_area" onclick="$.checkHaveMsgItemAndGoProfile(this,'238217','man','meetList');">
+					<span class="photo_box">
+						
+						<div class="ripple"></div>
+						<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/avata_man.jpg" align="left">
+					</span>
+					<span class="ment_txt font_r" style="line-height:1.4">
+						<a href="javascript:void(0);" onclick="$.togChung(this);" class="img_chung"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/img_chung_s.gif" height="26" alt="청사초롱" align="left" style="-webkit-transform:translateZ(0);"></a>
+						<a href="javascript:void(0);" class="goMemProfile">
+							&nbsp;&nbsp;
+                            <span class="rw_badge"></span>
+							<span class="mem_nick man">장면
+							
+							</span>
+							
+							&nbsp;&nbsp;
+							<span class="ment_conts" style="color:#3d3f4e;font-size:0.9em; margin-right:10px;">저는 자녀는 없고 혼자지낸지는 8년정도됩니다
+서로 아껴주고 힘이되주고 싶습니다</span>
+
+						</a>
+					</span>
+				</div>
+
+				<div class="list_info font_b">
+					<a href="javascript:void(0);" onclick="$.goCall({memNo:'238217', memNick:'장면', memName: '장○○님', memSex:'m', memAge:'47', distance:'경기'});">
+											<span class="mem_info man">
+							<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/ico_man.jpg" width="15" height="13" class="sex">
+							| 장○○님
+							| 47세
+							| 돼지띠
+							| 경기
+						</span>
+						<div class="list_btn font_m">연락하기</div>
+											</a>
+				</div>
+			</form>
+		</li>
+		<li id="ID_263465">
+		<form name="fmeet_263465" id="fmeet_263465" method="post" onsubmit="return false;">
+				<input type="hidden" name="memNo" value="263465">
+				<input type="hidden" name="memNick" value="가꾸기야">
+				<input type="hidden" name="meetSlct" value="1">
+				<input type="hidden" name="meetText" value="avata">
+				<input type="hidden" name="chrgrNm" value="">
+
+				<div class="ment_area" onclick="$.checkHaveMsgItemAndGoProfile(this,'263465','woman','meetList');">
+					<span class="photo_box">
+						<div class="count_scrt_img"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/icon_badge2.png" width="23" height="23" class="count_img" alt="프로필사진갯수"><p class="count_num">3</p></div>
+						<a href="javascript:void(0);" id="mem_photo" onclick="">
+							<div class="ripple"></div>
+							<img src="http://photo.yeoboya.com/prg/yimg.php?type=photo&amp;sdir=&amp;viewname=YVgrQmVvV0hwSXBVYW1wamFYbUVlSUdDZDR0Y2NtZG9jS2l3ZExuQ3JBPT0." align="left" onerror="$.noImgProc(this,'woman');">
+						</a>
+					</span>
+					<span class="ment_txt font_r" style="line-height:1.4">
+						<a href="javascript:void(0);" onclick="$.togChung(this);" class="img_chung"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/img_chung_s.gif" height="26" alt="청사초롱" align="left" style="-webkit-transform:translateZ(0);"></a>
+						<a href="javascript:void(0);" class="goMemProfile">
+							&nbsp;&nbsp;
+                            <span class="nw_badge"></span>
+							<span class="mem_nick woman">가꾸기야
+							
+							</span>
+							
+							&nbsp;&nbsp;
+							<span class="ment_conts" style="color:#3d3f4e;font-size:0.9em; margin-right:10px;">안녕하세요
+
+좋은인연 기다려보아요^0^
+
+모두 좋은인연 만나길 바래요</span>
+
+						</a>
+					</span>
+				</div>
+
+				<div class="list_info font_b">
+					<a href="javascript:void(0);" onclick="$.goCall({memNo:'263465', memNick:'가꾸기야', memName: '함○○님', memSex:'f', memAge:'36', distance:'경남'});">
+											<span class="mem_info woman">
+							<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/ico_woman.jpg" width="11" height="15" class="sex">
+							| 함○○님
+							| 36세
+							| 개띠
+							| 경남
+						</span>
+						<div class="list_btn font_m">연락하기</div>
+											</a>
+				</div>
+			</form>
+		</li>
+		<li id="ID_269873">
+		<form name="fmeet_269873" id="fmeet_269873" method="post" onsubmit="return false;">
+				<input type="hidden" name="memNo" value="269873">
+				<input type="hidden" name="memNick" value="나의스마일">
+				<input type="hidden" name="meetSlct" value="1">
+				<input type="hidden" name="meetText" value="avata">
+				<input type="hidden" name="chrgrNm" value="">
+
+				<div class="ment_area" onclick="$.checkHaveMsgItemAndGoProfile(this,'269873','man','meetList');">
+					<span class="photo_box">
+						
+						<div class="ripple"></div>
+						<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/avata_man.jpg" align="left">
+					</span>
+					<span class="ment_txt font_r" style="line-height:1.4">
+						<a href="javascript:void(0);" onclick="$.togChung(this);" class="img_chung"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/img_chung_s.gif" height="26" alt="청사초롱" align="left" style="-webkit-transform:translateZ(0);"></a>
+						<a href="javascript:void(0);" class="goMemProfile">
+							&nbsp;&nbsp;
+                            <span class="rw_badge"></span>
+							<span class="mem_nick man">나의스마일
+							
+							</span>
+							
+							&nbsp;&nbsp;
+							<span class="ment_conts" style="color:#3d3f4e;font-size:0.9em; margin-right:10px;">안녕하세요.이제늦게나마좋운인연을만나즐거운삶을공유하며지내고싶어서이곳에올리게되었답니다</span>
+
+						</a>
+					</span>
+				</div>
+
+				<div class="list_info font_b">
+					<a href="javascript:void(0);" onclick="$.goCall({memNo:'269873', memNick:'나의스마일', memName: '배○○님', memSex:'m', memAge:'56', distance:'경기'});">
+											<span class="mem_info man">
+							<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/ico_man.jpg" width="15" height="13" class="sex">
+							| 배○○님
+							| 56세
+							| 범띠
+							| 경기
+						</span>
+						<div class="list_btn font_m">연락하기</div>
+											</a>
+				</div>
+			</form>
+		</li>
+		<li id="ID_168531">
+		<form name="fmeet_168531" id="fmeet_168531" method="post" onsubmit="return false;">
+				<input type="hidden" name="memNo" value="168531">
+				<input type="hidden" name="memNick" value="내고장지역탐방">
+				<input type="hidden" name="meetSlct" value="1">
+				<input type="hidden" name="meetText" value="avata">
+				<input type="hidden" name="chrgrNm" value="">
+
+				<div class="ment_area" onclick="$.checkHaveMsgItemAndGoProfile(this,'168531','man','meetList');">
+					<span class="photo_box">
+						<div class="count_scrt_img"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/icon_badge2.png" width="23" height="23" class="count_img" alt="프로필사진갯수"><p class="count_num">1</p></div>
+						<a href="javascript:void(0);" id="mem_photo" onclick="">
+							<div class="ripple"></div>
+							<img src="http://photo.yeoboya.com/prg/yimg.php?type=photo&amp;sdir=&amp;viewname=YUgrR2U0S0RwSXBVYW1wamFIdUdlSUdGZUloY2FtaHJiYWl3ZExuQ3JBPT0." align="left" onerror="$.noImgProc(this,'man');">
+						</a>
+					</span>
+					<span class="ment_txt font_r" style="line-height:1.4">
+						<a href="javascript:void(0);" onclick="$.togChung(this);" class="img_chung"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/img_chung_s.gif" height="26" alt="청사초롱" align="left" style="-webkit-transform:translateZ(0);"></a>
+						<a href="javascript:void(0);" class="goMemProfile">
+							&nbsp;&nbsp;
+                            <span class="nw_badge"></span>
+							<span class="mem_nick man">내고장지역탐방
+							
+							</span>
+							
+							&nbsp;&nbsp;
+							<span class="ment_conts" style="color:#3d3f4e;font-size:0.9em; margin-right:10px;">안녕하세요:) 모두들 좋은 사람 만나서 행복하시길 바랍니다:))</span>
+
+						</a>
+					</span>
+				</div>
+
+				<div class="list_info font_b">
+					<a href="javascript:void(0);" onclick="$.goCall({memNo:'168531', memNick:'내고장지역탐방', memName: '서○○님', memSex:'m', memAge:'40', distance:'부산'});">
+											<span class="mem_info man">
+							<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/ico_man.jpg" width="15" height="13" class="sex">
+							| 서○○님
+							| 40세
+							| 말띠
+							| 부산
+						</span>
+						<div class="list_btn font_m">연락하기</div>
+											</a>
+				</div>
+			</form>
+		</li>
+		<li id="ID_245931">
+		<form name="fmeet_245931" id="fmeet_245931" method="post" onsubmit="return false;">
+				<input type="hidden" name="memNo" value="245931">
+				<input type="hidden" name="memNick" value="서울드림">
+				<input type="hidden" name="meetSlct" value="1">
+				<input type="hidden" name="meetText" value="avata">
+				<input type="hidden" name="chrgrNm" value="">
+
+				<div class="ment_area" onclick="$.checkHaveMsgItemAndGoProfile(this,'245931','man','meetList');">
+					<span class="photo_box">
+						<div class="count_scrt_img"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/icon_badge2.png" width="23" height="23" class="count_img" alt="프로필사진갯수"><p class="count_num">15</p></div>
+						<a href="javascript:void(0);" id="mem_photo" onclick="">
+							<div class="ripple"></div>
+							<img src="http://photo.yeoboya.com/prg/yimg.php?type=photo&amp;sdir=&amp;viewname=YVgyRGY0S0RwSXBVYW1wamFYcUFkbitGZklsVmJXdHJiNml3ZExuQ3JBPT0." align="left" onerror="$.noImgProc(this,'man');">
+						</a>
+					</span>
+					<span class="ment_txt font_r" style="line-height:1.4">
+						<a href="javascript:void(0);" onclick="$.togChung(this);" class="img_chung"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/img_chung_s.gif" height="26" alt="청사초롱" align="left" style="-webkit-transform:translateZ(0);"></a>
+						<a href="javascript:void(0);" class="goMemProfile">
+							&nbsp;&nbsp;
+                            <span class="rw_badge"></span>
+							<span class="mem_nick man">서울드림
+							
+							</span>
+							
+							&nbsp;&nbsp;
+							<span class="ment_conts" style="color:#3d3f4e;font-size:0.9em; margin-right:10px;">"함께"를  빼버린 행복이란
+상상하지 않습니다.
+함께 대화하려고 하며
+함께 고민하려고 하며
+함께 기뻐하려고 합니다.
+
+"함께"를  잃어버린  행복은 도무지 존재하지  않습니다.
+남자와 여자를 지으신 이유도 여기에 있습니다.
+함께 슬픔을 느끼고
+함께 행복을 느끼고
+함께 고마움을 느끼도록....
+
+난 오늘 
+함께 할 줄 아는 사람을 사귀고
+함께 시간 낼 줄 아는 사람을 만나고
+함께 짐을 져 줄 사람, 함께 끝까지  동행할 사람을 찾고  싶습니다.
+
+날씨는 추워도  즐거운 하루가 되시길 바랍니다.</span>
+
+								<span class="marry-info_cue_in-card">직</span><span class="marry-info_cue_in-card">업</span>
+								<span class="marry-info_cue_in-card_badge">1</span>
+								<span class="marry-info_cue_in-card">차</span><span class="marry-info_cue_in-card">량</span>
+								<span class="marry-info_cue_in-card_badge">2</span>
+								<span class="marry-info_cue_in-card">움</span><span class="marry-info_cue_in-card">짤</span>
+								<span class="marry-info_cue_in-card_badge">2</span>
+						</a>
+					</span>
+				</div>
+
+				<div class="list_info font_b">
+					<a href="javascript:void(0);" onclick="$.goCall({memNo:'245931', memNick:'서울드림', memName: '이○○님', memSex:'m', memAge:'46', distance:'서울'});">
+											<span class="mem_info man">
+							<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/ico_man.jpg" width="15" height="13" class="sex">
+							| 이○○님
+							| 46세
+							| 쥐띠
+							| 서울
+						</span>
+						<div class="list_btn font_m">연락하기</div>
+											</a>
+				</div>
+			</form>
+		</li>
+		<li id="ID_206891">
+		<form name="fmeet_206891" id="fmeet_206891" method="post" onsubmit="return false;">
+				<input type="hidden" name="memNo" value="206891">
+				<input type="hidden" name="memNick" value="짱이여">
+				<input type="hidden" name="meetSlct" value="1">
+				<input type="hidden" name="meetText" value="avata">
+				<input type="hidden" name="chrgrNm" value="">
+
+				<div class="ment_area" onclick="$.checkHaveMsgItemAndGoProfile(this,'206891','man','meetList');">
+					<span class="photo_box">
+						<div class="count_scrt_img"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/icon_badge2.png" width="23" height="23" class="count_img" alt="프로필사진갯수"><p class="count_num">6</p></div>
+						<a href="javascript:void(0);" id="mem_photo" onclick="">
+							<div class="ripple"></div>
+							<img src="http://photo.yeoboya.com/prg/yimg.php?type=photo&amp;sdir=&amp;viewname=YVhtRWZvaURwSXBVYW1walozbUdlSUNIZkl4Y21KVmdvYm0x" align="left" onerror="$.noImgProc(this,'man');">
+						</a>
+					</span>
+					<span class="ment_txt font_r" style="line-height:1.4">
+						<a href="javascript:void(0);" onclick="$.togChung(this);" class="img_chung"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/img_chung_s.gif" height="26" alt="청사초롱" align="left" style="-webkit-transform:translateZ(0);"></a>
+						<a href="javascript:void(0);" class="goMemProfile">
+							&nbsp;&nbsp;
+                            <span class="rw_badge"></span>
+							<span class="mem_nick man">짱이여
+							
+							</span>
+							
+							&nbsp;&nbsp;
+							<span class="ment_conts" style="color:#3d3f4e;font-size:0.9em; margin-right:10px;">앞만보고 달려온 세월이...
+이젠 쉰을 넘기고나니 허전함과 그리움이
+넘 절실하네요
+혼자가아닌  이젠두리서 챙겨주는 그러한 삶을
+살고싶은데 그런분 꼬~옥 계시겠죠 ^^~
+사진안올린분 죄송합니다 
+현재 울산에서 근무중입니다 ^^~</span>
+
+								<span class="marry-info_cue_in-card">직</span><span class="marry-info_cue_in-card">업</span>
+								<span class="marry-info_cue_in-card_badge">1</span>
+								<span class="marry-info_cue_in-card">연</span><span class="marry-info_cue_in-card">봉</span>
+								<span class="marry-info_cue_in-card_badge">3</span>
+								<span class="marry-info_cue_in-card">차</span><span class="marry-info_cue_in-card">량</span>
+								<span class="marry-info_cue_in-card_badge">1</span>
+						</a>
+					</span>
+				</div>
+
+				<div class="list_info font_b">
+					<a href="javascript:void(0);" onclick="$.goCall({memNo:'206891', memNick:'짱이여', memName: '김○○님', memSex:'m', memAge:'53', distance:'전남'});">
+											<span class="mem_info man">
+							<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/ico_man.jpg" width="15" height="13" class="sex">
+							| 김○○님
+							| 53세
+							| 뱀띠
+							| 전남
+						</span>
+						<div class="list_btn font_m">연락하기</div>
+											</a>
+				</div>
+			</form>
+		</li>
+		<li id="ID_152132">
+		<form name="fmeet_152132" id="fmeet_152132" method="post" onsubmit="return false;">
+				<input type="hidden" name="memNo" value="152132">
+				<input type="hidden" name="memNick" value="행복을같이꿈꾸실">
+				<input type="hidden" name="meetSlct" value="1">
+				<input type="hidden" name="meetText" value="avata">
+				<input type="hidden" name="chrgrNm" value="">
+
+				<div class="ment_area" onclick="$.checkHaveMsgItemAndGoProfile(this,'152132','man','meetList');">
+					<span class="photo_box">
+						<div class="count_scrt_img"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/icon_badge2.png" width="23" height="23" class="count_img" alt="프로필사진갯수"><p class="count_num">8</p></div>
+						<a href="javascript:void(0);" id="mem_photo" onclick="">
+							<div class="ripple"></div>
+							<img src="http://photo.yeoboya.com/prg/yimg.php?type=photo&amp;sdir=&amp;viewname=YUg2QWQ0S0VwSXBVYW1waWJYcCtkb0tIZllsVm1KVmdvYm0x" align="left" onerror="$.noImgProc(this,'man');">
+						</a>
+					</span>
+					<span class="ment_txt font_r" style="line-height:1.4">
+						<a href="javascript:void(0);" onclick="$.togChung(this);" class="img_chung"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/img_chung_s.gif" height="26" alt="청사초롱" align="left" style="-webkit-transform:translateZ(0);"></a>
+						<a href="javascript:void(0);" class="goMemProfile">
+							&nbsp;&nbsp;
+                            <span class="rw_badge"></span>
+							<span class="mem_nick man">행복을같이꿈꾸실
+							
+							</span>
+							
+							&nbsp;&nbsp;
+							<span class="ment_conts" style="color:#9450f9;font-size:0.9em; margin-right:10px;">안녕하셔요~~전 현재 고양시에 살고 있고 직장은 백석입니다. 성격은...음..한마디로 깔끔합니다...기면 기고 아닌건 아닌 성격...취미는 드라이브, 여행, 볼링, 낚시, 맛집가기...술은 소주반병정도, 담배는 스트레스해소로 한갑정도...이상형은 통통하고 귀여우며 대화가 잘 통하는 편안한 여성이면 좋겠어요...좋은 인연 만나 남은 여생 즐겁고 행복하게 지내고 싶어요..</span>
+
+						</a>
+					</span>
+				</div>
+
+				<div class="list_info font_b">
+					<a href="javascript:void(0);" onclick="$.goCall({memNo:'152132', memNick:'행복을같이꿈꾸실', memName: '김○○님', memSex:'m', memAge:'46', distance:'경기'});">
+											<span class="mem_info man">
+							<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/ico_man.jpg" width="15" height="13" class="sex">
+							| 김○○님
+							| 46세
+							| 쥐띠
+							| 경기
+						</span>
+						<div class="list_btn font_m">연락하기</div>
+											</a>
+				</div>
+			</form>
+		</li>
+		<li id="ID_248461">
+		<form name="fmeet_248461" id="fmeet_248461" method="post" onsubmit="return false;">
+				<input type="hidden" name="memNo" value="248461">
+				<input type="hidden" name="memNick" value="가시받길">
+				<input type="hidden" name="meetSlct" value="1">
+				<input type="hidden" name="meetText" value="avata">
+				<input type="hidden" name="chrgrNm" value="">
+
+				<div class="ment_area" onclick="$.checkHaveMsgItemAndGoProfile(this,'248461','man','meetList');">
+					<span class="photo_box">
+						<div class="count_scrt_img"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/icon_badge2.png" width="23" height="23" class="count_img" alt="프로필사진갯수"><p class="count_num">1</p></div>
+						<a href="javascript:void(0);" id="mem_photo" onclick="">
+							<div class="ripple"></div>
+							<img src="http://photo.yeoboya.com/prg/yimg.php?type=photo&amp;sdir=&amp;viewname=YVgyR2VvV0RwSXBVYW1wamFIdCtlSCtIZW8xY2EyTmliS2l3ZExuQ3JBPT0." align="left" onerror="$.noImgProc(this,'man');">
+						</a>
+					</span>
+					<span class="ment_txt font_r" style="line-height:1.4">
+						<a href="javascript:void(0);" onclick="$.togChung(this);" class="img_chung"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/img_chung_s.gif" height="26" alt="청사초롱" align="left" style="-webkit-transform:translateZ(0);"></a>
+						<a href="javascript:void(0);" class="goMemProfile">
+							&nbsp;&nbsp;
+                            <span class="rw_badge"></span>
+							<span class="mem_nick man">가시받길
+							
+							</span>
+							
+							&nbsp;&nbsp;
+							<span class="ment_conts" style="color:#3d3f4e;font-size:0.9em; margin-right:10px;">영원한 반려자을 찿으려고합니다 차분한 성격이고조아하는것은 스포츠 배구 당구입니다 반려자가 되어줄열락기다릴께요</span>
+
+						</a>
+					</span>
+				</div>
+
+				<div class="list_info font_b">
+					<a href="javascript:void(0);" onclick="$.goCall({memNo:'248461', memNick:'가시받길', memName: '조○○님', memSex:'m', memAge:'58', distance:'전남'});">
+											<span class="mem_info man">
+							<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/ico_man.jpg" width="15" height="13" class="sex">
+							| 조○○님
+							| 58세
+							| 쥐띠
+							| 전남
+						</span>
+						<div class="list_btn font_m">연락하기</div>
+											</a>
+				</div>
+			</form>
+		</li>
+		<li id="ID_150783">
+		<form name="fmeet_150783" id="fmeet_150783" method="post" onsubmit="return false;">
+				<input type="hidden" name="memNo" value="150783">
+				<input type="hidden" name="memNick" value="좋은만남을가져요">
+				<input type="hidden" name="meetSlct" value="0">
+				<input type="hidden" name="meetText" value="">
+				<input type="hidden" name="chrgrNm" value="">
+
+				<div class="ment_area" onclick="$.checkHaveMsgItemAndGoProfile(this,'150783','man','meetList');">
+					<span class="photo_box">
+						<div class="count_scrt_img"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/icon_badge2.png" width="23" height="23" class="count_img" alt="프로필사진갯수"><p class="count_num">2</p></div>
+						<a href="javascript:void(0);" id="mem_photo" onclick="">
+							<div class="ripple"></div>
+							<img src="http://photo.yeoboya.com/prg/yimg.php?type=photo&amp;sdir=&amp;viewname=YUg1K2ZZZUZwSXBVYW1walozcUFlSUNGZUlwYW1KVmdvYm0x" align="left" onerror="$.noImgProc(this,'man');">
+						</a>
+					</span>
+					<span class="ment_txt font_r" style="line-height:1.4">
+						<a href="javascript:void(0);" onclick="$.togChung(this);" class="img_chung"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/img_chung_s.gif" height="26" alt="청사초롱" align="left" style="-webkit-transform:translateZ(0);"></a>
+						<a href="javascript:void(0);" class="goMemProfile">
+							&nbsp;&nbsp;
+                            <span class="nw_badge"></span>
+							<span class="mem_nick man">좋은만남을가져요
+							
+							</span>
+							
+							&nbsp;&nbsp;
+							<span class="ment_conts" style="color:#;font-size:0.9em; margin-right:10px;">배려할줄 아는 여자분을 만나고 싶군요.살아가는데 힘을 합치면 모든 어려움을 헤쳐 나갈수 있겠죠?</span>
+
+						</a>
+					</span>
+				</div>
+
+				<div class="list_info font_b">
+					<a href="javascript:void(0);" onclick="$.goCall({memNo:'150783', memNick:'좋은만남을가져요', memName: '김○○님', memSex:'m', memAge:'48', distance:'경기'});">
+											<span class="mem_info man">
+							<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/ico_man.jpg" width="15" height="13" class="sex">
+							| 김○○님
+							| 48세
+							| 개띠
+							| 경기
+						</span>
+						<div class="list_btn font_m">연락하기</div>
+											</a>
+				</div>
+			</form>
+		</li>
+</ul></div>
+		<div style="clear:both;height:10px"></div>
+		<div id="moreBtn" style="transform: translateZ(0px); display: block;"><a href="javascript:void(0);" class="appBtn">불러오는중...</a></div>
+
+	</div>
+
+</div>
+
+<!------------------------------------------------- 171226 플로팅 버튼 -------------------------------------------------------->
+<div class="float_wrap float_wrap_on" id="floatWrap" style="display:block; z-index:300;">
+    <div class="float_bg_modal" id="floatBgModal" style="display:block;"></div>
+    <div class="float_item" id="floatItem" style="display: block;">
+        <a href="javascript:void(0);" id="float_item" onclick="$.goBuyList();">
+        <div class="float_txt">아이템 관리/구매</div>
+        <span class="float_ico"></span>
+        </a>
+    </div>
+    <div class="float_btn" id="floatBtn" style="display:block;"></div>
+	    <div class="float_write" id="floatWrite" style="display:block;">
+	    <a href="javascript:void(0);" id="float_write" onclick="$.goWrite($.cookie('gCCV:NO'));">
+		    <div class="float_txt">글쓰기/위로 올리기</div>
+		    <span class="float_ico"></span>
+	    </a>
+    </div>
+    <div class="float_info" id="floatInfo" style="display:block;">
+	    <a href="javascript:void(0);" id="float_myinfo" onclick="$.goProfile($.cookie('gCCV:NO'));">
+		    <div class="float_txt">내프로필 / 움짤등록</div>
+		    <span class="float_ico"></span>
+	    </a>
+    </div>
+	<div class="float_question" id="floatQuestion" style="display:block;">
+		<a href="javascript:void(0);" id="float_inquiry" onclick="$.goInquiry();">
+			<div class="float_txt">1:1 문의하기</div>
+			<span class="float_ico"></span>
+			<!--1:1답변 new표시 --><span class="yby_newbadge_a" style="display:none;"></span>
+		</a>
+    </div>
+	<div class="float_alarm" id="floatAlarm" style="display:block;">
+		<a href="javascript:void(0);" id="float_alarm" onclick="$.goNotiSetup();">
+			<div class="float_txt">푸시알림 설정</div>
+			<span class="float_ico"></span>
+		</a>
+	</div>
+    <div class="float_marry" id="floatMarry" style="display:block;">
+		<a href="javascript:void(0);" onclick="$.goWeddingRefundInfo();">
+			<div class="float_txt">성혼 환불신청</div>
+			<span class="float_ico"></span>
+		</a>
+	</div>
+	<!--171218 wshop 플로팅버튼 추가-->
+	<div class="float_wshop" id="floatWshop" style="display:block;">
+		<a href="#" onclick="#">
+			<div class="float_txt">W shop</div>
+			<span class="float_ico"></span>
+		</a>
+	</div>
+	<!--171218 wshop 플로팅버튼 추가-->
+</div>
+<!------------------------------------------------- // 170331 플로팅 버튼 -------------------------------------------------------->
+
+<!-- 수정팝업창 -->
+<div id="editPop" class="main_pop">
+	<span class="popTitle">수정하기</span>
+	<textarea id="editText"></textarea>
+	<div class="btnBg">
+		<button id="btn_del" class="btnAll">삭제</button>
+		<button id="btn_edit" class="btnAll">수정</button>
+		<button id="btn_close" class="btnAll">취소</button>
+	</div>
+</div>
+
+
+
+
+<style>
+	.bg_modal{position:fixed; top:0; left:0; z-index: 2000; width:100%; height:100%; background:rgba(0,0,0,0.4);}
+	.pop_srch_more{position:absolute; display:inline-table; width:92%; height:auto; margin:auto; letter-spacing:-1px; border-radius:5px; box-shadow: 1px 1px 5px rgba(40, 40, 40, 0.5); z-index: 2001;top:50%;left:50%;-ms-transform: translateX(-50%) translateY(-50%);-webkit-transform: translate(-50%,-50%);	transform: translate(-50%,-50%);}
+	.pop_srch_more .srch_more_hd {position: relative; width:100%;height:45px; line-height:18px; padding:0 20px; padding-top:15px; background: #ed9797; border-radius: 5px 5px 0 0;  font-size: 18px; font-weight: 700; color: #fff; letter-spacing: -1px; box-sizing: border-box;}
+	.pop_srch_more .srch_more_hd .btn_cls{position:absolute; width:43px; height:43px; top:0; right:0;}
+	.pop_srch_more .srch_more_hd .btn_cls a{display:block; width:100%; height:100%; background:url(http://image.yeoboya.com/imgs/new_wedding/mobile/srch_detail/btn_cls.png) center center no-repeat; background-size:13px 13px; text-indent:-9999px;}
+	.pop_srch_more .srch_more_hd .btn_cls a:active{background-color:rgba(0,0,0,0.05);}
+	
+	.pop_srch_more .scrt_info_txt{position:relative; width:100%; height:auto; padding:8px 18px; box-sizing:border-box; border-bottom:1px solid #dbdbdb; background:#fff; font-size:13px; font-weight:700; color:#5a5a5a;}
+	.pop_srch_more .scrt_info_txt span{font-size:12px;}
+	
+	.pop_srch_more .srch_more_content{position:relative; width:100%; height:auto; padding:10px 20px 16px 20px; border-radius:0 0 5px 5px; background:#fff; box-sizing:border-box;}
+	.pop_srch_more .srch_more_content ul{position:relative; width:100%; height:auto; margin:0; padding:0;}
+	.pop_srch_more .srch_more_content ul li{position:relative; width:100%; height:28px; padding:6px 0;}
+	.pop_srch_more .srch_more_content ul li h4 {position: absolute; width: 60px; height: auto; margin: 0; padding-top:7px; font-size: 15px; line-height: 15px; color: #424242;}
+	
+	.pop_srch_more .srch_more_content ul li select{position:relative; width:126px; height:28px; line-height:28px; margin-left:60px; border:1px solid #dbdbdb; border-radius:30px; background:#f4f4f4 url(http://image.yeoboya.com/imgs/new_wedding/mobile/srch_detail/bullet_slct1.png) 90% center no-repeat; background-size:9px 6px; padding:0 20px; font-size:13px; color:#5a5a5a; box-sizing:border-box; outline:none;  -webkit-appearance:none;
+		-moz-appearance:none; appearance:none;}
+	.pop_srch_more .srch_more_content ul li .selected{background:#fff url(http://image.yeoboya.com/imgs/new_wedding/mobile/srch_detail/bullet_slct2.png) 90% center no-repeat; background-size:9px 6px; border:1px solid #9c8ad5; color:#9c8ad5; box-sizing:border-box;}
+	select::-ms-expand{display:none;}
+	
+	.pop_srch_more .srch_more_content ul li .rd_box{position:relative; width:100%; height:28px; padding-left:60px; box-sizing:border-box; overflow:auto;}
+	.pop_srch_more .srch_more_content ul li .rd_box a.rd_25{display:block; float:left; width:25%; height:100%; line-height:15px; padding-top:8px; padding-left:22px; box-sizing:border-box; background:url(http://image.yeoboya.com/imgs/new_wedding/mobile/srch_detail/radio_off.png) left center no-repeat; background-size:16px 16px; font-size:15px; color:#5a5a5a;}
+	.pop_srch_more .srch_more_content ul li .rd_box a.rd_50{display:block; float:left; width:50%; height:16px; margin:6px 0; line-height:14px; padding-top:1px; padding-left:22px; box-sizing:border-box; background:url(http://image.yeoboya.com/imgs/new_wedding/mobile/srch_detail/radio_off.png) left center no-repeat; background-size:16px 16px; font-size:14px; color:#5a5a5a;}
+	.pop_srch_more .srch_more_content ul li .rd_box a.rd_slct{ background:url(http://image.yeoboya.com/imgs/new_wedding/mobile/srch_detail/radio_on.png) left center no-repeat; background-size:16px 16px; font-weight:700; color:#9c8ad5;}
+	
+	.pop_srch_more .srch_more_content ul li .chk_photo{position:relative; width:100%; height:auto;}
+	.pop_srch_more .srch_more_content ul li .chk_photo a{display:block; padding:6px 0 5px 0; padding-left:30px; background:url(http://image.yeoboya.com/imgs/new_wedding/mobile/srch_detail/chk_off.png) left center no-repeat; background-size:20px 20px; font-size:15px; line-height:15px; font-weight:700; color:#5a5a5a;}
+	.pop_srch_more .srch_more_content ul li .chk_photo a.chk_slct{background:url(http://image.yeoboya.com/imgs/new_wedding/mobile/srch_detail/chk_on.png) left center no-repeat; background-size:20px 20px; font-size:15px; font-weight:700; color:#9c8ad5;}
+	
+	.pop_srch_more .srch_more_content .botom_btn{position:relative; width:100%; height:auto; overflow:auto;}
+	.pop_srch_more .srch_more_content .botom_btn .btn_init{float:left; width:40%; height:37px; line-height:37px; padding-right:5px; box-sizing:border-box;}
+	.pop_srch_more .srch_more_content .botom_btn .btn_init a{display:block; width:100%; padding: 12px 0 10px 0; font-size:15px; line-height:15px; font-weight:700; color:#fff; text-align:center; border-radius:3px; background:#c5beb6;}
+	.pop_srch_more .srch_more_content .botom_btn .btn_init a:active{background:#bab2a9;}
+	.pop_srch_more .srch_more_content .botom_btn .btn_srch{float:right; width:60%; height:37px; line-height:37px; padding-left:5px; box-sizing:border-box;}
+	.pop_srch_more .srch_more_content .botom_btn .btn_srch a{display:block; width:100%; padding: 11px 0 11px 0; border-radius:3px; background:#7a7370; font-size:15px; line-height:17.5px; font-weight:700; color:#fff; text-align:center;}
+	.pop_srch_more .srch_more_content .botom_btn .btn_srch a:active{background:#716a67;}
+	.pop_srch_more .srch_more_content .botom_btn .btn_srch a span{display:block; width:38px; height:15px; margin:0 auto; padding-left:14px; background: url(http://image.yeoboya.com/imgs/new_wedding/mobile/srch_detail/ico_srch2.png) left 0px no-repeat; background-size:15px 14px;}
+</style>
+<!--<div class="bg_modal" id="detailSearchPopBG"></div>-->
+<!--<div class="pop_srch_more" id="detailSearchPop">-->
+<div class="bg_modal" id="detailSearchPopBG" style="display: none;"></div>
+<div class="pop_srch_more" id="detailSearchPop" style="display: none;">
+	<div class="srch_more_hd">
+		추가검색
+		<div class="btn_cls"><a href="javascript:void(0)" id="detailSrchPopClose">닫기</a></div>
+	</div>
+<!--	<div class="scrt_info_txt">-->
+<!--		※ 시크릿<span>(비밀)</span>회원은 검색되지 않습니다.-->
+<!--	</div>-->
+	<div class="srch_more_content">
+		<ul id="componentWrap">
+		
+	<li>
+		<h4>종교</h4>
+		<select class="slct1" id="srchItem_religion" data-type="scrollComp" data-tag="religion" name="select_religion">
+			<option value="">전체</option>
+			<option value="1">기독교</option>
+			<option value="2">불교</option>
+			<option value="3">천주교</option>
+			<option value="4">원불교</option>
+			<option value="5">무교</option>
+			<option value="6">유교</option>
+			<option value="7">도교</option>
+			<option value="8">이슬람교</option>
+			<option value="9">힌두교</option>
+			<option value="0">기타</option>
+		</select>
+	</li>
+
+	<li>
+		<h4>연봉</h4>
+		<select class="slct2" id="srchItem_salary" data-type="scrollComp" data-tag="salary" name="select_salary">
+			<option value="">전체</option>
+			<option value="3">3000만원 이상</option>
+			<option value="5">5000만원 이상</option>
+			<option value="10">1억 이상</option>
+		</select>
+	</li>
+
+	<li>
+		<h4>재산</h4>
+		<select class="slct3" id="srchItem_memProperty" data-type="scrollComp" data-tag="memProperty" name="select_memProperty">
+			<option value="">전체</option>
+			<option value="1">1억 이상</option>
+			<option value="3">3억 이상</option>
+			<option value="5">5억 이상</option>
+			<option value="10">10억 이상</option>
+		</select>
+	</li>
+
+	<li>
+		<h4>혈액형</h4>
+		<div class="rd_box" id="srchItem_blood" data-type="radioComp" data-tag="blood" data-selcode="">
+			<a href="javascript:void(0)" class="rd_25" data-code="1" onclick="$.radioBtnClick()">A</a>
+			<a href="javascript:void(0)" class="rd_25" data-code="2" onclick="$.radioBtnClick()">B</a>
+			<a href="javascript:void(0)" class="rd_25" data-code="3" onclick="$.radioBtnClick()">O</a>
+			<a href="javascript:void(0)" class="rd_25" data-code="4" onclick="$.radioBtnClick()">AB</a>
+		</div>
+	</li>
+
+	<li>
+		<h4>학력</h4>
+		<div class="rd_box" id="srchItem_school" data-type="radioComp" data-tag="school" data-selcode="">
+			<a href="javascript:void(0)" class="rd_50" data-code="h" onclick="$.radioBtnClick()">고졸 이하</a>
+			<a href="javascript:void(0)" class="rd_50" data-code="u" onclick="$.radioBtnClick()">대졸 이상</a>
+		</div>
+	</li>
+
+	<li>
+		<h4>흡연</h4>
+		<div class="rd_box" id="srchItem_smoke" data-type="radioComp" data-tag="smoke" data-selcode="">
+			<a href="javascript:void(0)" class="rd_50" data-code="n" onclick="$.radioBtnClick()">비 흡연자</a>
+			<a href="javascript:void(0)" class="rd_50" data-code="y" onclick="$.radioBtnClick()">흡연자</a>
+		</div>
+	</li>
+
+	<li>
+		<h4>음주</h4>
+		<div class="rd_box" id="srchItem_alcohol" data-type="radioComp" data-tag="alcohol" data-selcode="">
+			<a href="javascript:void(0)" class="rd_50" data-code="n" onclick="$.radioBtnClick()">비 음주자</a>
+			<a href="javascript:void(0)" class="rd_50" data-code="y" onclick="$.radioBtnClick()">음주자</a>
+		</div>
+	</li>
+
+	<li>
+		<h4>자녀</h4>
+		<div class="rd_box" id="srchItem_children" data-type="radioComp" data-tag="children" data-selcode="">
+			<a href="javascript:void(0)" class="rd_50" data-code="n" onclick="$.radioBtnClick()">무자녀</a>
+			<a href="javascript:void(0)" class="rd_50" data-code="y" onclick="$.radioBtnClick()">유자녀</a>
+		</div>
+	</li>
+
+	<li>
+		<div class="chk_photo" id="srchItem_profile" data-type="checkComp" data-tag="profile" data-ischked="">
+			<a href="javascript:void(0)" onclick="$.chkboxBtnClick()">프로필 인증사진 있는 사람만</a>
+		</div>
+	</li>
+
+	<li>
+		<h4>종교</h4>
+		<select class="slct1" id="srchItem_religion" data-type="scrollComp" data-tag="religion" name="select_religion">
+			<option value="">전체</option>
+			<option value="1">기독교</option>
+			<option value="2">불교</option>
+			<option value="3">천주교</option>
+			<option value="4">원불교</option>
+			<option value="5">무교</option>
+			<option value="6">유교</option>
+			<option value="7">도교</option>
+			<option value="8">이슬람교</option>
+			<option value="9">힌두교</option>
+			<option value="0">기타</option>
+		</select>
+	</li>
+
+	<li>
+		<h4>연봉</h4>
+		<select class="slct2" id="srchItem_salary" data-type="scrollComp" data-tag="salary" name="select_salary">
+			<option value="">전체</option>
+			<option value="3">3000만원 이상</option>
+			<option value="5">5000만원 이상</option>
+			<option value="10">1억 이상</option>
+		</select>
+	</li>
+
+	<li>
+		<h4>재산</h4>
+		<select class="slct3" id="srchItem_memProperty" data-type="scrollComp" data-tag="memProperty" name="select_memProperty">
+			<option value="">전체</option>
+			<option value="1">1억 이상</option>
+			<option value="3">3억 이상</option>
+			<option value="5">5억 이상</option>
+			<option value="10">10억 이상</option>
+		</select>
+	</li>
+
+	<li>
+		<h4>혈액형</h4>
+		<div class="rd_box" id="srchItem_blood" data-type="radioComp" data-tag="blood" data-selcode="">
+			<a href="javascript:void(0)" class="rd_25" data-code="1" onclick="$.radioBtnClick()">A</a>
+			<a href="javascript:void(0)" class="rd_25" data-code="2" onclick="$.radioBtnClick()">B</a>
+			<a href="javascript:void(0)" class="rd_25" data-code="3" onclick="$.radioBtnClick()">O</a>
+			<a href="javascript:void(0)" class="rd_25" data-code="4" onclick="$.radioBtnClick()">AB</a>
+		</div>
+	</li>
+
+	<li>
+		<h4>학력</h4>
+		<div class="rd_box" id="srchItem_school" data-type="radioComp" data-tag="school" data-selcode="">
+			<a href="javascript:void(0)" class="rd_50" data-code="h" onclick="$.radioBtnClick()">고졸 이하</a>
+			<a href="javascript:void(0)" class="rd_50" data-code="u" onclick="$.radioBtnClick()">대졸 이상</a>
+		</div>
+	</li>
+
+	<li>
+		<h4>흡연</h4>
+		<div class="rd_box" id="srchItem_smoke" data-type="radioComp" data-tag="smoke" data-selcode="">
+			<a href="javascript:void(0)" class="rd_50" data-code="n" onclick="$.radioBtnClick()">비 흡연자</a>
+			<a href="javascript:void(0)" class="rd_50" data-code="y" onclick="$.radioBtnClick()">흡연자</a>
+		</div>
+	</li>
+
+	<li>
+		<h4>음주</h4>
+		<div class="rd_box" id="srchItem_alcohol" data-type="radioComp" data-tag="alcohol" data-selcode="">
+			<a href="javascript:void(0)" class="rd_50" data-code="n" onclick="$.radioBtnClick()">비 음주자</a>
+			<a href="javascript:void(0)" class="rd_50" data-code="y" onclick="$.radioBtnClick()">음주자</a>
+		</div>
+	</li>
+
+	<li>
+		<h4>자녀</h4>
+		<div class="rd_box" id="srchItem_children" data-type="radioComp" data-tag="children" data-selcode="">
+			<a href="javascript:void(0)" class="rd_50" data-code="n" onclick="$.radioBtnClick()">무자녀</a>
+			<a href="javascript:void(0)" class="rd_50" data-code="y" onclick="$.radioBtnClick()">유자녀</a>
+		</div>
+	</li>
+
+	<li>
+		<div class="chk_photo" id="srchItem_profile" data-type="checkComp" data-tag="profile" data-ischked="">
+			<a href="javascript:void(0)" onclick="$.chkboxBtnClick()">프로필 인증사진 있는 사람만</a>
+		</div>
+	</li>
+</ul>
+		<div class="botom_btn">
+			<div class="btn_init" id="btnDetailInit"><a href="javascript:void(0)">초기화</a></div>
+			<div class="btn_srch" id="btnDetailSrchOk"><a href="javascript:void(0)"><span class="ico_srch">검색</span></a></div>
+		</div>
+	</div>
+</div>
+
+<!--템플릿-->
+<script id="detailSrhComponentDropdown-template" type="text/x-handlebars-template">
+	<li>
+		<h4>{{title}}</h4>
+		<select class="{{className}}" id="srchItem_{{tagID}}" data-type={{type}} data-tag={{tagID}} name="select_{{tagID}}">
+			<option value="">전체</option>
+			{{#each options}}
+			<option value="{{this.code}}">{{this.value}}</option>
+			{{/each}}
+		</select>
+	</li>
+</script>
+
+<script id="detailSrhComponentRadioBtn-template" type="text/x-handlebars-template">
+	<li>
+		<h4>{{title}}</h4>
+		<div class="rd_box" id="srchItem_{{tagID}}" data-type={{type}} data-tag={{tagID}} data-selcode="">
+			{{#each options}}
+			<a href="javascript:void(0)" class="{{../className}}" data-code="{{this.code}}" onclick="$.radioBtnClick()">{{this.value}}</a>
+			{{/each}}
+		</div>
+	</li>
+</script>
+
+<script id="detailSrhComponentCheckBox-template" type="text/x-handlebars-template">
+	<li>
+		<div class="chk_photo" id="srchItem_{{tagID}}" data-type={{type}} data-tag={{tagID}} data-ischked="">
+			<a href="javascript:void(0)" onclick="$.chkboxBtnClick()">{{title}}</a>
+		</div>
+	</li>
+</script>
+
+<script>
+	var isReadyDeatilSrchPop = false;
+	var $arCode_religion = {"k":[1,2,3,4,5,6,7,8,9,0],"v":["\uae30\ub3c5\uad50","\ubd88\uad50","\ucc9c\uc8fc\uad50","\uc6d0\ubd88\uad50","\ubb34\uad50","\uc720\uad50","\ub3c4\uad50","\uc774\uc2ac\ub78c\uad50","\ud78c\ub450\uad50","\uae30\ud0c0"]};
+//	var $arCode_blood = //;
+	
+	var $arSlctLastDeatilCode = [""];
+	
+	const COMP_TYPE_SCROLL = "scrollComp";
+	const COMP_TYPE_RADIO = "radioComp";
+	const COMP_TYPE_CHECK = "checkComp";
+	
+	var secretRecoverForMateCode="";
+	var secretRecoverForMateText="";
+	var secretRecoverForSexCode="";
+	var secretRecoverForSexText="";
+
+(function($) {
+	var dropDownCompTmpl = Handlebars.compile($('#detailSrhComponentDropdown-template').html());
+	var radioCompTmpl = Handlebars.compile($('#detailSrhComponentRadioBtn-template').html());
+	var checkOnlyCompTmpl = Handlebars.compile($('#detailSrhComponentCheckBox-template').html());
+	
+	$.buildTmplData = function(_data, _type){
+		var j, x, len2, tmplData = {}, appendHtml, optionObj = {}, jsonVar;
+		
+		tmplData.type = compData[i].type;
+		tmplData.title = _data.title;
+		tmplData.tagID = _data.tagID;
+		tmplData.className = _data.className;
+		tmplData.options = [];
+
+		if(_data.gArCode != "none"){
+			jsonVar = window['$arCode_'+ [_data.gArCode]];
+			len2 = jsonVar.k.length;
+			for(x=0; x < len2; x++){
+				optionObj = { "code":jsonVar.k[x], "value": jsonVar.v[x] };
+				tmplData.options.push(optionObj);
+			}
+		}
+		else{
+			len2 = _data.customCodeData.length;
+			for(j=0; j < len2; j++){
+				optionObj = { "code":_data.customCodeData[j].code, "value": _data.customCodeData[j].value };
+				tmplData.options.push(optionObj);
+			}
+		}
+		
+		
+		if(_type == COMP_TYPE_SCROLL) {
+			appendHtml = dropDownCompTmpl(tmplData);
+			$('#componentWrap').append(appendHtml);
+		}
+		else if(_type == COMP_TYPE_RADIO){
+			appendHtml = radioCompTmpl(tmplData);
+			$('#componentWrap').append(appendHtml);
+		}
+		else{
+			console.log("wrong type!");
+		}
+	};
+
+	//전체 생성할 각각 컴포넌트엘리먼트 최상위 id
+	var tagIDArr = [];
+	
+		var compData = [
+					{"type":COMP_TYPE_SCROLL, "className":"slct1", "title":"종교", "tagID":"religion", "gArCode":"religion"},
+					{"type":COMP_TYPE_SCROLL, "className":"slct2", "title":"연봉", "tagID":"salary", "gArCode":"none", "customCodeData":[
+																						{code:"3", value:"3000만원 이상"},
+																						{code:"5", value:"5000만원 이상"},
+																						{code:"10", value:"1억 이상"}
+																					]},
+					{"type":COMP_TYPE_SCROLL, "className":"slct3", "title":"재산", "tagID":"memProperty", "gArCode":"none", "customCodeData":[
+																						{code:"1", value:"1억 이상"},
+																						{code:"3", value:"3억 이상"},
+																						{code:"5", value:"5억 이상"},
+																						{code:"10", value:"10억 이상"}
+																					]},
+					{"type":COMP_TYPE_RADIO, "className":"rd_25", "title":"혈액형", "tagID":"blood",  "gArCode":"none", "customCodeData":[
+																						{code:"1", value:"A"},
+																						{code:"2", value:"B"},
+																						{code:"3", value:"O"},
+																						{code:"4", value:"AB"}
+																					]},
+					{"type":COMP_TYPE_RADIO, "className":"rd_50", "title":"학력", "tagID":"school", "gArCode":"none", "customCodeData":[
+																						{code:"h", value:"고졸 이하"},
+																						{code:"u", value:"대졸 이상"}
+																					]},
+					{"type":COMP_TYPE_RADIO, "className":"rd_50", "title":"흡연", "tagID":"smoke", "gArCode":"none", "customCodeData":[
+																						{code:"n", value:"비 흡연자"},
+																						{code:"y", value:"흡연자"}
+																					]},
+					{"type":COMP_TYPE_RADIO, "className":"rd_50", "title":"음주", "tagID":"alcohol", "gArCode":"none", "customCodeData":[
+																						{code:"n", value:"비 음주자"},
+																						{code:"y", value:"음주자"}
+																					]},
+					{"type":COMP_TYPE_RADIO, "className":"rd_50", "title":"자녀", "tagID":"children", "gArCode":"none", "customCodeData":[
+																						{code:"n", value:"무자녀"},
+																						{code:"y", value:"유자녀"}
+																					]},
+					{"type":COMP_TYPE_CHECK, "title":"프로필 인증사진 있는 사람만", "tagID":"profile"}
+	           ];
+	
+	var i, len=compData.length, tmplData = {}, appendHtml;
+	for(i=0; i<len; i++){
+		tagIDArr.push(compData[i].tagID);
+		switch(compData[i].type){
+			case COMP_TYPE_SCROLL :
+				$.buildTmplData(compData[i], COMP_TYPE_SCROLL);
+				break;
+			case COMP_TYPE_RADIO :
+				$.buildTmplData(compData[i], COMP_TYPE_RADIO);
+				break;
+			case COMP_TYPE_CHECK :
+				tmplData.type = compData[i].type;
+				tmplData.title = compData[i].title;
+				tmplData.tagID = compData[i].tagID;
+				
+				appendHtml = checkOnlyCompTmpl(tmplData);
+				$('#componentWrap').append(appendHtml);
+				break;
+		}
+	}
+
+	$("#componentWrap select").on("change",function (e) {
+		if($(e.target).val() == ""){
+			$(e.target).removeClass("selected");
+		}
+		else{
+			$(e.target).addClass("selected");
+		}
+	});
+
+	$.radioBtnClick = function(){
+		event.stopImmediatePropagation();
+		
+		var target=$(event.target);
+		if(target.hasClass('rd_slct')){
+			target.removeClass('rd_slct');
+			target.parent().data("selcode", "");
+		}
+		else{
+			target.addClass('rd_slct');
+			target.parent().data("selcode", target.data('code'));
+		}
+
+		target.siblings().removeClass("rd_slct");
+
+		return false;
+	};
+	
+	$.chkboxBtnClick = function(){
+		event.stopImmediatePropagation();
+		
+		var target=$(event.target);
+		if(target.hasClass('chk_slct')){
+			target.removeClass('chk_slct');
+			target.parent().data("ischked", "");
+		}
+		else{
+			target.addClass('chk_slct');
+			target.parent().data("ischked", "y");
+		}
+		
+		return false;
+	};
+	
+	
+	//기존 선택된 값 복구
+	$.recoverDetailComp = function(){
+//		console.log("recoverSelectedOpt= "+$arSlctLastDeatilCode);
+		
+		var i, len=tagIDArr.length, targetEL;
+		for(i=0; i<len; i++){
+			targetEL = $('#srchItem_'+tagIDArr[i]);
+			switch(targetEL.data('type')){
+				case COMP_TYPE_SCROLL :
+					if($arSlctLastDeatilCode[i] != "" && $arSlctLastDeatilCode[i] != undefined) {
+						targetEL.val($arSlctLastDeatilCode[i]);
+						targetEL.addClass("selected");
+					}
+					else{
+						targetEL.val("");
+						targetEL.removeClass("selected");
+					}
+					break;
+
+				case COMP_TYPE_RADIO :
+					targetEL.find('a').each(function(){
+						var $this = $(this);
+						$this.removeClass("rd_slct");
+						if($this.data('code') == $arSlctLastDeatilCode[i]){
+							targetEL.data('selcode', $arSlctLastDeatilCode[i]);
+							$this.addClass("rd_slct");
+						}
+					});
+					break;
+
+				case COMP_TYPE_CHECK :
+					targetEL.data('ischked', $arSlctLastDeatilCode[i]);
+					if($arSlctLastDeatilCode[i] == "y") {
+						targetEL.find('a').addClass("chk_slct");
+					}
+					else{
+						targetEL.find('a').removeClass("chk_slct");
+					}
+					break;
+
+				default :
+					console.log('wrong type!!');
+					break;
+			}
+		}
+	};
+	
+	//전체/재혼/결혼에 따른 자녀항목 노출
+	$.controlChildrenByMateslct = function(){
+		if($('#mateSlct').val() == "w"){
+			$('#srchItem_children').data('selcode', "");
+			$('#srchItem_children').removeClass('rd_slct');
+			$('#srchItem_children').parent().hide();
+		}
+		else{
+			$('#srchItem_children').parent().show();
+		}
+	};
+
+	//개별 컴포넌트 초기화
+	$.initDetailComp = function(_el){
+//		console.log(_el.data('type'));
+		
+		switch(_el.data('type')){
+			case COMP_TYPE_SCROLL :
+				_el.val('');
+				_el.removeClass("selected");
+				break;
+				
+			case COMP_TYPE_RADIO :
+				_el.data('selcode', "");
+				_el.find('a').removeClass("rd_slct");
+				break;
+			
+			case COMP_TYPE_CHECK :
+				_el.data('ischked', "");
+				_el.find('a').removeClass("chk_slct");
+				break;
+				
+			default :
+				console.log('wrong type!!');
+				break;
+		}
+	};
+	// 전체 컴포넌트 초기화
+	$('#btnDetailInit').on('tap click', function(){
+		var i, len=tagIDArr.length, targetEL;
+		for(i=0; i<len; i++){
+			targetEL = $('#srchItem_'+tagIDArr[i]);
+			$.initDetailComp(targetEL);
+		}
+	});
+
+	//컴포넌트별 현재 선택값 리턴
+	$.getDetailItemSelVal = function(_el){
+		switch(_el.data('type')){
+			case COMP_TYPE_SCROLL :
+				return _el.val();
+				break;
+
+			case COMP_TYPE_RADIO :
+				return _el.data('selcode');
+				break;
+
+			case COMP_TYPE_CHECK :
+				return _el.data('ischked');
+				break;
+
+			default :
+				console.log('wrong type!!');
+				break;
+		}
+	};
+	// 확인
+	$('#btnDetailSrchOk').on('tap click', function(){
+		var i, len=tagIDArr.length, retVal = [], itemVal, isAllValNone = true;
+		for(i=0; i<len; i++){
+			itemVal = $.getDetailItemSelVal( $('#srchItem_'+tagIDArr[i]) );
+			retVal.push(itemVal);
+			
+			if(itemVal != ""){
+				isAllValNone = false;
+			}
+		}
+		
+		if(isAllValNone) {
+			$('#memDetailCode').val("");
+		}
+		else{
+			$('#memDetailCode').val(retVal.join("@"));
+		}
+
+//		$('#detailSearchPop').hide();
+//		$('#detailSearchPopBG').hide();
+		$.goSrch();
+	});
+
+	// 바로닫기
+	$("#detailSrchPopClose").on('tap click', function() {
+		$.directCloseDetailSrchPop();
+	});
+
+	$.directCloseDetailSrchPop = function(){
+		isReadyDeatilSrchPop = true;
+		if(window.location.hash==='#detailSrchPop'){window.history.back();}
+		$('body').scrollTop(0);
+//		$("#wrap").css({"position":""});
+		$('#detailSearchPop').hide();
+		$('#detailSearchPopBG').hide();
+		
+		if(secretRecoverForMateCode != ""){
+			$('#mateSlct').val(secretRecoverForMateCode);
+			$('#t_mateSlct > span').html(secretRecoverForMateText);
+			secretRecoverForMateCode = "";
+			secretRecoverForMateText = "";
+		}
+
+		if(secretRecoverForSexCode != ""){
+			$('#memSex').val(secretRecoverForSexCode);
+			$('#t_memAgeCode > span').html(secretRecoverForSexText);
+			secretRecoverForSexCode = "";
+			secretRecoverForSexText = ""
+		}
+		
+	};
+
+	$.showDetailSearchPop = function(){
+		if(isReadyDeatilSrchPop == false){
+			return;
+		}
+		isReadyDeatilSrchPop = false;
+		
+		var t = $('#mateSlct').val();
+		var m = $('#memSex').val();
+//		if(t=="g"||t == 'h'||m=="g"||m=="h"){
+//			$.toast('추가검색은 전체회원을 대상으로만 <br>이용할 수 있습니다.', function() {
+//				if(t=="g"||t == 'h') {
+//					secretRecoverForMateCode = $('#mateSlct').val();
+//					$('#mateSlct').val("");
+//					secretRecoverForMateText = $('#t_mateSlct > span').html();
+//					$('#t_mateSlct > span').html("전체");
+//				}
+//				else if(m=="g"||m=="h") {
+//					secretRecoverForSexCode = $('#memSex').val();
+//					$('#memSex').val("");
+//					secretRecoverForSexText = $('#t_memAgeCode > span').html();
+//					$('#t_memAgeCode > span').html("성별");
+//				}
+//
+//				$.controlChildrenByMateslct();
+//				$.recoverDetailComp();
+//				$('#detailSearchPop').show();
+//				$('#detailSearchPopBG').show();
+//				$("#wrap").css({"position": "fixed"});
+//
+//				$.setHash("#detailSrchPop");
+//			});
+//		}
+//		else {
+			$.controlChildrenByMateslct();
+			$.recoverDetailComp();
+			$('#detailSearchPop').show();
+			$('#detailSearchPopBG').show();
+			isReadyDeatilSrchPop = false;
+//			$("#wrap").css({"position": "fixed"});
+
+			$.setHash("#detailSrchPop");
+//		}
+	};
+
+	
+}(jQuery));
+
+$(document).on("ready", function(){
+	isReadyDeatilSrchPop = true;
+});
+</script>
+
+
+<div id="bg_black_all" class="bg_black_all"></div>
+<div id="notice_pop_partner" class="notice_pop_partner">
+	<a href="javascript:void(0);" onclick="$.setNewMemAlertHide();" class="btn_close_wishPop"></a>
+	<h1><span style="color:#cd1894;">신규회원</span> 가입 알림 서비스</h1>
+		<p>희망배우자 지역을 설정하시면</p>
+		<p>신규회원 가입 알림을<br>
+			받을 수 있습니다.</p>
+		<div class="btn_set">
+			<a href="javascript:void(0);" onclick="$.openWin('/?chnl=cont&amp;ctrl=profile&amp;dest=profileEdit#myWant', 'goProfile'); $.setNewMemAlertHide();">희망배우자 지역 설정하러 가기</a>
+		</div>
+</div>
+
+</body></html>
