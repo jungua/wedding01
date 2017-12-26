@@ -1,0 +1,355 @@
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<link rel="shortcut icon" href="http://image.yeoboya.com/imgs/new_wedding/mobile/img/favicon_16.ico" type="image/x-icon">
+<link rel="icon" href="http://image.yeoboya.com/imgs/new_wedding/mobile/img/favicon_16.ico" type="image/x-icon">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="ALL">
+<meta name="robots" content="index,follow">
+<meta name="revisit-after" content="1 days">
+<meta name="Subject" content="여보야">
+<meta name="description" content="결혼, 재혼, 평생 배우자를 찾는 스마트한 방법, 문의전화1522-3379">
+<meta name="keywords" content="여보야, yeoboya, 결혼, 재혼">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="HandheldFriendly" content="true">
+<meta name="mobile-web-app-capable" content="yes">
+<title>여보야</title>
+<link href="css/webfont.min2.css" rel="stylesheet" type="text/css">
+<link href="css/default.css" rel="stylesheet" type="text/css">
+<script async="" src="https://www.google-analytics.com/analytics.js"></script><script>
+document.domain = "yeoboya.com";
+var _underwork = false;
+</script>
+<script src="http://m.yeoboya.com/_global/js/jquery.min.js"></script>
+<script src="http://m.yeoboya.com/_global/js/jquery-cookie.min.js"></script>
+<script src="http://m.yeoboya.com/_global/js/jsBridge.js"></script>
+<script src="http://m.yeoboya.com/_global/js/app.js"></script>
+<script src="http://m.yeoboya.com/_global/js/NodeMarrySession.js"></script>
+<script src="http://m.yeoboya.com/js/default.js"></script>
+<script src="http://m.yeoboya.com/js/testDomains.js"></script>
+<script src="http://m.yeoboya.com/_global/js/jquery-ui.min-1.12.1.js"></script>
+
+<style>
+*{margin:0; padding:0;}    
+body{background:#fff;}
+.content_wrap{position:relative;}
+select{vertical-align:middle; -webkit-appearance:none; -webkit-tap-highlight-color:rgba(255, 255, 255, 0); -o-appearance:none; -moz-appearance:none; -ms-appearance:none;}
+    
+/*-----전체모달-----*/    
+.full_bg_modal{position:fixed; top:0; bottom:0; left:0; right:0; z-index:900; background:rgba(0,0,0,0.7); cursor:pointer;}
+    
+/*----- 헤더 -----*/
+header{height:50px; line-height:50px; background: rgb(57,86,145);
+background: -moz-linear-gradient(left, rgb(57,86,145) 0%, rgb(41,64,115) 100%);
+background: -webkit-linear-gradient(left, rgb(57,86,145) 0%,rgb(41,64,115) 100%);
+background: linear-gradient(to right, rgb(57,86,145) 0%,rgb(41,64,115) 100%);}
+.btn_back{display:block; position:absolute; top:0; left:0; width:70px; height:50px; padding:0;}
+.btn_back:active{background-color:#344d80; display:block; position:absolute; top:0; left:0; width:70px; height:50px;}
+.btn_back img{position:absolute; top:15px; right:24px;}
+.btn_home{display:block; position:absolute; top:0; right:0; width:70px; height:50px; padding:0;}
+.btn_home:active{background-color:#273e70; display:block; position:absolute; top:0; right:0; width:70px; height:50px;}
+.btn_home img{position:absolute; top:15px; left:24px;}
+.wshop_title{text-align:center; width:100%; height:50px;}
+.wshop_title img{margin-top:15px;}
+.wshop_title .title_txt{font-size:16px; color:#fbeddb; font-weight:600;}
+
+/*----- 탭메뉴 -----*/
+.content_wrap .wshop_tap{position:relative; width:100%; height:auto; box-shadow:0px 4px 5px rgba(0,0,0,0.1); box-sizing:border-box;}
+.content_wrap .wshop_tap:after{display:block; content:''; clear:both;}
+.content_wrap .wshop_tap li{float:left; box-sizing:border-box; width:50%; height:40px; line-height:38px; color:#8f8f8f; text-align:center;}
+.content_wrap .wshop_tap li a{display:block; width:100%; height:100%; font-size:16px; font-weight:600;}
+.tap_touch{border-bottom:3px solid #486cb5; color:#3b3b3b!important;}
+.content_wrap .wshop_tap li a:active{background-color:#efefef; color:#3b3b3b;}
+.inquire_content{width:100%; height:auto;}    
+.inquire_content .rg_shop{position:relative; width:100%; height:auto;}
+
+/*----- 사진등록 -----*/
+.photo_upload{position:relative; width:100%; height:auto; text-align:center; padding:22px 0 16px 0;}
+.photo_upload .photo_del{position:absolute; top:-24px; right:-48px; text-indent:-9999px; width:auto; height:auto; z-index:3;}
+.photo_upload .photo_del a{display:block; background:url(http://image.yeoboya.com/imgs/new_wedding/mobile/wshop/close_blue.png) no-repeat center center; background-size:32px 32px; padding:18px 40px;} 
+.photo_upload .photo_box{position:relative; display:inline-block; padding:10px; border:1px solid #9a9a9a; border-radius:5px; box-sizing:border-box;}
+.photo_upload .photo_box .photo_box_inner{display:inline-block; width:144px; height:108px; background:url(http://image.yeoboya.com/imgs/new_wedding/mobile/wshop/question_c.png) no-repeat center center; background-size:142px 106px; box-sizing:border-box;}  
+.photo_upload .photo_box_inner a{display:block; width:100%; height:100%; text-align:center; border:1px solid #bfbfbf; box-sizing:border-box;}
+.photo_upload .photo_box_inner a img{width:100%; height:100%;}
+
+/*----- 설명글 -----*/
+.text_area{position:relative; width:100%; height:auto; padding:10px; background-color:#ecedf2; box-sizing:border-box; border-top:1px solid #c1c1c1; text-align:center;}
+.btn_iq{display:inline-block; margin-top:10px; box-sizing:border-box;}
+.btn_iq a{display:block; padding:7px 26px; border-radius:3px; border:1px solid #b8b8b8; box-sizing:border-box; background: linear-gradient(to bottom, rgb(255,255,255) 0%,rgb(233,233,233) 100%); font-size:16px; font-weight:600; color:#3b3b3b;}
+.btn_iq a:active{background:#ccc;}    
+    
+/*----- 텍스트입력박스 -----*/
+.input_wrap{position:relative; width:100%; height:158px; border-radius:2px; border:1px solid #b4b4b4; background-color:#fff; box-sizing:border-box;}
+.input_wrap textarea{display:block; width:100%; height:100%; padding:8px; font-size:15px; color:#3b3b3b; box-sizing:border-box; resize:none; border:none; outline:none; background:none; line-height:20px;}    
+
+/*----- 설명메시지 -----*/
+textarea::-webkit-input-placeholder{color:#8b8b8b;}
+textarea::-moz-placeholder{color:#8b8b8b;}
+textarea::-o-placeholder{color:#8b8b8b;}
+textarea::-ms-placeholder{color:#8b8b8b;}  
+
+/*----- 입점문의 -----*/
+.info_box{position:relative; width:100%; height:auto; background-color:#f4f5f8; text-align:center; color:#585858; padding:16px 0; border-top:1px solid #c1c1c1; border-bottom:1px solid #c1c1c1; box-sizing:border-box;}
+.info_box .h_title{font-size:15px; font-weight:600; padding-bottom:4px;}
+.info_box .h_title img{vertical-align:middle; margin:0 5px 1px 0;}
+.info_box .h_txt{font-size:14px;}
+.info_box .help_info{margin-top:8px;}
+.help_info .call_info{font-size:15px; font-weight:600; margin-right:3px;}
+.help_info .call_num{color:#d84646;}
+.btn_call{margin-top:0;}    
+.btn_call a{padding:4px 12px; color:#606060; font-size:14px;}
+
+/*----- 나의 문의 -----*/
+.list_none{position:relative; width:100%; height:auto; text-align:center; margin-top:70px;}
+.badge_red{position:absolute; top:9px; right:7%; width:20px; height:20px; line-height:20px; text-align:center; background: -moz-linear-gradient(top, rgb(247,135,135) 0%, rgb(222,23,23) 100%);
+background: -webkit-linear-gradient(top, rgb(247,135,135) 0%,rgb(222,23,23) 100%);
+background: linear-gradient(to bottom, rgb(247,135,135) 0%,rgb(222,23,23) 100%); border-radius:50%; border:1px solid #e43433; background-size:26px 26px; color:#fff; font-size:13px; box-shadow:0px 4px 5px rgba(0,0,0,0.1);}
+.my_list{position:relative; width:100%; height:auto;}
+.my_list .mylist_l, .my_list .view_title, .my_list .detail_inq, .my_list .detail_ans, .my_list .d_inq{position:relative; width:100%; height:auto;}
+.my_list .view_title a, .my_list .detail_inq, .my_list .detail_ans{padding:10px; box-sizing:border-box;}    
+.my_list .mylist_l{border-bottom:1px solid #bfbfbf; color:#3d3d3d; font-size:15px;}    
+.my_list .view_title a{display:block;}
+.my_list .view_title a:active{background-color:#efefef;}
+.view_title .inq_title{width:90%; height:auto; display:-webkit-box; -webkit-line-clamp:1; -webkit-box-orient:vertical; overflow:hidden; box-sizing:border-box;}
+.view_title .answer_fin{display:inline-block; color:#d55050;}
+.view_title .div_bar{font-size:13px; color:#cfcfcf; margin:0 2px;}
+.view_title .in_date{color:#7d7d7d;}
+.view_title .btn_spread{position:absolute; top:28px; right:12px;}
+.view_title .btn_fold{transform:rotate(-180deg); -webkit-transform:rotate(-180deg); -o-transform:rotate(-180deg); -moz-transform:rotate(-180deg); -ms-transform:rotate(-180deg);}
+.detail_inq, .detail_ans{border-top:1px solid #cacaca; background-color:#f0f0f0;}
+.detail_inq .img_box{width:100%; height:auto; margin-bottom:10px;}
+.detail_inq .img_box img{width:100%; height:auto;}    
+.icon_area{position:absolute; top:2px; left:0;}
+.inq_txt{padding-left:25px;}    
+    
+/*----- 알림 팝업 -----*/
+.st_blue{color:#5b78aa!important; border-bottom:2px solid #5b78aa!important;}
+.popico{margin-bottom:5px;}
+.notice_pop_wrap{background:none;}    
+.notice_pop_wrap .notice_pop_bg{transform:translate(-50%,-50%);}
+.notice_pop_wrap .picture_bg{position:relative; top:50%; left:50%; transform:translate(-50%,-50%); width:282px; height:auto; padding:18px 14px; background:#fff; font-size:16px; font-weight:600; color:#3e3e3e; text-align:center; border:1px solid #958b8a; border-radius:5px; box-sizing:border-box;}
+.picture_bg .pte_btn{position:relative; width:100%; height:auto; box-sizing:border-box;}
+.picture_bg .pte_btn a{display:block; border-radius:3px; border:1px solid #b4b3b3; background:linear-gradient(to bottom, #ffffff 0%,#efefefef 100%); background:-moz-linear-gradient(top, #ffffff 0%, #ededed 100%); background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ededed)); background:-o-linear-gradient(top, #ffffff 0%,#ededed 100%); background:-ms-linear-gradient(top, #ffffff 0%,#ededed 100%); padding:8px 0;}
+.picture_bg .pte_btn a:active{background:#ddd;}    
+.pic_pd{margin:14px 0;}
+    
+</style>
+<body>
+<!--전체 모달-->
+<div class="full_bg_modal" id="fullBgModal" style="display:none;"></div>
+<!--// 전체 모달-->
+<header>
+    <a href="#" class="btn_back">
+        <img src="http://image.yeoboya.com/imgs/new_wedding/mobile/wshop/behind.png" width="20px" height="19px" alt="뒤로">
+    </a>
+    <div class="wshop_title">
+        <h3 class="title_txt">입점 문의하기</h3>
+    </div>
+    <a href="#" onclick="#" class="btn_home">
+        <img src="http://image.yeoboya.com/imgs/new_wedding/mobile/wshop/home.png" width="27px" height="22px" alt="홈으로">
+    </a>
+</header>
+<div class="content_wrap">
+   <!-- 탭 메뉴 -->
+    <ul class="wshop_tap">
+        <li><a href="#">입점 문의</a></li>
+        <li class="tap_touch"><a href="#">나의 문의<div class="badge_red">N</div>
+        </a></li>
+    </ul>
+    <!-- // 탭 메뉴 -->
+    <!-- 입점문의하기 내용 -->
+    <ul class="inquire_content">
+        <!-- 입점문의 -->
+        <li style="display:none;">
+            <div class="photo_upload">
+                <div class="photo_box">
+                  <div class="photo_del" style="display:none;"><a href="#">닫기</a></div>
+                   <div class="photo_box_inner">
+                        <a href="#">
+                           <!--사진 업로드 시-->
+                            <img src="http://image.yeoboya.com/imgs/new_wedding/mobile/wshop/pic1.png" style="display:none;" />
+                        </a>
+                    </div>    
+                </div>
+            </div>
+            <div class="text_area">
+                <div class="input_wrap">
+                    <textarea placeholder="사진을 첨부해주시면 더욱 원활한 답변이 가능합니다."></textarea>
+                </div>
+                <div class="btn_iq"><a href="#">문의하기</a></div>
+            </div>
+            <div class="info_box">
+                <p class="h_title"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/wshop/ico_notice.png" width="16px" height="16px" />도움이 필요하세요?</p>
+                <p class="h_txt">해당 입점과 관련된 문의사항이 있으신 경우,</p>
+                <p class="h_txt">전화문의 주시면 친절히 도와드리겠습니다.</p>
+                <div class="help_info">
+                    <span class="call_info">입점전화문의</span>
+                    <span class="call_info call_num">062-380-8019</span>
+                    <div class="btn_iq btn_call"><a href="#">전화걸기</a></div>
+                </div>
+            </div>
+        </li>
+        <!-- // 입점문의 -->
+        <!-- 나의 문의 -->
+        <li>
+           <!-- 나의 문의 내역 없을 때 -->
+            <div class="list_none" style="display:none;">
+                <img src="http://image.yeoboya.com/imgs/new_wedding/mobile/wshop/no_list.png" width="126px" height="141px" />
+            </div>
+            <!-- // 나의 문의 내역 없을 때 -->
+            <!-- 문의 내역 리스트 -->
+            <ul class="my_list">
+               <!-- list1-->
+                <li class="mylist_l">
+                    <div class="my_inq">
+                        <div class="view_title">
+                            <a href="#">
+                                <p class="inq_title">입점등록을 하고 싶은데 비용이 얼마인지 알 수 있을까요?</p>
+                                <div class="answer_fin">답변완료<span class="div_bar">｜</span></div>
+                                <span class="in_date">2017.11.16</span>
+                                <div class="btn_spread btn_fold">
+                                    <img src="http://image.yeoboya.com/imgs/new_wedding/mobile/wshop/bottom_ico.png" width="17px" height="9px" />
+                                </div>
+                            </a>
+                        </div>
+                        <div class="detail_inq">
+                            <div class="img_box">
+                                <img src="http://image.yeoboya.com/imgs/new_wedding/mobile/wshop/pic1.png" width="200px" height="133px" />
+                            </div>
+                            <div class="d_inq">
+                                <div class="icon_area">
+                                    <img src="http://image.yeoboya.com/imgs/new_wedding/mobile/wshop/q_icon.png" width="19px" height="19px" />
+                                </div>
+                                <div class="inq_txt">
+                                    입점등록을 하고 싶은데 비용이 얼마인지 알 수 있을까요? 여기에 답변주시면 감사하겠습니다.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detail_ans">
+                            <div class="d_inq">
+                                <div class="icon_area">
+                                    <img src="http://image.yeoboya.com/imgs/new_wedding/mobile/wshop/a_icon.png" width="19px" height="19px" />
+                                </div>
+                                <div class="inq_txt">
+                                    안녕하세요. W Shop입니다. <br>항상 저희 W Shop을 이용해 주셔서 감사합니다. <br>저희 W Shop에서는 일체의 입점 비용을 받지 않고 있습니다. 감사합니다. 
+                                </div>
+                            </div>         
+                        </div>
+                    </div>
+                </li><!--// list1-->
+                <!-- list2-->
+                <li class="mylist_l">
+                    <div class="my_inq">
+                        <div class="view_title">
+                            <a href="#">
+                                <p class="inq_title">입점하는데 저희가 웨딩카 사업체인데 등록이 가능한가요?</p>
+                                <div class="answer_fin">답변완료<span class="div_bar">｜</span></div>
+                                <span class="in_date">2017.11.16</span>
+                                <div class="btn_spread">
+                                    <img src="http://image.yeoboya.com/imgs/new_wedding/mobile/wshop/bottom_ico.png" width="17px" height="9px" />
+                                </div>
+                            </a>
+                        </div>
+                        <div class="detail_inq" style="display:none;">
+                            <div class="img_box" style="display:none;">
+                                <img src="http://image.yeoboya.com/imgs/new_wedding/mobile/wshop/pic1.png" width="200px" height="133px" />
+                            </div>
+                            <div class="d_inq">
+                                <div class="icon_area">
+                                    <img src="http://image.yeoboya.com/imgs/new_wedding/mobile/wshop/q_icon.png" width="19px" height="19px" />
+                                </div>
+                                <div class="inq_txt">
+                                    입점하는데 저희가 웨딩카 사업체인데 등록이 가능한가요?
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detail_ans" style="display:none;">
+                            <div class="d_inq">
+                                <div class="icon_area">
+                                    <img src="http://image.yeoboya.com/imgs/new_wedding/mobile/wshop/a_icon.png" width="19px" height="19px" />
+                                </div>
+                                <div class="inq_txt">
+                                    안녕하세요. W Shop입니다. <br>항상 저희 W Shop을 이용해 주셔서 감사합니다. <br>저희 W Shop에서는 웨딩카 입점 가능합니다.
+                                </div>
+                            </div>         
+                        </div>
+                    </div>
+                </li>
+                <!-- //list2-->
+                <!-- list3-->
+                <li class="mylist_l">
+                    <div class="my_inq">
+                        <div class="view_title">
+                            <a href="#">
+                                <p class="inq_title">출장뷔페인데요. 입점이 가능할까요?</p>
+                                <div class="answer_fin" style="display:none;">답변완료<span class="div_bar">｜</span></div>
+                                <span class="in_date">2017.11.16</span>
+                                <div class="btn_spread">
+                                    <img src="http://image.yeoboya.com/imgs/new_wedding/mobile/wshop/bottom_ico.png" width="17px" height="9px" />
+                                </div>
+                            </a>
+                        </div>
+                        <div class="detail_inq" style="display:none;">
+                            <div class="img_box" style="display:none;">
+                                <img src="http://image.yeoboya.com/imgs/new_wedding/mobile/wshop/pic1.png" width="200px" height="133px" />
+                            </div>
+                            <div class="d_inq">
+                                <div class="icon_area">
+                                    <img src="http://image.yeoboya.com/imgs/new_wedding/mobile/wshop/q_icon.png" width="19px" height="19px" />
+                                </div>
+                                <div class="inq_txt">
+                                    출장뷔페인데요. 입점이 가능할까요?
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detail_ans" style="display:none;">
+                            <div class="d_inq">
+                                <div class="icon_area">
+                                    <img src="http://image.yeoboya.com/imgs/new_wedding/mobile/wshop/a_icon.png" width="19px" height="19px" />
+                                </div>
+                                <div class="inq_txt">
+                                    안녕하세요. W Shop입니다. <br>항상 저희 W Shop을 이용해 주셔서 감사합니다. <br>저희 W Shop에서는 출장뷔페 입점 가능합니다.
+                                </div>
+                            </div>         
+                        </div>
+                    </div>
+                </li>
+                <!--//list3-->
+            </ul>
+            <!-- // 문의 내역 리스트 -->
+        </li>
+        <!-- // 나의 문의 -->
+    </ul>
+    <!-- 입점문의하기 내용 -->
+<!-- 팝업(모달은 fullBgModal 공유함) -->
+    <!-- 알림 팝업 -->
+    <div class="notice_pop_wrap" style="display:none;">
+      <!-- 사진올리기 팝업 -->
+       <div class="picture_bg" style="display:none;">
+           <div class="pte_btn">
+               <a href="#">앨범에서 가져오기</a>    
+           </div>
+           <div class="pte_btn pic_pd">
+               <a href="#">카메라 촬영하기</a>    
+           </div>
+           <div class="pte_btn">
+               <a href="#">닫기</a>    
+           </div>
+       </div>
+       <!-- // 사진올리기 팝업 -->
+       <!-- 입점 문의하기 답변완료 팝업 -->
+        <div class="notice_pop_bg" style="display:none;">
+            <p class="pop_title font_b st_blue">알 림</p>
+            <div class="notice_txt_box_wrap">
+                <div class="notice_txt font_r">
+                    <span class="sp10">입점 문의하기<br>답변이 완료되었습니다.</span>
+                </div>
+            </div>
+            <div class="btn_box_100"><a href="#" class="btn_ok2 font_m">확인</a></div>
+        </div>
+        <!-- 입점 문의하기 답변완료 팝업 -->
+    </div>
+    <!-- // 알림 팝업 -->
+<!-- // 팝업(모달은 fullBgModal 공유함) -->
+</body>
+</html>

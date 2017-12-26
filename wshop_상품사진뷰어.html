@@ -1,0 +1,981 @@
+<html lang="ko"><head>
+<meta charset="utf-8">
+<link rel="shortcut icon" href="http://image.yeoboya.com/imgs/new_wedding/mobile/img/favicon_16.ico" type="image/x-icon">
+<link rel="icon" href="http://image.yeoboya.com/imgs/new_wedding/mobile/img/favicon_16.ico" type="image/x-icon">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="ALL">
+<meta name="robots" content="index,follow">
+<meta name="revisit-after" content="1 days">
+<meta name="Subject" content="여보야">
+<meta name="description" content="결혼, 재혼, 평생 배우자를 찾는 스마트한 방법, 문의전화1522-3379">
+<meta name="keywords" content="여보야, yeoboya, 결혼, 재혼">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="HandheldFriendly" content="true">
+<meta name="mobile-web-app-capable" content="yes">
+
+
+<title>여보야</title>
+<link href="css/webfont.min2.css" rel="stylesheet" type="text/css">
+<link href="http://m.yeoboya.com/_global/plugin/photoswipe/photoswipe.css" rel="stylesheet" type="text/css">
+<link href="http://m.yeoboya.com/_global/plugin/photoswipe/default-skin/default-skin.css" rel="stylesheet" type="text/css">
+<link href="css/default.css" rel="stylesheet" type="text/css">
+<script async="" src="https://www.google-analytics.com/analytics.js"></script><script>
+document.domain = "yeoboya.com";
+var _underwork = false;
+</script>
+<script src="http://m.yeoboya.com/_global/js/jquery.min.js"></script>
+<script src="http://m.yeoboya.com/_global/js/jquery-cookie.min.js"></script>
+<script src="http://m.yeoboya.com/_global/js/jsBridge.js?ver=1513824070"></script>
+<script src="http://m.yeoboya.com/_global/js/app.js?ver=1513824070"></script>
+<script src="http://m.yeoboya.com/_global/js/NodeMarrySession.js?ver=1513824070"></script>
+<script src="http://m.yeoboya.com/js/default.js?ver=1513824070"></script>
+<script src="http://m.yeoboya.com/js/testDomains.js?ver=1513824070"></script>
+<script src="http://m.yeoboya.com/_global/js/jquery-ui.min-1.12.1.js"></script>
+<style>
+#imgSpinBg {position:fixed;width:100%;height:100%;background:rgba(0,0,0,0.7);top:0;}
+#imgSpin {position:fixed;top:50%;left:50%;margin-top:-36px;margin-left:-36px;width:72px;height:72px;}
+@-webkit-keyframes flip /* Safari and Chrome */ {
+  from {
+    -ms-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  to {
+    -ms-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+@keyframes flip {
+  from {
+    -ms-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  to {
+    -ms-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+
+.flip {    
+  -webkit-animation: flip 1.2s ease infinite;
+  -moz-animation: flip 1.2s ease infinite;
+  -ms-animation: flip 1.2s ease infinite;
+  -o-animation: flip 1.2s ease infinite;
+  animation: flip 1.2s ease infinite;
+}
+
+.btn_home{display:inline-block;}
+.btn_home{position:absolute; padding:7px 20px 2px 50px; top:0; right:0;}
+</style>
+<script async="" src="http://m.yeoboya.com/_global/plugin/photoswipe/photoswipe.js"></script>
+<script async="" src="http://m.yeoboya.com/_global/plugin/photoswipe/photoswipe-ui-default.js"></script>
+<script src="http://m.yeoboya.com/_global/js/jquery.jplayer.min.js"></script>
+</head>
+<body style=";-webkit-overflow-scrolling: touch">
+<script>
+// path controls
+var _chnl = 'cont';
+var _ctrl = 'photoview';
+var _dest = 'album';
+
+$(window).on("touchend",function(){});
+</script><style>
+body {background:#000;overflow:auto}
+#pswp_cert {display:none;position:absolute;top:55px;left:10px}
+#curpage_per_totpage {position:absolute; top:12px; left:11px; color:white; font-size:13px;}
+#arrow_left {position:absolute;top:50%;left:6px;margin-top:-15px}
+#arrow_right {position:absolute;top:50%;right:7px;margin-top:-15px}
+#gallGoClose {
+	border:none;
+	width:50px;
+	height:31px;
+	background: url('http://image.yeoboya.com/imgs/new_wedding/mobile/img/btn_closed.jpg');
+	background-size: 50px 31px;
+	background-repeat: no-repeat;
+	text-indent:-9999px;
+}
+#gallPrPhotoDel {
+	width:105px;
+	height:40px;	
+}
+#gallPrPhotoReport {
+	width:60px;
+	height:40px;
+	background: url('http://image.yeoboya.com/imgs/new_wedding/mobile/img/btn_report_img03.png');
+	background-size: 60px 40px;
+	background-repeat: no-repeat;
+	text-indent:-9999px;
+}
+#gallGoCall {
+	width:105px;
+	height:40px;
+	background: url('http://image.yeoboya.com/imgs/new_wedding/mobile/img/btn_call_img03.png');
+	background-size: 105px 40px;
+	background-repeat: no-repeat;
+	text-indent:-9999px;
+}
+.main_photo_btn {position:absolute;top:-5px;left:10px;display:none; width:135px; height:40px; border:1px solid #3a3030; border-radius:3px; background-color: #d3d3d3; background-image: -webkit-gradient(linear, left top, left bottom, from(#d3d3d3), to(#707070)); background-image: -webkit-linear-gradient(top, #d3d3d3, #707070); background-image: -moz-linear-gradient(top, #d3d3d3, #707070); background-image: -ms-linear-gradient(top, #d3d3d3, #707070); background-image: -o-linear-gradient(top, #d3d3d3, #707070); background-image: linear-gradient(to bottom, #d3d3d3, #707070);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#d3d3d3, endColorstr=#707070); color:#fff; font-size:16px;-webkit-box-shadow:inset 0 1px 0 0px #d5d1d1; -moz-box-shadow:inset 0 1px 0 0px #d5d1d1;}
+.photo_del_2btn {position:absolute;top:-5px;right:10px;display:block; width:105px; height:40px; border:1px solid #adadad; border-radius:3px; background:-moz-linear-gradient(top, #f4f3f3 0%, #d3d3d3 100%); background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#f4f3f3), color-stop(100%,#d3d3d3)); background:-webkit-linear-gradient(top, #f4f3f3 0%,#d3d3d3 100%); background:-o-linear-gradient(top, #f4f3f3 0%,#d3d3d3 100%); color:#263238; font-size:16px;-webkit-border:1px solid #adadad; -webkit-box-shadow:inset 1px -1px 0 0px #e2e1e1; -moz-box-shadow:inset 1px -1px 0 0px #e2e1e1;}
+.btn_pho_box {display:table; margin:0 auto;}
+.photo_del_1btn {width:105px; height:40px; margin:10px auto; border:1px solid #adadad; border-radius:3px; background:-moz-linear-gradient(top, #f4f3f3 0%, #d3d3d3 100%); background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#f4f3f3), color-stop(100%,#d3d3d3)); background:-webkit-linear-gradient(top, #f4f3f3 0%,#d3d3d3 100%); background:-o-linear-gradient(top, #f4f3f3 0%,#d3d3d3 100%); color:#263238; font-size:16px;-webkit-border:1px solid #adadad; -webkit-box-shadow:inset 1px -1px 0 0px #e2e1e1; -moz-box-shadow:inset 1px -1px 0 0px #e2e1e1;}
+.confirm_mark_l {display:inline-block; position:absolute; top:15px; left:15px;}
+.btn_play {z-index:100;bottom:170px;position:absolute;display:none; width:40px; height:40px; border:1px solid #3a3030; border-radius:3px; background-color: #d3d3d3; background-image: -webkit-gradient(linear, left top, left bottom, from(#d3d3d3), to(#707070)); background-image: -webkit-linear-gradient(top, #d3d3d3, #707070); background-image: -moz-linear-gradient(top, #d3d3d3, #707070); background-image: -ms-linear-gradient(top, #d3d3d3, #707070); background-image: -o-linear-gradient(top, #d3d3d3, #707070); background-image: linear-gradient(to bottom, #d3d3d3, #707070);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#d3d3d3, endColorstr=#707070); color:#fff; font-size:16px;-webkit-box-shadow:inset 0 1px 0 0px #d5d1d1; -moz-box-shadow:inset 0 1px 0 0px #d5d1d1;}
+
+/*171118 움짤, 음성 플레이버튼*/
+/*
+.play_btn{display:none;position:absolute; top:50%; left:50%; z-index:100; width:55px; height:55px; margin-left:-27px; margin-top:-27px; border-radius:50%; box-shadow:1px 2px 8px rgba(0,0,0,0.5); background-color:#ff5252;}
+.play_btn .file_txt {position:absolute;top:-40px;left:-22px;color:#fff;text-align:center;width:104px;}
+.play_btn a{display:block; width:100%; height:100%; background:url("http://image.yeoboya.com/imgs/new_wedding/mobile/photoviewer/play.png") no-repeat 20px center; background-size:19px 22px; text-indent:-9999px;}
+.stop a{background:url("http://image.yeoboya.com/imgs/new_wedding/mobile/photoviewer/stop.png") no-repeat center center; background-size:19px 19px;}
+.stop a:active, .play_btn a:active{background-color:#e24949; border-radius:50%;}
+*/
+
+.voice_rbg {display:none; position: absolute; top:50%; left:50%; width:300px; height:172px; margin-left:-150px; margin-top:-100px; background:url(http://image.yeoboya.com/imgs/new_wedding/mobile/special/voice/pc_voice_bg.png) no-repeat; background-size:300px 172px; z-index:9999;}
+.btn_stop_voice {position:absolute; top:20px; left:8px;}
+.img_voice_play {display:inline-block; width:130px; height:130px; background:url(http://image.yeoboya.com/imgs/new_wedding/mobile/special/voice/pc_btn_voice_play.png) no-repeat center center; background-size:130px 130px;}
+.img_voice_stop {display:inline-block; width:130px; height:130px; background:url(http://image.yeoboya.com/imgs/new_wedding/mobile/special/voice/pc_btn_voice_stop.png) no-repeat center center; background-size:130px 130px;}
+/*.img_voice_stop:active	{display:inline-block; width:130px; height:130px; background:url(http://image.club5678.com/imgs/img_chat/rec_voice/ani/pc_btn_voice_stop_active.png) no-repeat center center; background-size:130px 130px;}*/
+.ani_voice {position:absolute; top:30px; left:140px;}
+.time_txt {position:absolute; top:100px; right:21px; font-size:36px; line-height:38px !important;}
+    
+/*171221 버튼(정우아)*/
+.btn_up, .btn_close, .btn_setting, .btn_del, .btn_rp, .btn_num{position:absolute; top:4px; color:#fff; font-size:15px; font-weight:400;}
+.btn_up, .btn_setting, .btn_rp{left:10px;}
+.btn_close, .btn_del, .btn_num{right:10px;}
+.btn_up a, .btn_close a{display:block; width:64px; height:auto; text-align:center; padding:6px 0; background: -moz-linear-gradient(top, rgb(91,66,66) 0%, rgb(65,47,47) 99%);
+background: -webkit-linear-gradient(top, rgb(91,66,66) 0%,rgb(65,47,47) 99%);
+background: linear-gradient(to bottom, rgb(91,66,66) 0%,rgb(65,47,47) 99%); border:1px solid #3b2929; border-radius:3px;}
+.btn_up a:active{background:#312424; border:1px solid #3b2929; border-radius:3px;}    
+.btn_close a:active{background:#312424; border:1px solid #3b2929; border-radius:3px;}   
+.btn_rp{display:block; width:auto; height:auto; text-align:center; padding:6px 10px; background-color:#4c6587; border-radius:3px; border:1px solid #3c506b;}
+.btn_num{display:block; width:auto; height:auto; text-align:center; padding:6px 10px; background-color:#5a3f41; border:1px solid #3b2929; border-radius:3px;}
+.btn_setting a{display:block; width:auto; height:auto; text-align:center; padding:6px 10px; background-color:#4c6587; border-radius:3px; border:1px solid #3c506b;}
+.btn_setting a:active{background-color:#445976;}    
+.btn_del a{display:block; width:auto; height:auto; text-align:center; padding:6px 10px; background-color:#5a3f41; border:1px solid #3b2929; border-radius:3px;}
+.btn_del a:active{background-color:#4b3537;}
+.pswp__caption_top{position:absolute; left:0; top:45px; height:44px;}
+.pswp__top-bar{border-bottom:1px solid #312223;}
+</style>
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp pswp--supports-fs pswp--open pswp--touch pswp--css_animation pswp--svg pswp--visible pswp--animated-in" tabindex="-1" role="dialog" aria-hidden="false" style="position: fixed; opacity: 1;">
+    <!-- Background of PhotoSwipe.
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg" style="opacity: 1;"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+				
+        <!-- Container that holds slides.
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container" style="transform: translate3d(0px, 0px, 0px);">
+            <div class="pswp__item" style="display: block; transform: translate3d(-403px, 0px, 0px);"></div>
+            <div class="pswp__item" style="transform: translate3d(0px, 0px, 0px);"><div class="pswp__zoom-wrap" style="transform: translate3d(0px, 0px, 0px) scale(1);"><div class="pswp__img pswp__img--placeholder pswp__img--placeholder--blank" style="width: 360px; height: 640px; display: none;"></div><img class="pswp__img" src="http://image.yeoboya.com/imgs/new_wedding/mobile/wshop/sunflower.jpg"
+           style="display: block; width: 564px; height: 846px;"></div></div>
+            <div class="pswp__item" style="display: block; transform: translate3d(403px, 0px, 0px);"></div>
+        </div>
+				
+				
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--one-slide">
+						<div id="arrow_left">
+				<a href="javascript:void(0);" onclick="$.checkProfileOpenItem(); return false;"><img src="http://image.yeoboya.com/imgs/new_wedding/prime/img_photo_arrow_left.png" alt="Previous (arrow left)"></a>
+			</div>
+			<div id="arrow_right">
+				<a href="javascript:void(0);" onclick="$.checkProfileOpenItem(); return false;"><img src="http://image.yeoboya.com/imgs/new_wedding/prime/img_photo_arrow_right.png" alt="Next (arrow right)"></a>
+			</div>
+			            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <!-- 171221 닫기, 올리기 버튼 추가(정우아) -->
+                <div class="btn_close"><a href="#">닫기</a></div>
+                <div class="btn_up"><a href="#">올리기</a></div>
+                <!-- 171221 // 닫기, 올리기 버튼 추가(정우아) -->
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <!-- 171221 대표사진, 사진순서, 대표사진설정, 삭제하기 버튼 추가(정우아) -->
+            <!-- 클릭시 사라짐-->
+            <div class="pswp__caption pswp__caption_top">
+                <div class="btn_rp">대표사진</div>
+                <div class="btn_num">1/3</div>				
+            </div>
+            <!-- // 클릭시 사라짐-->
+			<div class="pswp__caption">
+                <div class="btn_setting" style="display:none;"><a href="#">대표사진 설정</a></div>
+                <div class="btn_del"><a href="#">삭제하기</a></div>				
+            </div>
+            <!-- 171221 대표사진, 사진순서, 대표사진설정, 삭제하기 버튼 추가(정우아) -->
+        </div>
+    </div>	
+</div>
+<!-- ================= 허위프로필신고 팝업창 ================= -->
+<style>
+.report_wrap {position:fixed; top:15%; left:5%; width:90%; height:auto; margin:20px auto; border:1px solid #3a3030; border-radius:10px; display:none; z-index:95;}
+.report_wrap .report_header {width:100%; height:34px; border-top:1px solid #6d5859; border-bottom:1px solid #3a3030; border-top-right-radius:10px; border-top-left-radius:10px; background:-moz-linear-gradient(top, #533b3c 0%, #483334 100%); background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#533b3c), color-stop(100%,#483334)); background:-webkit-linear-gradient(top, #533b3c 0%,#483334 100%); background:-o-linear-gradient(top, #533b3c 0%,#483334 100%); background:-ms-linear-gradient(top, #533b3c 0%,#483334 100%); line-height:34px; letter-spacing:-1px;}
+.report_wrap .report_header .report_txt_01 {padding-left:55px; color:#fff; font-size:15px}
+.report_wrap .report_header .report_txt_02 {color:#b6b6b6; font-size:13px;}
+.report_wrap img {display:block; position:absolute; z-index:999; top:-4px; left:9px;}
+.report_wrap ul {width:100%; height:auto; margin:0; padding:0; overflow:hidden;}
+.report_wrap ul li {width:100%; height:35px; padding-left:20px; border-top:1px solid #fff; border-bottom:1px solid #d0d0d1; background-color:#f2f2f5; color:#374148; font-size:14px; line-height:35px;}
+.report_wrap .last_li {display:block; width:100%; height:auto; padding:10px 20px; color:#727272; line-height:20px;}
+.report_wrap .last_li div {display:block; height:80px; background-size:35%; background-repeat:no-repeat;}
+.msg_radio_1 {position:absolute; z-index:-1000; left:-1000px; width:1px; height:1px; margin:-1px; padding:0; overflow:hidden; border:0; vertical-align:middle; clip:rect(0 0 0 0);}
+.msg_radio_1 {display:inline-block; height:25px; background-repeat:no-repeat; background-position:0 0; vertical-align:middle;}
+.radio_css01 {display:inline-block; float:right; height:25px; margin-top:3px; padding-right:30px; background-repeat:no-repeat; background-position:0 0;}
+.msg_radio_1:checked + .radio_css01 {background-position:0 -25px;}
+input[type=radio].radio_css01 {background-position:0 -25px;}
+label.radio_label { width:100%; height:25px; color:#374148; font-size:14px; padding:0; margin:0 0 10px 0; }
+label.radio_css01 {background-image:url("http://image.yeoboya.com/imgs/new_wedding/mobile/img/hope_radio.png");background-size:25px 50px; }
+.report_btn_cancel {float:left; width:50%; height:35px; border:none; border-bottom-left-radius:10px; background-color:#c5beb6; color:#fff; -webkit-appearance:none;-moz-appearance:none;appearance:none;outline:none !important;}
+.report_btn_rpt {float:right; width:50%; height:35px; border:none; border-bottom-right-radius:10px; background-color:#7a7370; color:#fff;}
+
+</style>
+  <!-- ################################### [허위프로필신고] 클릭시 보이는 신고창 ################################### -->
+  <div id="profileReport" class="report_wrap">
+    <img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img2/ico_report.png" width="42" height="43" alt="아이콘">
+    <div class="report_header font_b">
+      <span class="font_b report_txt_01">허위신고하기<span class="font_m report_txt_02">(신고 사유를 선택하여 주세요)</span></span>
+    </div>
+    <ul id="profileReportUl">
+      <span></span>
+      <div>
+        <button href="javascript:void(0);" onclick="$.cancelMsg()" class="font_m report_btn_cancel">취소</button>
+        <button href="javascript:void(0);" onclick="$.sendProfile();" class="font_m report_btn_rpt sendReport">신고하기</button>
+      </div>
+    </ul>
+  </div>
+  <!-- ################################### 채팅창/메시지박스 [신고하기] 클릭시 보이는 신고창 ################################### -->
+  <div id="msgReport" class="report_wrap">
+    <img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img2/ico_report.png" width="42" height="43" alt="아이콘">
+    <div class="report_header font_b">
+      <span class="font_b report_txt_01">신고하기<span class="font_m report_txt_02">(신고 사유를 선택하여 주세요)</span></span>
+    </div>
+    <ul id="msgReportUl">
+      <span></span>
+      <div>
+        <button href="javascript:void(0);" onclick="$.cancelMsg()" class="font_m report_btn_cancel">취소</button>
+        <button href="javascript:void(0);" onclick="$.sendMsg()" class="font_m report_btn_rpt sendReport">신고하기</button>
+      </div>
+    </ul>
+  </div>
+  <!-- ################################### [추가사진 허위신고] 클릭시 보이는 신고창 ################################### -->
+  <div id="wealthReport" class="report_wrap">
+    <img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img2/ico_report.png" width="42" height="43" alt="아이콘">
+    <div class="report_header font_b">
+      <span class="font_b report_txt_01">허위신고하기<span class="font_m report_txt_02">(신고 사유를 선택하여 주세요)</span></span>
+    </div>
+    <ul id="wealthReportUI">
+      <span></span>
+      <div>
+        <button href="javascript:void(0);" onclick="$.cancelMsg()" class="font_m report_btn_cancel">취소</button>
+        <button href="javascript:void(0);" onclick="$.sendProfile();" class="font_m report_btn_rpt sendReport">신고하기</button>
+      </div>
+    </ul>
+  </div>
+  <input type="hidden" id="pmemNo" value="193233">
+<!-- ================= 허위프로필신고 팝업창 ================= -->
+
+<!--<div class="play_btn" id="btnPlay" onclick="playerPlay();"><div id="fileTxt" class="file_txt"></div><a href="javascript:void(0);"><div class="v_play">재생</div></a></div>-->
+<div id="jplayer" style="width: 0px; height: 0px;"><img id="jp_poster_0" style="width: 0px; height: 0px; display: none;"><audio id="jp_audio_0" preload="metadata"></audio></div>
+<div id="jp_container" class="voice_rbg jp-state-no-volume">
+	<a href="javascript:void(0);" class="jp-stop btn_stop_voice" id="btnPlay" data="stop"><span class="img_voice_play"></span></a>
+	<span class="ani_voice"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/special/voice/voice_ani_stop.png" width="138" height="65"></span>
+	<span id="voice_timer" class="jp-current-time time_txt">00:00</span>
+</div>
+
+
+
+<script>
+//(function($) {
+$(window).on("load",function(){
+	var deviceChkComp = false;
+	var mediaPlayer = $('#jplayer');
+	mediaPlayer.jPlayer({
+		'pause': function(event) {
+			var $btnPlay=$("#btnPlay"),$aniVoiceImg=$("#jp_container .ani_voice img");
+			$btnPlay.attr('data','stop');
+			$btnPlay.find('span').removeClass('img_voice_stop').addClass('img_voice_play');
+			$aniVoiceImg.attr('src','http://image.yeoboya.com/imgs/new_wedding/mobile/special/voice/voice_ani_stop.png');
+		},
+		'error': function(event) {
+		},
+		'swfPath': '/_global/plugin/jplayer/js',
+		'cssSelectorAncestor': '#jp_container',
+		'supplied': 'mp3',
+		'wmode': 'window'
+	});
+
+	// 현재 페이지가 비활성화 되면 음성플레이 종료
+	document.addEventListener("visibilitychange", function() {
+		mediaPlayer.jPlayer('stop');
+	});
+
+	$('#btnPlay').click(function(){
+		if (mediaPlayer === null) return;
+		var $this = $(this);
+		var data = $this.attr('data');
+		if (data === 'stop') {
+			mediaPlayer.jPlayer('stop');
+			playerPlay();
+		} else {
+			mediaPlayer.jPlayer('stop');
+		}
+	});
+
+	playerPlay = function(_source, _el) {
+		dataOpenProc();
+		if(window.location.host.indexOf('inforex') >= 0) {
+			if(typeof _el != 'undefined') {
+				var posX = $(_el).offset().left+160,
+				posY = $(_el).offset().top+120;
+				$('#jp_container').css({'top': posY+'px', 'left': posX+'px'});
+			}
+		}
+
+		if(mediaPlayer != null) {
+			var playURL = 'http://photo.yeoboya.com/prg/ymedia.php?type=media&viewname=' + gallery.currItem.source;
+			mediaPlayer.jPlayer('setMedia', {'mp3': playURL});
+			mediaPlayer.jPlayer('play');
+			var $btnPlay=$("#btnPlay"),$aniVoiceImg=$("#jp_container .ani_voice img");
+			$btnPlay.attr('data','play');
+			$btnPlay.find('span').removeClass('img_voice_play').addClass('img_voice_stop');
+			$aniVoiceImg.attr('src','http://image.yeoboya.com/imgs/new_wedding/mobile/special/voice/voice_ani.gif');
+		}
+	};
+
+	var dataOpenProc = function(){
+		var memNo=$.cookie('gCCV:NO'),pmemNo=$.getUrlVal("memNo"),dataSlct=gallery.currItem.data_slct;
+		if (memNo === pmemNo || dataSlct === 'p') return;
+		if (dataSlct === 'v') {
+			if (vOpenYn === 'y') return;
+			vOpenYn = 'y';
+		} else {
+			if (uOpenYn === 'y') return;
+			uOpenYn = 'y';
+		}
+		$.ajax({
+			url: "/?chnl=cont&ctrl=photoview/ajax&dest=ajaxDataOpen",
+			method: 'POST',
+			data: {"pmemNo": pmemNo, "dataSlct": dataSlct},
+			timeout: 10000,
+			success: function(_data) {
+				console.log(_data);
+			}
+		});
+	};
+
+	var pswpElement = document.querySelectorAll('.pswp')[0];
+	// build items array
+	var items = [
+						{
+					src: 'http://image.yeoboya.com/imgs/new_wedding/mobile/wshop/sunflower.jpg',
+					w: '576',
+					h: '1024',
+					pno: '321962',
+					title: '&nbsp;',
+					cert_yn: 'y',
+					rprsn_yn: 'y',
+					data_slct: 'p',
+					source: '',
+					file_txt: '',
+          			reportNum: 0
+			},
+				];
+	var vCnt=0, uCnt=0, pCnt=1;
+	var vOpenYn='', uOpenYn='';
+	
+	// define options (if needed)
+	var options = {
+		closeOnVerticalDrag: false,
+		closeOnScroll: false,
+		pinchToClose: false,
+		preloaderEl: true,
+		history: false,
+		maxSpreadZoom: 1,
+    	getDoubleTapZoom: function (isMouseClick, item) {
+        	return item.initialZoomLevel;
+    	},
+    	// UI options
+    	zoomEl: false,
+		index: 0 // start at first slide
+	};
+	// Initializes and opens PhotoSwipe
+	var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+	gallery.init();
+	gallery.options.escKey = false;
+	if(gallery.currItem.data_slct!=='p'){
+		if(!deviceChkComp&&(($device.smtpSlct==='a'&&$device.appVer<"1.5.30")||($device.smtpSlct==='b'&&$device.appVer<"4.9"))){
+			$.alert('스페셜 자기소개를 이용하시려면<br><span style="color:red;">앱 업데이트</span>가 필요합니다.');
+			deviceChkComp = true;
+		}
+	}
+
+	$('#pswp_cert').show();
+$('#gallPrPhotoRprsnDel').show();
+	gallery.listen('beforeChange', function() {
+		mediaPlayer.jPlayer('stop');
+		if(gallery.currItem['data_slct'] == 'v') $("#jp_container").show();
+		else $("#jp_container").hide();
+
+		$('#pswp_cert').hide();
+		$('#gallPrPhotoRprsn').hide();
+		$('#gallPrPhotoRprsnDel').hide();
+		if(gallery.currItem['cert_yn'] == 'y') {
+			$('#pswp_cert').show();
+			if(gallery.currItem['rprsn_yn'] == 'y') {
+				$('#gallPrPhotoRprsnDel').show();
+			}
+			else {
+				if(gallery.currItem['data_slct'] == 'p') $('#gallPrPhotoRprsn').show();
+			}
+		}
+
+		if(gallery.currItem['data_slct']!=='p') $('#gallPrPhotoDel').hide();
+		else $('#gallPrPhotoDel').show();
+		if(!deviceChkComp&&gallery.currItem['data_slct']!=='p'&&(($device.smtpSlct==='a'&&$device.appVer<"1.5.30")||($device.smtpSlct==='b'&&$device.appVer<"4.9"))){
+			$.alert('스페셜 자기소개를 이용하시려면<br><span style="color:red;">앱 업데이트</span>가 필요합니다.');
+			deviceChkComp = true;
+			return;
+		}
+	});
+
+	gallery.ui.updateIndexIndicator = function(){
+		var _options = gallery.options,title,numItems,indexNum;
+		if(_options.counterEl) {
+			switch(gallery.currItem.data_slct){
+				case "u": {
+					title='움짤소개';
+					numItems=uCnt;
+					indexNum = gallery.getCurrentIndex()+1-pCnt;
+					break;
+				}
+				case "v": {
+					title='음성소개';
+					numItems=vCnt;
+					indexNum = gallery.getCurrentIndex()+1-pCnt-uCnt;
+					break;
+				}
+				default : {
+					title = '사진소개';
+					numItems = pCnt;
+					indexNum = gallery.getCurrentIndex()+1;
+					break;
+				}
+			}
+			var txt = title + ' (' + indexNum +  _options.indexIndicatorSep +  numItems+ ')';
+			$('.pswp__counter').text(txt);
+			if (gallery.currItem.data_slct === 'u') dataOpenProc();
+		}
+	};
+	gallery.ui.updateIndexIndicator();
+
+	// 신고하기 : 신고된 정보인지 확인 (프로필이미지)
+	// 이미신고된 프로필/사진 이면 [이미신고되었습니다] 라는 토스트메시지 띄우고 신고사유 선택창은 띄우지 않는다.
+	$.prPhotoReport = function() {
+		var regNo = gallery.currItem['pno'];
+		var reportNum = gallery.currItem['reportNum'];   // 신고버튼 클릭횟수 : 똑같은 정보를 신고하게 했을 때 매번 디비호출을 하는걸 막기위함
+		// alert("pmemNo:"+pmemNo+" / regNo:"+regNo);
+		if(reportNum == 0) { 
+		  $.ajax({
+			url: "/?chnl=ajax&ctrl=&dest=reportChk",
+			method: 'POST',
+			data: {"pmemNo": pmemNo, "regNo": regNo},
+			timeout: 10000
+		  })
+		  .done(function(data) {
+			switch(data) {
+			  case '1' :
+				// 신고안된 프로필/사진 이면 신고사유선택창 띄우고 신고진행
+				$.btnClick('btnReport', 'p', '', regNo);
+				break;
+			  case '-1' :
+				$.toast('이미신고하였습니다');
+				gallery.currItem['reportNum']++;
+				break;
+			  default :
+				$.toast('시스템 오류입니다. 다시 시도해 주세요.');
+				history.back();
+				break;
+			}
+		  });
+		}
+		else {
+		  $.toast('이미신고하였습니다');
+		}
+	}
+
+	// 대표사진 설정
+	$.prPhotoRprsn = function() {
+		$.ajax({
+			url: '/?chnl=cont&ctrl=profile/ajax&dest=ajaxPrPhotoRprsn',
+			method: 'POST',
+			data: {'photoNo':gallery.currItem['pno'], 'mode':'ins'},
+			timeout: 10000
+		})
+		.done(function(data) {
+				switch(data) {
+					case '1' :
+						$.toast('이 사진이 내프로필 대표사진으로 설정되었습니다');
+						$('#gallPrPhotoRprsn').hide();
+						$('#gallPrPhotoRprsnDel').show();
+						
+						for(var k in gallery.items) {
+							gallery.items[k]['rprsn_yn'] = 'n';
+						}
+						gallery.currItem['rprsn_yn'] = 'y';
+						break;
+				}
+		});
+	}
+	// 대표사진 해제
+	$.delPrPhotoRprsn = function() {
+		$.ajax({
+			url: '/?chnl=cont&ctrl=profile/ajax&dest=ajaxPrPhotoRprsn',
+			method: 'POST',
+			data: {'photoNo':gallery.currItem['pno'], 'mode':'del'},
+			timeout: 10000
+		})
+		.done(function(data) {
+				switch(data) {
+					case '1' :						
+						$.toast('이 사진이 내프로필 대표사진에서 해제되었습니다');
+						$('#gallPrPhotoRprsnDel').hide();
+						$('#gallPrPhotoRprsn').show();						
+						for(var k in gallery.items) {
+							gallery.items[k]['rprsn_yn'] = 'n';
+						}
+						break;
+				}
+		});
+	}
+	// current pr photo delete
+	$.delPrPhotoRel = function() {
+		var memNo = '193233';
+		var pNo = gallery.currItem['pno'];
+		if(gallery.currItem['rprsn_yn'] == 'y') {
+			$.confirm('대표사진으로 등록된 사진입니다.<br>삭제하시겠습니까?','취소', '삭제', null, function(){
+				$.delPrPhoto(memNo, pNo, '');
+			});
+		}
+		else {			
+			$.confirm('정말 이 사진을 본인소개사진앨범에서<br>삭제하시겠습니다?','취소', '삭제', null, function(){
+				$.delPrPhoto(memNo, pNo, '');
+			});
+		}		
+	}
+	$.gallGoCall = function() {
+		$.goCall({memNo:'193233', memNick:'안나짱', memSex:'f', memAge:'46', distance:'경기'});
+	}
+	$.checkProfileOpenItem = function(){
+		$.finishWin('0','');
+		return;
+	}
+	var $isOpenAllPhoto = false;
+	$.closeAlbum = function(e){
+		if($isOpenAllPhoto===false&&e.target.className!=='btn_report_img03 float_l'&&e.target.className!=='btn_report_img03 float_r'&&e.target.className!=='btn_closed'){
+			var opener = '';
+			if(opener==='index'){
+				$.goProfile('193233');
+			}else{
+				$.finishWin('0','');
+			}
+		}
+		
+	};
+	gallery.listen('preventDragEvent', function(e, isDown, preventObj) {
+		if(isDown){$.closeAlbum(e);}
+		preventObj.prevent = true;
+	});
+$.toast('회원님은 프로필 사진이 없습니다.<br/>프로필 사진을 등록하면<br/>천생연분을 만날 가능성이 높습니다.', null, 4000)});
+//}(jQuery));
+</script>
+<style>
+.company_ad { display:none; bottom:0; width:100%; height:auto; background-color:#636467; font-size:12px; color:#FFF;  padding:3px 0; text-align:center; }
+.posi_relative {position: relative;}
+.posi_fixed {position: fixed; }
+#btnMoveTop:focus {outline:none;}
+</style>
+
+<a href="javascript:void(0);" id="btnMoveTop" onclick="$(this).effect('bounce',{times:3},30,function(){$.goTop();});"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/btn_jump_up.png" width="35" alt=""></a>
+
+<div id="pushFloat"></div>
+<div class="company_ad font_r posi_fixed" id="company_ad">
+(주)인포렉스 대표이사 박진. 사업자등록번호 409-81-49209<br>
+광주광역시 서구 마륵동 165-27. 문의전화 1522-3379<br>
+결혼중개신고번호 광주-서구-국내-15-0003호
+</div>
+
+
+<script>
+$(document).ready(function() {
+
+	$.hashState = 1;
+
+	// open layer use backbutton
+	$.setHash = function(hashStr) {
+		$.hashState = 2;
+		if(history.pushState) {
+			history.pushState('', document.title, '/' + location.search + hashStr);
+		}
+		if(typeof(Storage) !== "undefined") {
+			localStorage.setItem("lastHash", hashStr);
+		}
+	}
+
+	// hash action
+	$.actHash = function(hashData) {
+		$.hashState = 3;
+		switch(hashData) {
+			case '#photo_save_hash' :
+				$("#photo_save_ly").hide();
+				$('.cer_modal').hide();
+				break;
+			case '#slctPrPhoto' :
+				$('#slctPrPhoto').hide();
+				break;
+			case '#slctProfileAttr' :
+				$.closeProfileAttr();
+				break;
+			case '#ifx-alert' :
+				$('#ifx-dialog').hide();
+				break;
+			case '#ifx-confirm' :
+				$('#ifx-dialog').hide();
+				break;
+			case '#msgReport' :
+				$('#profileReport').hide();
+				$('#msgReport').hide();
+				$('#wealthReport').hide();
+				break;
+			case '#ajaxStopID' :
+				$('#ifx-dialog').hide();
+				break;
+			case '#brokerMember' : // ----------------- 중매회원 소개
+				$("#brokerMember").remove();
+				break;
+			case '#miniProfile' : // ----------------- 미니프로필
+				$("#miniProfile").remove();
+				break;
+			case '#bgBlack' : // ----------------- 전체보기버튼 눌렀을 때 암막 2016.11.02 endy
+				$.allMenuHide();
+				break;
+			case '#bgBlackAll' : // ----------------- 2016.11.02 endymion 전체보기버튼 눌렀을 때 암막
+				$.setNewMemAlertHide();
+				break;
+			case '#noticeOpen' :
+				$.noticeClose();
+				break;
+			case '#floating' : // ----------------- 플로팅버튼 2017.04.03 endy
+				$.floatAction();
+				break;
+			case '#ilhaeyoWarning' : // ----------------- 일해요 유의사항 토글 2017.04.03 endy
+				$.noteToggle();
+				break;
+			case '#detailSrchPop' : // ----------------- 상세검색 팝업창 닫기
+				$.directCloseDetailSrchPop();
+				break;
+			case '#alarmLayer' :
+				$(".alarm_layer").slideUp(200);
+				$.hintLayerHide();
+				break;
+			case '#relationLayer' :
+				$.relationInfoLayerClose();
+				break;
+			case '#leaveLayer' :
+				layerHide();
+				break;
+			case '#t_mateSlct' :
+				$("#t_mateSlctLayer").attr("value","1");
+				$("#banner_secret_mini, .floating-btn_area_wrap").hide();
+				break;
+			case '#matchAllList' : // ----------------- 결혼상대를 만나 탈퇴회원 집계 리스트
+				$('#retList').hide();
+				$('.cls_btn').hide();
+				$('html').css('overflow-y','');
+				break;
+			case '#photosLayer' : // ------------------ Thanks여보야 페이지 포토레이어 닫기
+				var contNo = $('#contNo').val();
+				$('#img_' + contNo).css({"display" : "none"});
+				$('#imgModal_' + contNo).css({"display" : "none"});
+				$('#img_' + contNo).children().empty();
+				break;
+			case '#media_save_hash' :
+				$("#media_save_ly").hide();
+				break;
+			default :
+				// 연락하기
+				if(hashData.indexOf('msg_send_ly')) {
+					var arRet = hashData.split('_');
+					$.msgCloseLayer(arRet[3]);
+				}
+
+				if(hashData.indexOf('msg_rcv_ly')) {
+					var arRet = hashData.split('_');
+					$.msgCloseLayer(arRet[3]);
+				}
+				break;
+			}
+	};
+
+	// hash chcek
+	$(window).on('hashchange', function(e) {
+		if(typeof(Storage) !== "undefined") {
+			if(window.location.hash == '') {
+				$.actHash(localStorage.lastHash);
+				localStorage.setItem("lastHash", '');
+			}
+
+			if(window.location.hash != '' && window.location.hash != localStorage.lastHash) {
+				$.actHash(localStorage.lastHash);
+				localStorage.setItem("lastHash", window.location.hash);
+			}
+		}
+	});
+
+	$(window).scroll(function() {
+		if($(window).scrollTop() > 300) {
+			$('#btnMoveTop').css({"z-index":"999","margin-bottom":"0px"}).show();
+		}
+		else {
+			$('#btnMoveTop').hide();
+		}
+	});
+
+	$(window).on("load", function() {
+		setTimeout(function() {
+		}, 0);
+	});
+});
+</script>
+
+<script>
+(function($) {
+	// user stop check
+	if($.cookie('gCCV:NO')) {
+		if($isApp) {
+			$(document).on('WebViewJavascriptBridgeReady', function() {
+				$.userStopChk('userStop');
+			});
+		}
+		else {
+			$.userStopChk('userStop');
+		}
+	}
+}(jQuery));
+</script>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-65223325-2', 'auto');
+ga('send', 'pageview');
+</script>
+
+<script type="text/javascript">
+  // 한 페이지에서 두개의 서로다른 신고하기 창 처리
+  var $arProfileList = [ "기타", "개인정보 허위", "광고 및 음란성소개 사진/글"  ];     // [허위프로필신고] 의 신고사유 목록
+  var $arMsgList = [ "기타", "욕설/비방", "광고/상업성", "음란성", "SNS 아이디 요구 ( 카톡 )" ];   // 연락하기/메시지에서의 신고사유 목록
+  var $arWealthList1 = [ "기타", "연봉사진 신고", "개인정보 허위", "광고 및 음란성소개 사진/글"  ];     //프로필 연봉사진 신고 목록
+  var $arWealthList2 = [ "기타", "학력사진 신고", "개인정보 허위", "광고 및 음란성소개 사진/글"  ];     //프로필 학력사진 신고 목록
+  var $arWealthList3 = [ "기타", "차량사진 신고", "개인정보 허위", "광고 및 음란성소개 사진/글"  ];     //프로필 차량사진 신고 목록
+  var $arWealthList4 = [ "기타", "직업사진 신고", "개인정보 허위", "광고 및 음란성소개 사진/글"  ];     //프로필 직업사진 신고 목록
+  var $arWealthList5 = [ "기타", "증명서사진 신고", "개인정보 허위", "광고 및 음란성소개 사진/글"  ];     //프로필 증명서사진 신고 목록
+
+  var result = "";
+  var checkVal = "";
+  var pmemNo = '193233';   // 상대방 회원No
+
+  // 신고사유 라디오버튼을 클릭했을 때 선택한 번호([0:기타,1:개인정보허위,2:광고및음란성 사진/글])가 신고하기 버튼의 onclick 속성값을 업데이트 하도록
+  $.radioClick = function(){
+    checkVal = $(":radio[name='radiog_lite']:checked").val();
+  }
+  // 신고사유 선택된게 없으면 선택하도록 경고창 띄우기 : 메시지박스용(채팅창포함)
+  $.sendMsg = function(msgImg, msgText){
+    if($(":radio[name='radiog_lite']:checked").length > 0) {
+      var checkVal = $(":radio[name='radiog_lite']:checked").val();
+      $.msgReportProc(pmemNo, checkVal, msgImg, msgText);
+	  $('#msgReport').hide();
+      //alert("pmemNo : "+pmemNo+"  / checkVal : "+checkVal+"  / msgImg : "+msgImg+"  / msgText : "+msgText);
+    }
+    else {
+      $.alert('신고사유를 선택하여주세요', '확인', null);
+    }
+  }
+  // 신고사유 선택된게 없으면 선택하도록 경고창 띄우기 : 허위프로필신고용(프로필사진포함)
+  $.sendProfile = function(rptSlct, regNo){
+    if($(":radio[name='radiog_lite']:checked").length > 0) {
+      var rptType = $(":radio[name='radiog_lite']:checked").val();
+      $.reportProc(pmemNo, rptSlct, rptType, regNo);
+	  $('#wealthReport').hide();
+	  $('#profileReport').hide();
+    }
+    else {
+      $.alert('신고사유를 선택하여주세요', '확인', null);
+    }
+  }
+
+  $.cancelMsg = function(){
+	$('.report_wrap').hide();
+  };
+
+  // ====== 앞에서 신고하기를 클릭했을 때의 처리 ====== //
+  // 메시지박스(btnReport, 입력한내용, 이미지파일명, 이미지주소)
+  // 프로필사진(btnReport2, 'p', 신고사유(공백), 신고값(이미지번호))
+  // 허위프로필(btnReport2, 'm', 신고사유(공백), 신고값(0))
+  $.btnClick = function (clickId, msgText, msgImg, photoUrl, rcvPtrNo){
+	pmemNo = (pmemNo) ? pmemNo : rcvPtrNo; // 메인페이지에서 메세지 신고시 오류 수정
+
+    var rptSlct = msgText;    // 허위프로필 또는 프로필사진일때 : msgText 값을 rptSlct 로 받아서 사용(변수명을 명확히)
+    var regNo = photoUrl;   // 허위프로필 또는 프로필사진일때
+		if(!location.hash){
+			$.setHash('#msgReport');
+		}
+    var selKey = "";           // 신고사유 갯수가 서로 다르기 때문에 클릭한 id값에 따른 배열을 저장한다.
+    var clickReport = "";     // 허위플로필신고(btnReport) or 글쓰기의 신고(btnReport2)
+    var radioList = "";        // 신고사유 리스트를 저장할 변수(라디오버튼-목록)
+    var num =1;               // input 요소의 radio 버튼에 id 값을 줄 때 1 번부터 시작하도록(radio_msg01)
+
+    // 클릭한 버튼이 허위프로필신고(btnReport) or  글쓰기의 신고(btnReport2) 일 때 보여줄 창을 clickReport 에 담는다.
+    switch(clickId){
+    		case "btnReport":
+			      selKey = $arProfileList;
+			      clickReport = $('#profileReport').css('display');
+    		break;
+    		case "btnReport2":
+			      selKey = $arMsgList;
+			      clickReport = $('#msgReport').css('display');
+			      num += $arProfileList.length;    // 신고하기 창이 하나의 창에서 열리기 때문에  radio 버튼의 id 값을 중복되지 않게 처리
+    		break;
+    		case "btnReport3_1":  //프로필 연봉사진 신고
+			      selKey = $arWealthList1;
+			      clickReport = $('#msgReport').css('display');
+			      num += $arProfileList.length;    // 신고하기 창이 하나의 창에서 열리기 때문에  radio 버튼의 id 값을 중복되지 않게 처리
+    		break;
+    		case "btnReport3_2":  //프로필 학력사진 신고
+			      selKey = $arWealthList2;
+			      clickReport = $('#msgReport').css('display');
+			      num += $arProfileList.length;    // 신고하기 창이 하나의 창에서 열리기 때문에  radio 버튼의 id 값을 중복되지 않게 처리
+    		break;
+    		case "btnReport3_3":  //프로필 차량사진 신고
+			      selKey = $arWealthList3;
+			      clickReport = $('#msgReport').css('display');
+			      num += $arProfileList.length;    // 신고하기 창이 하나의 창에서 열리기 때문에  radio 버튼의 id 값을 중복되지 않게 처리
+    		break;
+	        case "btnReport3_4":  //프로필 직업사진 신고
+		        selKey = $arWealthList4;
+		        clickReport = $('#msgReport').css('display');
+		        num += $arProfileList.length;    // 신고하기 창이 하나의 창에서 열리기 때문에  radio 버튼의 id 값을 중복되지 않게 처리
+		    break;
+		    case "btnReport3_5":  //프로필 증명서사진 신고
+			    selKey = $arWealthList5;
+			    clickReport = $('#msgReport').css('display');
+			    num += $arProfileList.length;    // 신고하기 창이 하나의 창에서 열리기 때문에  radio 버튼의 id 값을 중복되지 않게 처리
+		    break;
+    		default:
+    				selKey = "";
+    		break;
+    }
+
+    // 위의 신고사유 배열 갯수만큼 ul 요소안에 li 요소로 사유리스트를 만든다.
+    // 실제 신고사유 리스트가 html 코드로 저장(단 기타의 경우 실제 index 값은 "0"이지만 실제 화면에 보이는 위치는 맨 끝으로 가야함)
+    for(var i=0; i<selKey.length; i++) {
+      if(selKey[i] != '기타') {
+        radioList += "<li class='font_m'>";
+        radioList += "<label for='radio_msg0"+(i+num)+"' class='radio_label'>"+selKey[i];
+        radioList += "<input href='javascript:void(0);' onclick='$.radioClick()' name='radiog_lite' type='radio' class='msg_radio_1' id='radio_msg0"+(i+num)+"' value="+i+" />";
+        radioList += "<label for='radio_msg0"+(i+num)+"' class='radio_css01'></label></label>";
+        radioList += "</li>";
+      }
+    }
+    for(var i=0; i<selKey.length; i++) {
+      if(selKey[i] == '기타') {
+        radioList += "<li class='font_m'>";
+        radioList += "<label for='radio_msg0"+(i+num)+"' class='radio_label'>"+selKey[i];
+        radioList += "<input href='javascript:void(0);' onclick='$.radioClick()' name='radiog_lite' type='radio' class='msg_radio_1' id='radio_msg0"+(i+num)+"' value="+i+" />";
+        radioList += "<label for='radio_msg0"+(i+num)+"' class='radio_css01'></label></label>";
+        radioList += "</li>";
+      }
+    }
+    // 신고사유선택창 : 허위프로필용
+    var wrapHeight = 0;
+    var winHeight = parseInt($(window).height());
+
+    if(clickReport == 'none'){
+    		switch(clickId){
+    				case "btnReport":
+					      $('#profileReport').show();
+					      $('#msgReport').hide();
+					      $('#wealthReport').hide();
+					      $('#profileReportUl > span').html(radioList);
+					      wrapHeight = parseInt($('#profileReport').css('height').replace(/[^0-9]/g,''))+50;
+					      result = "$.sendProfile('"+rptSlct+"','"+regNo+"')";
+    				break;
+    				case "btnReport2":
+					      if((msgImg == "||" || msgImg == "|" || msgImg == "null||") && msgText != null){
+					       		radioList += "<li class='font_m last_li'>"+msgText+"<br><br><br></li>";
+					      }else{
+					        	radioList += "<li class='font_m last_li' ><div id='imgReport'></div></li>";
+					      }
+					      $('#msgReport').show();
+					      $('#profileReport').hide();
+					      $('#wealthReport').hide();
+					      $('#msgReportUl > span').html(radioList);
+					      wrapHeight = parseInt($('#msgReport').css('height').replace(/[^0-9]/g,''));
+					      result = "$.sendMsg('"+msgImg+"','"+msgText+"')";
+    				break;
+    				case "btnReport3_1":
+    				case "btnReport3_2":
+    				case "btnReport3_3":
+					      $('#wealthReport').show();
+					      $('#msgReport').hide();
+					      $('#profileReport').hide();
+					      $('#wealthReportUI > span').html(radioList);
+					      wrapHeight = parseInt($('#profileReport').css('height').replace(/[^0-9]/g,''))+90;
+					      result = "$.sendProfile('"+rptSlct+"','"+regNo+"')";
+    				break;
+    				default:
+					      $('#profileReport').hide();
+					      $('#msgReport').hide();
+    				break;
+    		}
+    }else{
+	      $('#profileReport').hide();
+	      $('#msgReport').hide();
+    }
+
+    $('.sendReport').attr('onclick', result);
+//    $('#radio_msg0'+num).attr('checked', true);
+    $('#imgReport').css("background-image","url('"+photoUrl+"')");
+    $('.report_wrap').css("top", ((winHeight-wrapHeight)/2)+"px");
+  }
+</script>
+
+
+</body></html>
