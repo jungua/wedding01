@@ -494,10 +494,6 @@ nav li.align_lst a.slct_ui span{width:42px; padding-right:11px;}
 #contents .rolling_wrap .rolling_stop{background-color:#fffd60!important;}
 /*20170718 정우아_롤링메시지영역 수정//*/
 
-/* 170911 페이지 맨 상단으로 이동 & 맨 하단으로 이동 */
-#btnMoveTop{right:25px;}
-#btnMoveBottom{position:fixed; bottom:10px; right:80px; width:35px; height:35px; z-index:10;}
-
 /* 170913 로고애니메이션 */
 header .logo{-webkit-transform-style: preserve-3d; -moz-transform-style: preserve-3d; -ms-transform-style: preserve-3d; -o-transform-style: preserve-3d; transform-style: preserve-3d;}
 @keyframes spin {
@@ -614,7 +610,22 @@ background: linear-gradient(to bottom, rgb(69,101,171) 1%,rgb(39,68,128) 100%);}
 .float_wrap_on .float_marry{top:-390px; transform:scale(1); opacity:1; animation:up06 0.2s ease-in-out 1; -webkit-animation:up06 0.2s ease-in-out 1; -o-animation:up06 0.2s ease-in-out 1; -moz-animation:up06 0.2s ease-in-out 1; -ms-animation:up06 0.2s ease-in-out 1;}
 .float_wrap_on .float_wshop{top:-455px; transform:scale(1); opacity:1; animation:up05 0.2s ease-in-out 1; -webkit-animation:up05 0.2s ease-in-out 1; -o-animation:up05 0.2s ease-in-out 1; -moz-animation:up07 0.2s ease-in-out 1; -ms-animation:up05 0.2s ease-in-out 1;}
 #btnMoveTop{right:25px;}   
-
+@media(max-width:349px){
+    .float_wrap{bottom:10px;}
+    .float_wrap_on .float_item{top:-56px;}
+    .float_wrap_on .float_write{top:-112px;}
+    .float_wrap_on .float_info{top:-168px;}
+    .float_wrap_on .float_question{top:-224px;}
+    .float_wrap_on .float_alarm{top:-280px;}
+    .float_wrap_on .float_marry{top:-336px;}
+    .float_wrap_on .float_wshop{top:-392px;}
+}
+/* 171227 페이지 맨 상단으로 이동 & 맨 하단으로 이동(위치수정) */
+#btnMoveTop{right:25px;}
+@media(max-width:349px){
+    #btnMoveTop{right:74px;}
+}   
+#btnMoveBottom{position:fixed; bottom:10px; right:80px; width:35px; height:35px; z-index:10;} 
 </style>
 
 <div id="wrap">
@@ -3017,5 +3028,12 @@ $(document).on("ready", function(){
 			<a href="javascript:void(0);" onclick="$.openWin('/?chnl=cont&amp;ctrl=profile&amp;dest=profileEdit#myWant', 'goProfile'); $.setNewMemAlertHide();">희망배우자 지역 설정하러 가기</a>
 		</div>
 </div>
+<style>
+.company_ad { display:none; bottom:0; width:100%; height:auto; background-color:#636467; font-size:12px; color:#FFF;  padding:3px 0; text-align:center; }
+.posi_relative {position: relative;}
+.posi_fixed {position: fixed; }
+#btnMoveTop:focus {outline:none;}
+</style>
+<a href="javascript:void(0);" id="btnMoveTop" style="display: inline;"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/btn_jump_up.png" width="35" alt=""></a>
 
 </body></html>
